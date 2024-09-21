@@ -27,10 +27,52 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             InitializeComponent();
 
             this.JobItem = jobItem;
+
+            ShowInfo();
         }
         public Job()
         {
             InitializeComponent();
+        }
+
+        void ShowInfo()
+        {
+            btnInfo.Text = JobItem.NameJob;
+            //Them thuoc tinh ...
+        }
+       
+
+        private event EventHandler edited;
+        public event EventHandler Edited
+        {
+            add { edited += value; }
+            remove { edited -= value; }
+        }
+
+        private event EventHandler deleted;
+        public event EventHandler Deleted
+        {
+            add { deleted += value; }
+            remove { deleted -= value; }
+        }
+
+        private void ctmsSua_Click(object sender, EventArgs e)
+        {
+            JobItem.NameJob = btnInfo.Text;
+            //Them thuoc tinh ...
+            if (edited != null)
+            {
+                edited(this, new EventArgs());
+            }
+        }
+
+        private void ctmsXoa_Click(object sender, EventArgs e)
+        {
+            if (deleted != null)
+            {
+                deleted(this, new EventArgs());
+            }
+
         }
     }
 }

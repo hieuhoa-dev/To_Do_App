@@ -63,7 +63,6 @@
             this.pnlControl2.SuspendLayout();
             this.pnlControl.SuspendLayout();
             this.flpShowJobChild.SuspendLayout();
-            this.pnlDesktop.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabPage1
@@ -257,7 +256,7 @@
             this.iconMinimize.Dock = System.Windows.Forms.DockStyle.Right;
             this.iconMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconMinimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 200F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconMinimize.ForeColor = System.Drawing.Color.White;
+            this.iconMinimize.ForeColor = System.Drawing.Color.Transparent;
             this.iconMinimize.IconChar = FontAwesome.Sharp.IconChar.Minus;
             this.iconMinimize.IconColor = System.Drawing.Color.Black;
             this.iconMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -277,7 +276,7 @@
             this.iconXmark.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.iconXmark.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconXmark.Font = new System.Drawing.Font("Microsoft Sans Serif", 200F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconXmark.ForeColor = System.Drawing.Color.White;
+            this.iconXmark.ForeColor = System.Drawing.Color.Transparent;
             this.iconXmark.IconChar = FontAwesome.Sharp.IconChar.Remove;
             this.iconXmark.IconColor = System.Drawing.Color.Black;
             this.iconXmark.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -369,8 +368,6 @@
             this.pnlDesktop.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlDesktop.Controls.Add(this.btnAdd);
-            this.pnlDesktop.Controls.Add(this.pnlShowJob);
             this.pnlDesktop.Location = new System.Drawing.Point(80, 46);
             this.pnlDesktop.Name = "pnlDesktop";
             this.pnlDesktop.Size = new System.Drawing.Size(1320, 916);
@@ -380,7 +377,7 @@
             // 
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.Black;
-            this.btnAdd.Location = new System.Drawing.Point(679, 36);
+            this.btnAdd.Location = new System.Drawing.Point(767, 87);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(68, 31);
             this.btnAdd.TabIndex = 22;
@@ -390,9 +387,10 @@
             // 
             // pnlShowJob
             // 
-            this.pnlShowJob.Location = new System.Drawing.Point(313, 91);
+            this.pnlShowJob.BackColor = System.Drawing.Color.White;
+            this.pnlShowJob.Location = new System.Drawing.Point(379, 137);
             this.pnlShowJob.Name = "pnlShowJob";
-            this.pnlShowJob.Size = new System.Drawing.Size(434, 729);
+            this.pnlShowJob.Size = new System.Drawing.Size(469, 807);
             this.pnlShowJob.TabIndex = 0;
             // 
             // lbSeparator1
@@ -434,8 +432,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1400, 950);
+            this.Controls.Add(this.pnlShowJob);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -459,7 +459,6 @@
             this.pnlControl2.PerformLayout();
             this.pnlControl.ResumeLayout(false);
             this.flpShowJobChild.ResumeLayout(false);
-            this.pnlDesktop.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

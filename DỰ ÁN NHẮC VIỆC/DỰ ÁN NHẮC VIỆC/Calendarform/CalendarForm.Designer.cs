@@ -233,7 +233,7 @@
             this.pnlMatrix.Size = new System.Drawing.Size(1258, 684);
             this.pnlMatrix.TabIndex = 1;
             // 
-            // Calender
+            // CalendarForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -244,7 +244,7 @@
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Calender";
+            this.Name = "CalendarForm";
             this.Text = "Calender";
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);

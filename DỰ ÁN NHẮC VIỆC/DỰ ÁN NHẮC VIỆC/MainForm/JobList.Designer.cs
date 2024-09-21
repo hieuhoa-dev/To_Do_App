@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.dtpJob = new System.Windows.Forms.DateTimePicker();
-            this.fpnlJob = new System.Windows.Forms.FlowLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
+            this.pnlJob = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // dtpJob
@@ -39,34 +39,36 @@
             this.dtpJob.Name = "dtpJob";
             this.dtpJob.Size = new System.Drawing.Size(285, 26);
             this.dtpJob.TabIndex = 0;
-            // 
-            // fpnlJob
-            // 
-            this.fpnlJob.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.fpnlJob.Location = new System.Drawing.Point(27, 90);
-            this.fpnlJob.Name = "fpnlJob";
-            this.fpnlJob.Size = new System.Drawing.Size(309, 493);
-            this.fpnlJob.TabIndex = 0;
+            this.dtpJob.ValueChanged += new System.EventHandler(this.dtpJob_ValueChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(318, 24);
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Location = new System.Drawing.Point(361, 24);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 47);
+            this.button1.Size = new System.Drawing.Size(75, 34);
             this.button1.TabIndex = 1;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // pnlJob
+            // 
+            this.pnlJob.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlJob.Location = new System.Drawing.Point(0, 77);
+            this.pnlJob.Name = "pnlJob";
+            this.pnlJob.Size = new System.Drawing.Size(469, 730);
+            this.pnlJob.TabIndex = 2;
+            // 
             // JobList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.pnlJob);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.fpnlJob);
             this.Controls.Add(this.dtpJob);
             this.Name = "JobList";
-            this.Size = new System.Drawing.Size(415, 641);
+            this.Size = new System.Drawing.Size(469, 807);
             this.ResumeLayout(false);
 
         }
@@ -74,7 +76,7 @@
         #endregion
 
         private System.Windows.Forms.DateTimePicker dtpJob;
-        private System.Windows.Forms.FlowLayoutPanel fpnlJob;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel pnlJob;
     }
 }
