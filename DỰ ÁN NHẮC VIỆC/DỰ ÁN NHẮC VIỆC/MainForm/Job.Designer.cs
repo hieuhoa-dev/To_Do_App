@@ -61,7 +61,7 @@
             this.btnInfo.ContextMenuStrip = this.ctnsControlCV;
             this.btnInfo.Location = new System.Drawing.Point(0, 0);
             this.btnInfo.Name = "btnInfo";
-            this.btnInfo.Size = new System.Drawing.Size(456, 42);
+            this.btnInfo.Size = new System.Drawing.Size(429, 42);
             this.btnInfo.TabIndex = 0;
             this.btnInfo.UseVisualStyleBackColor = true;
             // 
@@ -73,14 +73,14 @@
             this.ctmsSua,
             this.ctmsXoa});
             this.ctnsControlCV.Name = "ctnsControlCV";
-            this.ctnsControlCV.Size = new System.Drawing.Size(241, 101);
+            this.ctnsControlCV.Size = new System.Drawing.Size(116, 68);
             // 
             // ctmsSua
             // 
             this.ctmsSua.BackColor = System.Drawing.SystemColors.Control;
             this.ctmsSua.ForeColor = System.Drawing.Color.Black;
             this.ctmsSua.Name = "ctmsSua";
-            this.ctmsSua.Size = new System.Drawing.Size(240, 32);
+            this.ctmsSua.Size = new System.Drawing.Size(115, 32);
             this.ctmsSua.Text = "Sửa";
             this.ctmsSua.Click += new System.EventHandler(this.ctmsSua_Click);
             // 

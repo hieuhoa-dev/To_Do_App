@@ -15,7 +15,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         public int DayOfWeek = 7;
         public int DayOfCColumn = 6;
         public int dateButtonWidth = 180;
-        public int dateButtonHeight = 57;
+        public int dateButtonHeight = 100;  
         public int margin = 0;
 
 

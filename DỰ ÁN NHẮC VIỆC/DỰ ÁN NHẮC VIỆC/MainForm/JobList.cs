@@ -29,16 +29,15 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             set { dscv = value; }
         }
 
-        public JobList(DateTime date,DSCongViec dscv)
+        public JobList(DateTime date, DSCongViec dscv)
         {
             InitializeComponent();
             this.Date = date;
             this.DSCongViec = dscv;
-  
+            fPanel.AutoScroll = true;
             fPanel.Width = pnlJob.Width;
             fPanel.Height = pnlJob.Height;
             pnlJob.Controls.Add(fPanel);
-
             dtpJob.Value = Date;
         }
 
@@ -58,12 +57,6 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             fPanel.Controls.Add(aJob);
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            CongViec cv = new CongViec() { Date = dtpJob.Value};
-            //DSCongViec.ListItemPlan.Add(cv);
-            AddJob(cv);
-        }
 
         void ShowJobByDay(DateTime date)
         {
@@ -101,7 +94,37 @@ namespace DỰ_ÁN_NHẮC_VIỆC
 
         List<CongViec> GetJobByDay(DateTime date)
         {
-            return DSCongViec.ListItemPlan.Where(p=>p.Date.Year == date.Year && p.Date.Month == date.Month && p.Date.Day == date.Day).ToList();
+            return DSCongViec.ListItemPlan.Where(p => p.Date.Year == date.Year && p.Date.Month == date.Month && p.Date.Day == date.Day).ToList();
+        }
+
+
+        private void txtTenCV_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                CongViec cv = new CongViec() { Date = dtpJob.Value };
+                // DSCongViec.ListItemPlan.Add(cv);
+                AddJob(cv);
+            }
+
+        }
+
+        private void txtTenCV_Enter(object sender, EventArgs e)
+        {
+            if (txtTenCV.Text == "  + Add tasks")
+            {
+                txtTenCV.Text = "";
+                txtTenCV.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtTenCV_Leave(object sender, EventArgs e)
+        {
+            if (txtTenCV.Text == "")
+            {
+                txtTenCV.Text = "  + Add tasks";
+                txtTenCV.ForeColor = Color.Silver;
+            }
         }
     }
 }

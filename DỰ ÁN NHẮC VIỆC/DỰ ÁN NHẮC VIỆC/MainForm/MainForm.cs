@@ -17,7 +17,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
 {
     public partial class MainForm : Form
     {
-
+        Panel pnlDeskTops = new Panel();
         //Tạo khung, viền, bóng
         #region DesignFrom 
         private bool Drag;
@@ -125,11 +125,11 @@ namespace DỰ_ÁN_NHẮC_VIỆC
 
         }
 
-
         public MainForm()
         {
             InitializeComponent();
             m_aeroEnabled = false;
+            TaopnlDeskTops();
 
         }
         //Tạo thoát, thu nhỏ
@@ -160,7 +160,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         #endregion
 
         //cài đặt màu cho nút Control, mở file tương ứng
-        #region
+        #region btnControl
         IconButton currentButton;
         private void ActivateButton(object btnSender)
         {
@@ -194,30 +194,28 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         {
             lbSeparator1.Visible = false;
             lbSeparator2.Visible = false;
-            pnlDesktop.Visible = true;
-            if (activeForm != null)
-                activeForm.Close();
+            pnlDeskTops.Visible = true;
+            //if (activeForm != null)
+            //    activeForm.Close();
             ActivateButton(btnSender);
             activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
-            this.pnlDesktop.Controls.Add(childForm);
-            this.pnlDesktop.Tag = childForm;
+            this.pnlDeskTops.Controls.Add(childForm);
+            this.pnlDeskTops.Tag = childForm;
             childForm.BringToFront();
-            pnlDesktop.BringToFront();
+            pnlDeskTops.BringToFront();
             childForm.Show();
 
         }
-
-
 
 
         private void iconHome_Click(object sender, EventArgs e)
         {
             lbSeparator1.Visible = true;
             lbSeparator2.Visible = true;
-            pnlDesktop.Visible = false;
+            pnlDeskTops.Visible = false;
             ActivateButton(sender);
         }
         private void iconButton4_Click(object sender, EventArgs e)
@@ -240,10 +238,6 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             ActivateButton(sender);
         }
 
-        private void iconNoti_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-        }
 
 
         #endregion
@@ -287,5 +281,28 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             JobList jobList = new JobList(new DateTime(mCalendar.SelectionStart.Year, mCalendar.SelectionStart.Month, mCalendar.SelectionStart.Day), dSCV);
             jobList.ThemJob();
         }
+
+
+        private void iconDonate_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+        }
+
+        private void iconNoti_Click(object sender, EventArgs e)
+        {
+            notifyIcon1.ShowBalloonTip(1000);
+        }
+
+       
+    
+        void TaopnlDeskTops()
+        {
+            pnlDeskTops.Location = new System.Drawing.Point(80, 46);
+            pnlDeskTops.Size = new System.Drawing.Size(1320, 916);
+            pnlDeskTops.TabIndex = 25;
+            pnlDeskTops.BringToFront();
+            this.Controls.Add(pnlDeskTops);  
+        }
+
     }
 }

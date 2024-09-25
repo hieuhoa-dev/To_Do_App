@@ -183,6 +183,7 @@
             this.btnMonday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnMonday.FlatAppearance.BorderSize = 0;
             this.btnMonday.ForeColor = System.Drawing.Color.White;
+            this.btnMonday.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnMonday.Location = new System.Drawing.Point(0, 0);
             this.btnMonday.Name = "btnMonday";
             this.btnMonday.Size = new System.Drawing.Size(180, 57);

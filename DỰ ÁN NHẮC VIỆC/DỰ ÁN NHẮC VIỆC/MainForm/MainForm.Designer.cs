@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -41,7 +42,9 @@
             this.iconHome = new FontAwesome.Sharp.IconButton();
             this.pnlBottom = new System.Windows.Forms.Panel();
             this.pnlTop = new System.Windows.Forms.Panel();
+            this.iconAdd = new FontAwesome.Sharp.IconButton();
             this.pnlControl = new System.Windows.Forms.Panel();
+            this.iconSearch = new FontAwesome.Sharp.IconButton();
             this.iconNoti = new FontAwesome.Sharp.IconButton();
             this.iconMinimize = new FontAwesome.Sharp.IconButton();
             this.iconXmark = new FontAwesome.Sharp.IconButton();
@@ -53,14 +56,16 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnToday = new System.Windows.Forms.Button();
             this.mCalendar = new System.Windows.Forms.MonthCalendar();
-            this.pnlDesktop = new System.Windows.Forms.Panel();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.pnlShowJob = new System.Windows.Forms.Panel();
             this.lbSeparator1 = new System.Windows.Forms.Label();
             this.lbSeparator2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.ttControl = new System.Windows.Forms.ToolTip(this.components);
+            this.ttAdd = new System.Windows.Forms.ToolTip(this.components);
             this.jobChild1 = new DỰ_ÁN_NHẮC_VIỆC.JobChild();
             this.pnlControl2.SuspendLayout();
+            this.pnlTop.SuspendLayout();
             this.pnlControl.SuspendLayout();
             this.flpShowJobChild.SuspendLayout();
             this.SuspendLayout();
@@ -134,6 +139,7 @@
             this.iconSetting.Name = "iconSetting";
             this.iconSetting.Size = new System.Drawing.Size(80, 80);
             this.iconSetting.TabIndex = 2;
+            this.ttControl.SetToolTip(this.iconSetting, "Settings");
             this.iconSetting.UseVisualStyleBackColor = false;
             this.iconSetting.Click += new System.EventHandler(this.iconSetting_Click);
             // 
@@ -151,8 +157,9 @@
             this.iconDonate.Name = "iconDonate";
             this.iconDonate.Size = new System.Drawing.Size(80, 80);
             this.iconDonate.TabIndex = 2;
+            this.ttControl.SetToolTip(this.iconDonate, "Support dev");
             this.iconDonate.UseVisualStyleBackColor = false;
-            this.iconDonate.Click += new System.EventHandler(this.iconNoti_Click);
+            this.iconDonate.Click += new System.EventHandler(this.iconDonate_Click);
             // 
             // iconList
             // 
@@ -160,13 +167,14 @@
             this.iconList.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconList.FlatAppearance.BorderSize = 0;
             this.iconList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconList.IconChar = FontAwesome.Sharp.IconChar.List;
+            this.iconList.IconChar = FontAwesome.Sharp.IconChar.ListCheck;
             this.iconList.IconColor = System.Drawing.Color.DarkGray;
             this.iconList.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconList.Location = new System.Drawing.Point(0, 217);
+            this.iconList.Location = new System.Drawing.Point(0, 243);
             this.iconList.Name = "iconList";
             this.iconList.Size = new System.Drawing.Size(80, 80);
             this.iconList.TabIndex = 2;
+            this.ttControl.SetToolTip(this.iconList, "List");
             this.iconList.UseVisualStyleBackColor = false;
             this.iconList.Click += new System.EventHandler(this.iconList_Click);
             // 
@@ -176,13 +184,14 @@
             this.iconCalendar.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconCalendar.FlatAppearance.BorderSize = 0;
             this.iconCalendar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconCalendar.IconChar = FontAwesome.Sharp.IconChar.Calendar;
+            this.iconCalendar.IconChar = FontAwesome.Sharp.IconChar.CalendarCheck;
             this.iconCalendar.IconColor = System.Drawing.Color.DarkGray;
             this.iconCalendar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconCalendar.Location = new System.Drawing.Point(0, 137);
+            this.iconCalendar.Location = new System.Drawing.Point(0, 163);
             this.iconCalendar.Name = "iconCalendar";
             this.iconCalendar.Size = new System.Drawing.Size(80, 80);
             this.iconCalendar.TabIndex = 2;
+            this.ttControl.SetToolTip(this.iconCalendar, "Calendar");
             this.iconCalendar.UseVisualStyleBackColor = false;
             this.iconCalendar.Click += new System.EventHandler(this.iconCalendar_Click);
             // 
@@ -195,10 +204,11 @@
             this.iconHome.IconChar = FontAwesome.Sharp.IconChar.House;
             this.iconHome.IconColor = System.Drawing.Color.DarkGray;
             this.iconHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconHome.Location = new System.Drawing.Point(0, 57);
+            this.iconHome.Location = new System.Drawing.Point(0, 83);
             this.iconHome.Name = "iconHome";
             this.iconHome.Size = new System.Drawing.Size(80, 80);
             this.iconHome.TabIndex = 2;
+            this.ttControl.SetToolTip(this.iconHome, "Home");
             this.iconHome.UseVisualStyleBackColor = false;
             this.iconHome.Click += new System.EventHandler(this.iconHome_Click);
             // 
@@ -213,15 +223,35 @@
             // 
             // pnlTop
             // 
+            this.pnlTop.BackColor = System.Drawing.Color.Gainsboro;
+            this.pnlTop.Controls.Add(this.iconAdd);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTop.Location = new System.Drawing.Point(0, 0);
             this.pnlTop.Name = "pnlTop";
-            this.pnlTop.Size = new System.Drawing.Size(80, 57);
+            this.pnlTop.Size = new System.Drawing.Size(80, 83);
             this.pnlTop.TabIndex = 1;
+            // 
+            // iconAdd
+            // 
+            this.iconAdd.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.iconAdd.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconAdd.FlatAppearance.BorderSize = 0;
+            this.iconAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconAdd.ForeColor = System.Drawing.Color.White;
+            this.iconAdd.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.iconAdd.IconColor = System.Drawing.Color.Black;
+            this.iconAdd.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconAdd.Location = new System.Drawing.Point(0, 0);
+            this.iconAdd.Name = "iconAdd";
+            this.iconAdd.Size = new System.Drawing.Size(80, 80);
+            this.iconAdd.TabIndex = 2;
+            this.ttAdd.SetToolTip(this.iconAdd, "Create Task");
+            this.iconAdd.UseVisualStyleBackColor = false;
             // 
             // pnlControl
             // 
             this.pnlControl.BackColor = System.Drawing.Color.White;
+            this.pnlControl.Controls.Add(this.iconSearch);
             this.pnlControl.Controls.Add(this.iconNoti);
             this.pnlControl.Controls.Add(this.iconMinimize);
             this.pnlControl.Controls.Add(this.iconXmark);
@@ -231,6 +261,25 @@
             this.pnlControl.Name = "pnlControl";
             this.pnlControl.Size = new System.Drawing.Size(1320, 40);
             this.pnlControl.TabIndex = 1;
+            // 
+            // iconSearch
+            // 
+            this.iconSearch.BackColor = System.Drawing.Color.White;
+            this.iconSearch.Dock = System.Windows.Forms.DockStyle.Right;
+            this.iconSearch.FlatAppearance.BorderSize = 0;
+            this.iconSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 200F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconSearch.ForeColor = System.Drawing.Color.Transparent;
+            this.iconSearch.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.iconSearch.IconColor = System.Drawing.Color.Black;
+            this.iconSearch.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconSearch.IconSize = 25;
+            this.iconSearch.Location = new System.Drawing.Point(1084, 0);
+            this.iconSearch.Name = "iconSearch";
+            this.iconSearch.Size = new System.Drawing.Size(59, 40);
+            this.iconSearch.TabIndex = 3;
+            this.ttControl.SetToolTip(this.iconSearch, "Search");
+            this.iconSearch.UseVisualStyleBackColor = false;
             // 
             // iconNoti
             // 
@@ -248,7 +297,9 @@
             this.iconNoti.Name = "iconNoti";
             this.iconNoti.Size = new System.Drawing.Size(59, 40);
             this.iconNoti.TabIndex = 3;
+            this.ttControl.SetToolTip(this.iconNoti, "Notification");
             this.iconNoti.UseVisualStyleBackColor = false;
+            this.iconNoti.Click += new System.EventHandler(this.iconNoti_Click);
             // 
             // iconMinimize
             // 
@@ -304,12 +355,14 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(389, 92);
+            this.label1.Location = new System.Drawing.Point(379, 57);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(147, 20);
+            this.label1.Size = new System.Drawing.Size(292, 36);
             this.label1.TabIndex = 22;
-            this.label1.Text = "Danh sách học việc";
+            this.label1.Text = "Danh sách công việc";
             // 
             // button3
             // 
@@ -358,32 +411,12 @@
             // 
             // mCalendar
             // 
+            this.mCalendar.FirstDayOfWeek = System.Windows.Forms.Day.Monday;
             this.mCalendar.Location = new System.Drawing.Point(95, 77);
+            this.mCalendar.MaxSelectionCount = 1;
             this.mCalendar.Name = "mCalendar";
             this.mCalendar.TabIndex = 15;
             this.mCalendar.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.mCalendar_DateChanged);
-            // 
-            // pnlDesktop
-            // 
-            this.pnlDesktop.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlDesktop.Location = new System.Drawing.Point(80, 46);
-            this.pnlDesktop.Name = "pnlDesktop";
-            this.pnlDesktop.Size = new System.Drawing.Size(1320, 916);
-            this.pnlDesktop.TabIndex = 25;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.ForeColor = System.Drawing.Color.Black;
-            this.btnAdd.Location = new System.Drawing.Point(767, 87);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(68, 31);
-            this.btnAdd.TabIndex = 22;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // pnlShowJob
             // 
@@ -420,6 +453,34 @@
             this.panel1.Size = new System.Drawing.Size(267, 500);
             this.panel1.TabIndex = 25;
             // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.notifyIcon1.BalloonTipText = "Thông báo";
+            this.notifyIcon1.BalloonTipTitle = "10h30 có lịch đi chơi";
+            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
+            this.notifyIcon1.Text = "notifyIcon1";
+            this.notifyIcon1.Visible = true;
+            // 
+            // ttControl
+            // 
+            this.ttControl.AutoPopDelay = 5000;
+            this.ttControl.BackColor = System.Drawing.Color.Black;
+            this.ttControl.ForeColor = System.Drawing.Color.Black;
+            this.ttControl.InitialDelay = 0;
+            this.ttControl.ReshowDelay = 100;
+            this.ttControl.ShowAlways = true;
+            // 
+            // ttAdd
+            // 
+            this.ttAdd.AutoPopDelay = 5000;
+            this.ttAdd.BackColor = System.Drawing.Color.Black;
+            this.ttAdd.ForeColor = System.Drawing.Color.Black;
+            this.ttAdd.InitialDelay = 0;
+            this.ttAdd.IsBalloon = true;
+            this.ttAdd.ReshowDelay = 100;
+            this.ttAdd.ShowAlways = true;
+            // 
             // jobChild1
             // 
             this.jobChild1.Location = new System.Drawing.Point(3, 3);
@@ -434,8 +495,8 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1400, 950);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pnlShowJob);
-            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -444,19 +505,19 @@
             this.Controls.Add(this.lbSeparator2);
             this.Controls.Add(this.lbSeparator1);
             this.Controls.Add(this.flpShowJobChild);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.pnlControl);
             this.Controls.Add(this.pnlControl2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pnlDesktop);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.pnlControl2.ResumeLayout(false);
             this.pnlControl2.PerformLayout();
+            this.pnlTop.ResumeLayout(false);
             this.pnlControl.ResumeLayout(false);
             this.flpShowJobChild.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -489,13 +550,16 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnToday;
         private System.Windows.Forms.MonthCalendar mCalendar;
-        private System.Windows.Forms.Panel pnlDesktop;
         private System.Windows.Forms.Label lbSeparator1;
         private System.Windows.Forms.Label lbSeparator2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel pnlShowJob;
-        private System.Windows.Forms.Button btnAdd;
         private JobChild jobChild1;
+        public System.Windows.Forms.NotifyIcon notifyIcon1;
+        private FontAwesome.Sharp.IconButton iconAdd;
+        private FontAwesome.Sharp.IconButton iconSearch;
+        private System.Windows.Forms.ToolTip ttControl;
+        private System.Windows.Forms.ToolTip ttAdd;
     }
 }
 
