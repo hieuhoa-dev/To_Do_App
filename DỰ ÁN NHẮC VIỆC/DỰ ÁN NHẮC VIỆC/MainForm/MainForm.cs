@@ -304,5 +304,9 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             this.Controls.Add(pnlDeskTops);  
         }
 
+        private void iconSearch_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

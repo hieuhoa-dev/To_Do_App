@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
+
 
 namespace DỰ_ÁN_NHẮC_VIỆC
 {
@@ -15,7 +17,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         public int DayOfWeek = 7;
         public int DayOfCColumn = 6;
         public int dateButtonWidth = 180;
-        public int dateButtonHeight = 100;  
+        public int dateButtonHeight = 115;
         public int margin = 0;
 
 
@@ -28,19 +30,26 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             set { matrix = value; }
         }
 
-        private List<string> dateOfWeek = new List<string> { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
 
+        private List<string> dateOfWeek = new List<string> { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
+        private List<string> NgayTrongTuan = new List<string> { "Hai", "Ba", "Tu", "Năm", "Sáu", "Bảy", "Chủ Nhật" };
         public CalendarForm()
         {
             InitializeComponent();
             LoadMatrix();
             ShowDateOnTop();
+
         }
 
         void ShowDateOnTop()
         {
-            tsmTime.Text = "Thứ " + dtpkDate.Value.DayOfWeek + ", Ngày " + dtpkDate.Value.Day.ToString() + " ,Tháng " + dtpkDate.Value.Month.ToString()
+            tsmTime.Text = "Thứ " + HienNgayTrongTuan(dtpkDate.Value.DayOfWeek) + ", Ngày " + dtpkDate.Value.Day.ToString() + " ,Tháng " + dtpkDate.Value.Month.ToString()
                 + " ,Năm " + dtpkDate.Value.Year.ToString();
+        }
+        string HienNgayTrongTuan(DayOfWeek dayOfWeek)
+        {
+            int Ngay = dateOfWeek.IndexOf(dayOfWeek.ToString());
+            return NgayTrongTuan[Ngay];
         }
         void LoadMatrix()
         {
@@ -56,10 +65,11 @@ namespace DỰ_ÁN_NHẮC_VIỆC
                     Button btn = new Button() { Width = dateButtonWidth, Height = dateButtonHeight };
                     btn.Location = new Point(oldBtn.Location.X + oldBtn.Width + margin, oldBtn.Location.Y);
 
+
+                    btn.MouseUp += Btn_MouseClick;
                     pnlMatrix.Controls.Add(btn);
 
                     Matrix[i].Add(btn);
-
 
                     oldBtn = btn;
                 }
@@ -69,6 +79,17 @@ namespace DỰ_ÁN_NHẮC_VIỆC
 
             SetDefaultDate();
         }
+
+        private void Btn_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                ShowJob(DateTime.Now);
+            }
+
+        }
+
+
         int DayOfMonth(DateTime date)
         {
             switch (date.Month)
@@ -101,20 +122,32 @@ namespace DỰ_ÁN_NHẮC_VIỆC
 
                 Button btn = Matrix[line][column];
                 btn.Text = i.ToString();
-                btn.ForeColor = Color.Black;
 
-                if (isEqualDate(useDate,DateTime.Now))
-                    btn.BackColor = Color.Aquamarine;
+                btn.ForeColor = Color.Black;
+                btn.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+
+                if (isEqualDate(useDate, DateTime.Now))
+                {
+                    btn.FlatAppearance.BorderColor = Color.Black;
+                    btn.BackColor = Color.Bisque;
+                    btn.FlatAppearance.BorderSize = 2;
+                    btn.FlatStyle = FlatStyle.Flat;
+                }
+
+                ChangeButtonColor(btn, useDate);
+
 
                 if (column >= 6)
                     line++;
+
+
                 useDate = useDate.AddDays(1);
 
             }
 
         }
 
-        bool isEqualDate(DateTime dateA,DateTime dateB)
+        bool isEqualDate(DateTime dateA, DateTime dateB)
         {
             return dateA.Year == dateB.Year && dateA.Month == dateB.Month && dateA.Day == dateB.Day;
         }
@@ -127,6 +160,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         void SetDefaultDate()
         {
             dtpkDate.Value = DateTime.Now;
+
         }
 
         void ClearMatrix()
@@ -155,6 +189,69 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         private void hômNayToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SetDefaultDate();
+        }
+
+        private void thêmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        void ShowJob(DateTime i)
+        {
+            ContextMenuStrip JobByI = new ContextMenuStrip();
+            string DateTimeByI = "Thứ " + HienNgayTrongTuan(i.DayOfWeek) + ", Ngày " + i.Day.ToString() + " ,Tháng " + i.Month.ToString()
+                + " ,Năm " + dtpkDate.Value.Year.ToString();
+            JobByI.Items.Add(DateTimeByI);
+            JobByI.Items[0].Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            JobByI.Items[0].BackColor = Color.FromArgb(64, 64, 64);
+            JobByI.Items[0].ForeColor = Color.WhiteSmoke;
+            string CongViecA = "Làm Desktop";
+            string CongViecB = "Làm Web";
+            JobByI.Items.Add(CongViecA);
+            JobByI.Items.Add(CongViecB);
+            JobByI.Show(Cursor.Position);
+
+
+        }
+
+        public int RandomColor(int i)
+        {
+            Random rd = new Random(unchecked((int)DateTime.Now.Millisecond));
+            return rd.Next(i); // Trả về số ngẫu nhiên từ 0 đến i-1
+        }
+
+        //void RadomColor()
+        //{
+        //    //int rnd = RandomColor(2);
+        //    foreach (Button btn in pnlMatrix.Controls.OfType<Button>())
+        //    {
+        //        if (rnd == 0)
+        //            btn.BackColor = Color.LightBlue;
+        //        else btn.BackColor = Color.DarkBlue;
+        //    }
+
+        //    Random rnd = new Random();
+        //    Color randomColor = Color.FromArgb(rnd.Next(256), rnd.Next(256), rnd.Next(256));
+        //    BackColor = randomColor;
+        //}
+
+        //void Mau()
+        //{
+        //    for (int i = 0; i < 10; i++)
+        //    {
+        //        textBox1.Text += RandomColor(2).ToString();
+
+        //    }
+        //}
+
+        void ChangeButtonColor(Button btn, DateTime date)
+        {
+     
+            if (date.Day % 4 == 0)
+            {
+                btn.BackColor = Color.Bisque; 
+            }     
         }
     }
 }

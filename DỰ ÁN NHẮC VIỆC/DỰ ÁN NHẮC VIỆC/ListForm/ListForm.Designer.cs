@@ -28,18 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewGroup listViewGroup23 = new System.Windows.Forms.ListViewGroup("Học tập", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup24 = new System.Windows.Forms.ListViewGroup("Mua sắm", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewItem listViewItem34 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewGroup listViewGroup7 = new System.Windows.Forms.ListViewGroup("Học tập", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup8 = new System.Windows.Forms.ListViewGroup("Mua sắm", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem(new string[] {
             "a",
             "Học tập",
             "10h",
             "20h",
             "Đang thực hiện",
             "Quan Trọng"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem35 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem36 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem12 = new System.Windows.Forms.ListViewItem("");
             this.panel1 = new System.Windows.Forms.Panel();
+            this.gbCVcon = new System.Windows.Forms.GroupBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
             this.gbDanhSanhCV = new System.Windows.Forms.GroupBox();
             this.lvDanhSachCV = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -50,25 +56,19 @@
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.gbTimKiem = new System.Windows.Forms.GroupBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.txtTenCV = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.gbCVcon = new System.Windows.Forms.GroupBox();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
+            this.txtTenCV = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
-            this.gbDanhSanhCV.SuspendLayout();
-            this.gbTimKiem.SuspendLayout();
             this.gbCVcon.SuspendLayout();
             this.panel2.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            this.gbDanhSanhCV.SuspendLayout();
+            this.gbTimKiem.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -80,6 +80,60 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1298, 860);
             this.panel1.TabIndex = 0;
+            // 
+            // gbCVcon
+            // 
+            this.gbCVcon.Controls.Add(this.panel2);
+            this.gbCVcon.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.gbCVcon.Location = new System.Drawing.Point(9, 451);
+            this.gbCVcon.Name = "gbCVcon";
+            this.gbCVcon.Size = new System.Drawing.Size(1277, 409);
+            this.gbCVcon.TabIndex = 2;
+            this.gbCVcon.TabStop = false;
+            this.gbCVcon.Text = "Thông tin công viêc";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.toolStrip1);
+            this.panel2.Location = new System.Drawing.Point(6, 37);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1265, 366);
+            this.panel2.TabIndex = 0;
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripLabel1,
+            this.toolStripSeparator1,
+            this.toolStripProgressBar1});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(1263, 38);
+            this.toolStrip1.TabIndex = 0;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.ForeColor = System.Drawing.Color.Black;
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(113, 33);
+            this.toolStripLabel1.Text = "Công việc : a";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 38);
+            // 
+            // toolStripProgressBar1
+            // 
+            this.toolStripProgressBar1.AutoSize = false;
+            this.toolStripProgressBar1.Name = "toolStripProgressBar1";
+            this.toolStripProgressBar1.Size = new System.Drawing.Size(150, 25);
+            this.toolStripProgressBar1.Value = 60;
             // 
             // gbDanhSanhCV
             // 
@@ -107,25 +161,25 @@
             this.columnHeader6,
             this.columnHeader7});
             this.lvDanhSachCV.FullRowSelect = true;
-            listViewGroup23.Header = "Học tập";
-            listViewGroup23.Name = "listViewGroup1";
-            listViewGroup24.Header = "Mua sắm";
-            listViewGroup24.Name = "listViewGroup2";
+            listViewGroup7.Header = "Học tập";
+            listViewGroup7.Name = "listViewGroup1";
+            listViewGroup8.Header = "Mua sắm";
+            listViewGroup8.Name = "listViewGroup2";
             this.lvDanhSachCV.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup23,
-            listViewGroup24});
+            listViewGroup7,
+            listViewGroup8});
             this.lvDanhSachCV.HideSelection = false;
-            listViewItem34.Group = listViewGroup23;
-            listViewItem34.StateImageIndex = 0;
-            listViewItem34.ToolTipText = "s";
-            listViewItem35.Group = listViewGroup24;
-            listViewItem35.StateImageIndex = 0;
-            listViewItem36.Group = listViewGroup24;
-            listViewItem36.StateImageIndex = 0;
+            listViewItem10.Group = listViewGroup7;
+            listViewItem10.StateImageIndex = 0;
+            listViewItem10.ToolTipText = "s";
+            listViewItem11.Group = listViewGroup8;
+            listViewItem11.StateImageIndex = 0;
+            listViewItem12.Group = listViewGroup8;
+            listViewItem12.StateImageIndex = 0;
             this.lvDanhSachCV.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem34,
-            listViewItem35,
-            listViewItem36});
+            listViewItem10,
+            listViewItem11,
+            listViewItem12});
             this.lvDanhSachCV.Location = new System.Drawing.Point(3, 25);
             this.lvDanhSachCV.Name = "lvDanhSachCV";
             this.lvDanhSachCV.Size = new System.Drawing.Size(1280, 316);
@@ -186,6 +240,34 @@
             this.gbTimKiem.TabStop = false;
             this.gbTimKiem.Text = "Tìm kiếm";
             // 
+            // comboBox4
+            // 
+            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "DONE",
+            "DOING",
+            "COMING",
+            "MISSED"});
+            this.comboBox4.Location = new System.Drawing.Point(318, 33);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(121, 28);
+            this.comboBox4.TabIndex = 23;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "DONE",
+            "DOING",
+            "COMING",
+            "MISSED"});
+            this.comboBox2.Location = new System.Drawing.Point(933, 33);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 28);
+            this.comboBox2.TabIndex = 23;
+            // 
             // comboBox1
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -218,63 +300,6 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(112, 26);
             this.dateTimePicker1.TabIndex = 22;
             // 
-            // txtTenCV
-            // 
-            this.txtTenCV.ForeColor = System.Drawing.Color.Gray;
-            this.txtTenCV.Location = new System.Drawing.Point(6, 34);
-            this.txtTenCV.Name = "txtTenCV";
-            this.txtTenCV.Size = new System.Drawing.Size(192, 26);
-            this.txtTenCV.TabIndex = 21;
-            this.txtTenCV.Text = "Tên Công Việc";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "DONE",
-            "DOING",
-            "COMING",
-            "MISSED"});
-            this.comboBox2.Location = new System.Drawing.Point(933, 33);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 28);
-            this.comboBox2.TabIndex = 23;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "DONE",
-            "DOING",
-            "COMING",
-            "MISSED"});
-            this.comboBox4.Location = new System.Drawing.Point(318, 33);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 28);
-            this.comboBox4.TabIndex = 23;
-            // 
-            // gbCVcon
-            // 
-            this.gbCVcon.Controls.Add(this.panel2);
-            this.gbCVcon.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.gbCVcon.Location = new System.Drawing.Point(9, 451);
-            this.gbCVcon.Name = "gbCVcon";
-            this.gbCVcon.Size = new System.Drawing.Size(1277, 409);
-            this.gbCVcon.TabIndex = 2;
-            this.gbCVcon.TabStop = false;
-            this.gbCVcon.Text = "Thông tin công viêc";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel2.Controls.Add(this.toolStrip1);
-            this.panel2.Location = new System.Drawing.Point(6, 37);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1265, 366);
-            this.panel2.TabIndex = 0;
-            // 
             // textBox1
             // 
             this.textBox1.ForeColor = System.Drawing.Color.Gray;
@@ -284,37 +309,14 @@
             this.textBox1.TabIndex = 21;
             this.textBox1.Text = "Địa điểm";
             // 
-            // toolStrip1
+            // txtTenCV
             // 
-            this.toolStrip1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripLabel1,
-            this.toolStripSeparator1,
-            this.toolStripProgressBar1});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1265, 38);
-            this.toolStrip1.TabIndex = 0;
-            this.toolStrip1.Text = "toolStrip1";
-            // 
-            // toolStripLabel1
-            // 
-            this.toolStripLabel1.ForeColor = System.Drawing.Color.Black;
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(113, 33);
-            this.toolStripLabel1.Text = "Công việc : a";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 30);
-            // 
-            // toolStripProgressBar1
-            // 
-            this.toolStripProgressBar1.Name = "toolStripProgressBar1";
-            this.toolStripProgressBar1.Size = new System.Drawing.Size(100, 25);
-            this.toolStripProgressBar1.Value = 60;
+            this.txtTenCV.ForeColor = System.Drawing.Color.Gray;
+            this.txtTenCV.Location = new System.Drawing.Point(6, 34);
+            this.txtTenCV.Name = "txtTenCV";
+            this.txtTenCV.Size = new System.Drawing.Size(192, 26);
+            this.txtTenCV.TabIndex = 21;
+            this.txtTenCV.Text = "Tên Công Việc";
             // 
             // ListForm
             // 
@@ -326,14 +328,14 @@
             this.Name = "ListForm";
             this.Text = "List";
             this.panel1.ResumeLayout(false);
-            this.gbDanhSanhCV.ResumeLayout(false);
-            this.gbTimKiem.ResumeLayout(false);
-            this.gbTimKiem.PerformLayout();
             this.gbCVcon.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.gbDanhSanhCV.ResumeLayout(false);
+            this.gbTimKiem.ResumeLayout(false);
+            this.gbTimKiem.PerformLayout();
             this.ResumeLayout(false);
 
         }

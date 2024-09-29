@@ -31,6 +31,7 @@
             this.dtpJob = new System.Windows.Forms.DateTimePicker();
             this.pnlJob = new System.Windows.Forms.Panel();
             this.txtTenCV = new System.Windows.Forms.TextBox();
+            this.iconSplitButton1 = new FontAwesome.Sharp.IconSplitButton();
             this.SuspendLayout();
             // 
             // dtpJob
@@ -64,6 +65,18 @@
             this.txtTenCV.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtTenCV_KeyDown);
             this.txtTenCV.Leave += new System.EventHandler(this.txtTenCV_Leave);
             // 
+            // iconSplitButton1
+            // 
+            this.iconSplitButton1.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconSplitButton1.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconSplitButton1.IconColor = System.Drawing.Color.Black;
+            this.iconSplitButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconSplitButton1.IconSize = 48;
+            this.iconSplitButton1.Name = "iconSplitButton1";
+            this.iconSplitButton1.Rotation = 0D;
+            this.iconSplitButton1.Size = new System.Drawing.Size(23, 23);
+            this.iconSplitButton1.Text = "iconSplitButton1";
+            // 
             // JobList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -83,5 +96,6 @@
         private System.Windows.Forms.DateTimePicker dtpJob;
         private System.Windows.Forms.Panel pnlJob;
         private System.Windows.Forms.TextBox txtTenCV;
+        private FontAwesome.Sharp.IconSplitButton iconSplitButton1;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnPre = new System.Windows.Forms.Button();
@@ -45,10 +46,15 @@
             this.btnWeday = new System.Windows.Forms.Button();
             this.btnThusday = new System.Windows.Forms.Button();
             this.pnlMatrix = new System.Windows.Forms.Panel();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.thêmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.xóaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sửaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -56,7 +62,7 @@
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Location = new System.Drawing.Point(29, 54);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1260, 795);
+            this.panel1.Size = new System.Drawing.Size(1269, 795);
             this.panel1.TabIndex = 0;
             // 
             // panel3
@@ -139,7 +145,7 @@
             this.panel4.Controls.Add(this.btnThusday);
             this.panel4.Location = new System.Drawing.Point(29, 99);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1257, 61);
+            this.panel4.Size = new System.Drawing.Size(1260, 61);
             this.panel4.TabIndex = 1;
             // 
             // btnSunday
@@ -181,7 +187,9 @@
             // btnMonday
             // 
             this.btnMonday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnMonday.FlatAppearance.BorderSize = 0;
+            this.btnMonday.FlatAppearance.BorderSize = 10;
+            this.btnMonday.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnMonday.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnMonday.ForeColor = System.Drawing.Color.White;
             this.btnMonday.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnMonday.Location = new System.Drawing.Point(0, 0);
@@ -231,8 +239,40 @@
             // 
             this.pnlMatrix.Location = new System.Drawing.Point(28, 162);
             this.pnlMatrix.Name = "pnlMatrix";
-            this.pnlMatrix.Size = new System.Drawing.Size(1258, 684);
+            this.pnlMatrix.Size = new System.Drawing.Size(1261, 699);
             this.pnlMatrix.TabIndex = 1;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.DropShadowEnabled = false;
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.contextMenuStrip1.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.thêmToolStripMenuItem,
+            this.xóaToolStripMenuItem,
+            this.sửaToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(129, 100);
+            this.contextMenuStrip1.UseWaitCursor = true;
+            // 
+            // thêmToolStripMenuItem
+            // 
+            this.thêmToolStripMenuItem.Name = "thêmToolStripMenuItem";
+            this.thêmToolStripMenuItem.Size = new System.Drawing.Size(128, 32);
+            this.thêmToolStripMenuItem.Text = "Thêm";
+            this.thêmToolStripMenuItem.Click += new System.EventHandler(this.thêmToolStripMenuItem_Click);
+            // 
+            // xóaToolStripMenuItem
+            // 
+            this.xóaToolStripMenuItem.Name = "xóaToolStripMenuItem";
+            this.xóaToolStripMenuItem.Size = new System.Drawing.Size(128, 32);
+            this.xóaToolStripMenuItem.Text = "Sửa";
+            // 
+            // sửaToolStripMenuItem
+            // 
+            this.sửaToolStripMenuItem.Name = "sửaToolStripMenuItem";
+            this.sửaToolStripMenuItem.Size = new System.Drawing.Size(128, 32);
+            this.sửaToolStripMenuItem.Text = "Xóa";
             // 
             // CalendarForm
             // 
@@ -252,6 +292,7 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel4.ResumeLayout(false);
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -276,5 +317,9 @@
         private System.Windows.Forms.Button btnTuesday;
         private System.Windows.Forms.Button btnWeday;
         private System.Windows.Forms.Panel pnlMatrix;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem thêmToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem xóaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sửaToolStripMenuItem;
     }
 }

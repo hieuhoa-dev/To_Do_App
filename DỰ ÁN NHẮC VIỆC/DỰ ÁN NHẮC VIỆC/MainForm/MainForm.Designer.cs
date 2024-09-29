@@ -280,6 +280,7 @@
             this.iconSearch.TabIndex = 3;
             this.ttControl.SetToolTip(this.iconSearch, "Search");
             this.iconSearch.UseVisualStyleBackColor = false;
+            this.iconSearch.Click += new System.EventHandler(this.iconSearch_Click);
             // 
             // iconNoti
             // 
@@ -455,9 +456,8 @@
             // 
             // notifyIcon1
             // 
-            this.notifyIcon1.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.notifyIcon1.BalloonTipText = "Thông báo";
-            this.notifyIcon1.BalloonTipTitle = "10h30 có lịch đi chơi";
+            this.notifyIcon1.BalloonTipText = "10h30 đến hạn";
+            this.notifyIcon1.BalloonTipTitle = "Làm winform";
             this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
             this.notifyIcon1.Text = "notifyIcon1";
             this.notifyIcon1.Visible = true;

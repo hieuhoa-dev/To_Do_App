@@ -31,10 +31,11 @@
             this.components = new System.ComponentModel.Container();
             this.cbJob = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnInfo = new System.Windows.Forms.Button();
             this.ctnsControlCV = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.ctmsSua = new System.Windows.Forms.ToolStripMenuItem();
             this.ctmsXoa = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnInfo = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.ctnsControlCV.SuspendLayout();
             this.SuspendLayout();
@@ -56,24 +57,16 @@
             this.panel1.Size = new System.Drawing.Size(459, 45);
             this.panel1.TabIndex = 2;
             // 
-            // btnInfo
-            // 
-            this.btnInfo.ContextMenuStrip = this.ctnsControlCV;
-            this.btnInfo.Location = new System.Drawing.Point(0, 0);
-            this.btnInfo.Name = "btnInfo";
-            this.btnInfo.Size = new System.Drawing.Size(429, 42);
-            this.btnInfo.TabIndex = 0;
-            this.btnInfo.UseVisualStyleBackColor = true;
-            // 
             // ctnsControlCV
             // 
             this.ctnsControlCV.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.ctnsControlCV.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.ctnsControlCV.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ctmsSua,
-            this.ctmsXoa});
+            this.ctmsXoa,
+            this.toolStripSeparator1});
             this.ctnsControlCV.Name = "ctnsControlCV";
-            this.ctnsControlCV.Size = new System.Drawing.Size(116, 68);
+            this.ctnsControlCV.Size = new System.Drawing.Size(116, 74);
             // 
             // ctmsSua
             // 
@@ -90,6 +83,25 @@
             this.ctmsXoa.Size = new System.Drawing.Size(115, 32);
             this.ctmsXoa.Text = "Xóa";
             this.ctmsXoa.Click += new System.EventHandler(this.ctmsXoa_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(112, 6);
+            // 
+            // btnInfo
+            // 
+            this.btnInfo.ContextMenuStrip = this.ctnsControlCV;
+            this.btnInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInfo.ForeColor = System.Drawing.Color.Black;
+            this.btnInfo.Location = new System.Drawing.Point(0, 0);
+            this.btnInfo.Name = "btnInfo";
+            this.btnInfo.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.btnInfo.Size = new System.Drawing.Size(429, 42);
+            this.btnInfo.TabIndex = 0;
+            this.btnInfo.Text = "Làm winform";
+            this.btnInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInfo.UseVisualStyleBackColor = true;
             // 
             // Job
             // 
@@ -110,9 +122,10 @@
 
         private System.Windows.Forms.CheckBox cbJob;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnInfo;
         private System.Windows.Forms.ContextMenuStrip ctnsControlCV;
         private System.Windows.Forms.ToolStripMenuItem ctmsSua;
         private System.Windows.Forms.ToolStripMenuItem ctmsXoa;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.Button btnInfo;
     }
 }

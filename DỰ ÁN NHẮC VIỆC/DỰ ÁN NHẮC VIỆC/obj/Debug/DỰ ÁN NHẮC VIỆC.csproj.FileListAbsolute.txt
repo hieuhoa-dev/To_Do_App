@@ -21,3 +21,49 @@ D:\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debu
 D:\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\FormPhu.ThongBao.resources
 D:\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\FormPhu.frmTBCon.resources
 D:\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\DỰ_ÁN_NHẮC_VIỆC.ListForm.resources
+C:\Users\Lenovo\Downloads\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\bin\Debug\DỰ ÁN NHẮC VIỆC.exe.config
+C:\Users\Lenovo\Downloads\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\bin\Debug\DỰ ÁN NHẮC VIỆC.exe
+C:\Users\Lenovo\Downloads\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\bin\Debug\DỰ ÁN NHẮC VIỆC.pdb
+C:\Users\Lenovo\Downloads\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\bin\Debug\CuoreUI.dll
+C:\Users\Lenovo\Downloads\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Lenovo\Downloads\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\DỰ ÁN NHẮC VIỆC.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Downloads\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\DỰ_ÁN_NHẮC_VIỆC.CalendarForm.resources
+C:\Users\Lenovo\Downloads\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\ListForm.AddForm.resources
+C:\Users\Lenovo\Downloads\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\DỰ_ÁN_NHẮC_VIỆC.ListForm.resources
+C:\Users\Lenovo\Downloads\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\DỰ_ÁN_NHẮC_VIỆC.Job.resources
+C:\Users\Lenovo\Downloads\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\DỰ_ÁN_NHẮC_VIỆC.JobChild.resources
+C:\Users\Lenovo\Downloads\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\DỰ_ÁN_NHẮC_VIỆC.JobList.resources
+C:\Users\Lenovo\Downloads\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\DỰ_ÁN_NHẮC_VIỆC.MainForm.resources
+C:\Users\Lenovo\Downloads\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\FormPhu.frmDuLieu.resources
+C:\Users\Lenovo\Downloads\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\FormPhu.Settings.resources
+C:\Users\Lenovo\Downloads\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\FormPhu.ThongBao.resources
+C:\Users\Lenovo\Downloads\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\FormPhu.frmTBCon.resources
+C:\Users\Lenovo\Downloads\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\DỰ_ÁN_NHẮC_VIỆC.Properties.Resources.resources
+C:\Users\Lenovo\Downloads\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\DỰ ÁN NHẮC VIỆC.csproj.GenerateResource.cache
+C:\Users\Lenovo\Downloads\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\DỰ ÁN NHẮC VIỆC.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Downloads\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\DỰ ÁN NH.E15C26D1.Up2Date
+C:\Users\Lenovo\Downloads\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\DỰ ÁN NHẮC VIỆC.exe
+C:\Users\Lenovo\Downloads\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\DỰ ÁN NHẮC VIỆC.pdb
+D:\DỰ ÁN NHẮC VIỆC\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\bin\Debug\DỰ ÁN NHẮC VIỆC.exe.config
+D:\DỰ ÁN NHẮC VIỆC\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\bin\Debug\DỰ ÁN NHẮC VIỆC.exe
+D:\DỰ ÁN NHẮC VIỆC\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\bin\Debug\DỰ ÁN NHẮC VIỆC.pdb
+D:\DỰ ÁN NHẮC VIỆC\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\bin\Debug\CuoreUI.dll
+D:\DỰ ÁN NHẮC VIỆC\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\bin\Debug\FontAwesome.Sharp.dll
+D:\DỰ ÁN NHẮC VIỆC\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\DỰ ÁN NHẮC VIỆC.csproj.AssemblyReference.cache
+D:\DỰ ÁN NHẮC VIỆC\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\DỰ_ÁN_NHẮC_VIỆC.CalendarForm.resources
+D:\DỰ ÁN NHẮC VIỆC\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\ListForm.AddForm.resources
+D:\DỰ ÁN NHẮC VIỆC\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\DỰ_ÁN_NHẮC_VIỆC.ListForm.resources
+D:\DỰ ÁN NHẮC VIỆC\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\DỰ_ÁN_NHẮC_VIỆC.Job.resources
+D:\DỰ ÁN NHẮC VIỆC\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\DỰ_ÁN_NHẮC_VIỆC.JobChild.resources
+D:\DỰ ÁN NHẮC VIỆC\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\DỰ_ÁN_NHẮC_VIỆC.JobList.resources
+D:\DỰ ÁN NHẮC VIỆC\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\DỰ_ÁN_NHẮC_VIỆC.MainForm.resources
+D:\DỰ ÁN NHẮC VIỆC\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\FormPhu.frmDuLieu.resources
+D:\DỰ ÁN NHẮC VIỆC\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\FormPhu.Settings.resources
+D:\DỰ ÁN NHẮC VIỆC\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\FormPhu.ThongBao.resources
+D:\DỰ ÁN NHẮC VIỆC\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\FormPhu.frmTBCon.resources
+D:\DỰ ÁN NHẮC VIỆC\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\DỰ_ÁN_NHẮC_VIỆC.Properties.Resources.resources
+D:\DỰ ÁN NHẮC VIỆC\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\DỰ ÁN NHẮC VIỆC.csproj.GenerateResource.cache
+D:\DỰ ÁN NHẮC VIỆC\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\DỰ ÁN NHẮC VIỆC.csproj.CoreCompileInputs.cache
+D:\DỰ ÁN NHẮC VIỆC\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\DỰ ÁN NH.E15C26D1.Up2Date
+D:\DỰ ÁN NHẮC VIỆC\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\DỰ ÁN NHẮC VIỆC.exe
+D:\DỰ ÁN NHẮC VIỆC\To_do_App_new\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\DỰ ÁN NHẮC VIỆC.pdb

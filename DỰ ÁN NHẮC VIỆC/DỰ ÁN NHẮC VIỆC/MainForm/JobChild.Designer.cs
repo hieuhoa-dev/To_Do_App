@@ -37,18 +37,20 @@
             this.label3 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
+            this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(27, 80);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 48);
+            this.label1.Size = new System.Drawing.Size(248, 46);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Tên CV";
+            this.label1.Text = "Làm winform";
             // 
             // textBox1
             // 
@@ -137,10 +139,26 @@
             this.panel1.Size = new System.Drawing.Size(405, 38);
             this.panel1.TabIndex = 6;
             // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.BackColor = System.Drawing.Color.White;
+            this.checkedListBox1.CheckOnClick = true;
+            this.checkedListBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.checkedListBox1.ForeColor = System.Drawing.Color.Black;
+            this.checkedListBox1.Items.AddRange(new object[] {
+            "Thiết kế",
+            "Phân tích",
+            "Code"});
+            this.checkedListBox1.Location = new System.Drawing.Point(24, 318);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(405, 452);
+            this.checkedListBox1.TabIndex = 7;
+            // 
             // JobChild
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
@@ -166,5 +184,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
     }
 }

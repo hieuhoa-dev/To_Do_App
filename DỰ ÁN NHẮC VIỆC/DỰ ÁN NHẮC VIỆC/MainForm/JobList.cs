@@ -105,6 +105,8 @@ namespace DỰ_ÁN_NHẮC_VIỆC
                 CongViec cv = new CongViec() { Date = dtpJob.Value };
                 // DSCongViec.ListItemPlan.Add(cv);
                 AddJob(cv);
+                txtTenCV.Text = "  + Add tasks";
+                txtTenCV.ForeColor = Color.Silver;
             }
 
         }

@@ -37,7 +37,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
 
         void ShowInfo()
         {
-            btnInfo.Text = JobItem.NameJob;
+            //btnInfo.Text = JobItem.NameJob;
             //Them thuoc tinh ...
         }
        
