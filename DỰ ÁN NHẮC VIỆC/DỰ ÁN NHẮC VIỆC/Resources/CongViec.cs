@@ -9,58 +9,52 @@ namespace DỰ_ÁN_NHẮC_VIỆC
 {
     public class CongViec
     {
-        private DateTime date;
-        public DateTime Date
+
+        public string NameJob { get; set; }
+        public DateTime ToDate { get; set; }
+        public DateTime FromDate { get; set; }
+
+        public string Status { get; set; }
+
+        public List<string> ListStatus = new List<string>() { "DONE", "DOING", "COMING", "MISSED" };
+
+        public enum ListStatusItem
         {
-            get { return date; }
-            set { date = value; }
-
-        }
-
-        private string nameJob;
-        public string NameJob
-        {
-            get { return nameJob; }
-            set { nameJob = value; }
-        }
-
-        private Point fromTime;
-        public Point FromTime
-        {
-            get { return fromTime; }
-            set { fromTime = value; }
-        }
-
-        private Point toTime;
-        public Point ToTime
-        {
-            get { return toTime; }
-            set { toTime = value; }
-        }
-
-        private string status;
-        public string Status
-        {
-            get { return status; }
-            set { status = value; }
-        }
-
-        public static List<string> ListStatus = new List<string>() { "DONE", "DOING", "COMING", "MISSED" };
-
-        public enum Plan
-        {
-            Done,
+            DONE,
             DOING,
             COMING,
             MISSED
         }
+        public string Level { get; set; }
 
-        private string level;
-        public string Level
+        public List<string> ListLevel = new List<string>() { "Important", "Normal", "Weak", "None" };
+
+        public enum ListLevelItem
         {
-            get { return level; }
-            set { status = value; }
+            DONE,
+            DOING,
+            COMING,
+            MISSED
         }
-        public static List<string> ListLevel = new List<string>() { "Important", "Normal", "Weak", "None" };
+        public List<string> DSCongViecCon { get; set; }
+        public CongViec()
+        {
+            DSCongViecCon = new List<string>();
+        }
+        public CongViec(string NameJob, DateTime ToDate, DateTime FromDate,
+        string Status, string Level, List<string> DSCongViecCon)
+        {
+            this.NameJob = NameJob;
+            this.ToDate = ToDate;
+            this.FromDate = FromDate;
+            this.Status = Status;
+            this.Level = Level;
+            this.DSCongViecCon = DSCongViecCon;
+        }
+
+
+
+
+
     }
 }

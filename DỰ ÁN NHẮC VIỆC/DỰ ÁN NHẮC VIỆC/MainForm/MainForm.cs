@@ -17,6 +17,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
 {
     public partial class MainForm : Form
     {
+        DSCongViec dscv = new DSCongViec();
         Panel pnlDeskTops = new Panel();
         //Tạo khung, viền, bóng
         #region DesignFrom 
@@ -248,8 +249,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         private void mCalendar_DateChanged(object sender, DateRangeEventArgs e)
         {
             pnlShowJob.Controls.Clear();
-            DSCongViec dSCV = new DSCongViec();
-            JobList jobList = new JobList(new DateTime(mCalendar.SelectionStart.Year, mCalendar.SelectionStart.Month, mCalendar.SelectionStart.Day), dSCV);
+            JobList jobList = new JobList(new DateTime(mCalendar.SelectionStart.Year, mCalendar.SelectionStart.Month, mCalendar.SelectionStart.Day), dscv);
             pnlShowJob.Controls.Add(jobList);
         }
 
@@ -263,6 +263,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         private void MainForm_Load(object sender, EventArgs e)
         {
             iconHome.IconColor = Color.FromArgb(17, 103, 177);
+            dscv.DocTuFile(Application.StartupPath + "/CongViec.txt");
         }
 
         void SetDefautDate()

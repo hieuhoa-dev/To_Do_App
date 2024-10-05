@@ -142,6 +142,7 @@
             // checkedListBox1
             // 
             this.checkedListBox1.BackColor = System.Drawing.Color.White;
+            this.checkedListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.checkedListBox1.CheckOnClick = true;
             this.checkedListBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.checkedListBox1.ForeColor = System.Drawing.Color.Black;
@@ -151,8 +152,9 @@
             "Code"});
             this.checkedListBox1.Location = new System.Drawing.Point(24, 318);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(405, 452);
+            this.checkedListBox1.Size = new System.Drawing.Size(405, 448);
             this.checkedListBox1.TabIndex = 7;
+            this.checkedListBox1.UseCompatibleTextRendering = true;
             // 
             // JobChild
             // 

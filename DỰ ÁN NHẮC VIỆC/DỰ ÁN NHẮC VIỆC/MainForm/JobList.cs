@@ -21,24 +21,19 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             set { _date = value; }
         }
 
-        private DSCongViec dscv;
-
-        public DSCongViec DSCongViec
-        {
-            get { return dscv; }
-            set { dscv = value; }
-        }
+        DSCongViec dscv;
 
         public JobList(DateTime date, DSCongViec dscv)
         {
             InitializeComponent();
             this.Date = date;
-            this.DSCongViec = dscv;
+            this.dscv = dscv;
             fPanel.AutoScroll = true;
             fPanel.Width = pnlJob.Width;
             fPanel.Height = pnlJob.Height;
             pnlJob.Controls.Add(fPanel);
-            dtpJob.Value = Date;
+            dtpJob.Value = date;
+            ShowJobByDay(date);
         }
 
         public void ThemJob()
@@ -61,15 +56,17 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         void ShowJobByDay(DateTime date)
         {
             fPanel.Controls.Clear();
-            if (DSCongViec != null && DSCongViec.ListItemPlan != null)
+            if (dscv != null && dscv.DanhSach != null)
             {
                 List<CongViec> toDayJob = GetJobByDay(date);
                 for (int i = 0; i < toDayJob.Count; i++)
                 {
-                    AddJob(toDayJob[i]);
+                    Job aJob = new Job(toDayJob[i]);
+                    fPanel.Controls.Add(aJob);
 
                 }
             }
+
         }
 
         void aJob_Edited(object sender, EventArgs e)
@@ -83,7 +80,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             CongViec congViec = uc.JobItem;
 
             fPanel.Controls.Remove(uc);
-            DSCongViec.ListItemPlan.Remove(congViec);
+            dscv.DanhSach.Remove(congViec);
         }
 
         private void dtpJob_ValueChanged(object sender, EventArgs e)
@@ -94,7 +91,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
 
         List<CongViec> GetJobByDay(DateTime date)
         {
-            return DSCongViec.ListItemPlan.Where(p => p.Date.Year == date.Year && p.Date.Month == date.Month && p.Date.Day == date.Day).ToList();
+            return dscv.DanhSach.Where(p => p.ToDate.Year == date.Year && p.ToDate.Month == date.Month && p.ToDate.Day == date.Day).ToList();
         }
 
 
@@ -102,8 +99,8 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         {
             if (e.KeyCode == Keys.Enter)
             {
-                CongViec cv = new CongViec() { Date = dtpJob.Value };
-                // DSCongViec.ListItemPlan.Add(cv);
+                CongViec cv = new CongViec() { ToDate = dtpJob.Value };
+                dscv.Them(cv);
                 AddJob(cv);
                 txtTenCV.Text = "  + Add tasks";
                 txtTenCV.ForeColor = Color.Silver;

@@ -1,81 +1,85 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\",
+  "WorkspaceRootPath": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\jobchild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\jobchild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\calendarform\\calendarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\calendarform\\calendarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|d:\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\to_do_app_new\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|d:\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\to_do_app_new\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|d:\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\to_do_app_new\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
-      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\listform\\listform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\listform\\listform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|d:\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\to_do_app_new\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\jobchild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\jobchild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|c:\\users\\lenovo\\downloads\\to_do_app\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\resources\\dscongviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\resources\\dscongviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|d:\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\to_do_app_new\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\resources\\congviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\resources\\congviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\job.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\job.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\joblist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\joblist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\joblist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\joblist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\joblist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\listform\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\joblist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\joblist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|c:\\users\\lenovo\\downloads\\to_do_app\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\jobchild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\jobchild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\resources\\congviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\resources\\congviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\calendarform\\calendarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\calendarform\\calendarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\listform\\listform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\listform\\listform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\jobchild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\jobchild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\job.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\job.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\listform\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\listform\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\calendarform\\calendarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\calendarform\\calendarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\calendarform\\calendarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\calendarform\\calendarform.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\calendarform\\calendarform.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
       "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\calendarform\\calendarform.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\calendarform\\calendarform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\calendarform\\calendarform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\calendarform\\calendarform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -86,52 +90,141 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\AssemblyInfo.cs",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\AssemblyInfo.cs",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\AssemblyInfo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 7,
+              "Title": "Job.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.cs",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAgwCcAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T03:10:08.264Z",
+              "WhenOpened": "2024-09-29T01:40:44.622Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Resources.resx",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\Resources.resx",
-              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\Resources.resx",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\Resources.resx",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\Resources.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-09-29T03:10:06.544Z",
-              "EditorCaption": ""
+              "DocumentIndex": 5,
+              "Title": "JobChild.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobChild.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobChild.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobChild.cs [Design]",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobChild.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T07:22:48.572Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Settings.settings",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\Settings.settings",
-              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\Settings.settings",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\Settings.settings",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\Settings.settings",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
-              "WhenOpened": "2024-09-29T03:10:03.558Z",
+              "Title": "JobList.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobList.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobList.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobList.cs [Design]",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobList.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T01:38:35.326Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "JobList.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobList.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobList.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobList.cs",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobList.cs",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAowIEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T01:38:15.776Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.cs",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.cs",
+              "ViewState": "AQIAAIAAAAAAAAAAAAAAwKEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T01:05:45.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DSCongViec.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Resources\\DSCongViec.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Resources\\DSCongViec.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Resources\\DSCongViec.cs",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Resources\\DSCongViec.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAMwFcAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T15:35:29.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.cs [Design]",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T07:04:36.513Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Job.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.cs [Design]",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T07:22:54.987Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "CongViec.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Resources\\CongViec.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Resources\\CongViec.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Resources\\CongViec.cs",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Resources\\CongViec.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAawDoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T01:41:11.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Job.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.Designer.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.Designer.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.Designer.cs",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.Designer.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAYwDsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T01:31:54.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "JobChild.cs",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobChild.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobChild.cs",
               "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobChild.cs",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobChild.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobChild.cs",
               "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobChild.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAADwvxkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -140,184 +233,104 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CongViec.cs",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Resources\\CongViec.cs",
-              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Resources\\CongViec.cs",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Resources\\CongViec.cs",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Resources\\CongViec.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAlwDkAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T01:41:11.502Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Job.cs",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.cs",
-              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.cs",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.cs",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAASwCcAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T01:40:44.622Z",
+              "DocumentIndex": 12,
+              "Title": "Settings.settings",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\Settings.settings",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\Settings.settings",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\Settings.settings",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\Settings.settings",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
+              "WhenOpened": "2024-09-29T03:10:03.558Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Job.Designer.cs",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.Designer.cs",
-              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.Designer.cs",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.Designer.cs",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.Designer.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAYwDsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T01:31:54.085Z"
+              "DocumentIndex": 11,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\Resources.resx",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\Resources.resx",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\Resources.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-09-29T03:10:06.544Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "Job.cs [Design]",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.cs",
-              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.cs",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.cs [Design]",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.cs [Design]",
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T07:22:54.987Z"
+              "WhenOpened": "2024-09-29T03:10:08.264Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "JobChild.cs [Design]",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobChild.cs",
-              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobChild.cs",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobChild.cs [Design]",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobChild.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T07:22:48.572Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MainForm.cs [Design]",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.cs",
-              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.cs",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.cs [Design]",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T07:04:36.513Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "ListForm.cs [Design]",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\ListForm\\ListForm.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\ListForm\\ListForm.cs",
               "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\ListForm\\ListForm.cs",
               "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\ListForm\\ListForm.cs [Design]",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\ListForm\\ListForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T07:04:19.384Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-09-28T07:04:19.384Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "AddForm.cs [Design]",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\ListForm\\AddForm.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\ListForm\\AddForm.cs",
               "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\ListForm\\AddForm.cs",
               "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\ListForm\\AddForm.cs [Design]",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\ListForm\\AddForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-27T14:26:28.555Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "CalendarForm.cs [Design]",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.cs",
               "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.cs",
               "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.cs [Design]",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T11:53:23.103Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "JobList.cs [Design]",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobList.cs",
-              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobList.cs",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobList.cs [Design]",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobList.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-18T01:38:35.326Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "CalendarForm.cs",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.cs",
-              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.cs",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.cs",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.cs",
-              "ViewState": "AQIAAO8AAAAAAAAAAAAuwPwAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-18T01:07:25.802Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "CalendarForm.Designer.cs",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.Designer.cs",
-              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.Designer.cs",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.Designer.cs",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.Designer.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAAABYAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T08:07:33.247Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "JobList.cs",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobList.cs",
-              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobList.cs",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobList.cs",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobList.cs",
-              "ViewState": "AQIAAEoAAAAAAAAAAAASwFgAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-18T01:38:15.776Z"
+              "WhenOpened": "2024-09-27T11:53:23.103Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "CalendarForm.resx",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.resx",
-              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.resx",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.resx",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-09-25T08:08:11.417Z",
-              "EditorCaption": ""
+              "Title": "CalendarForm.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.cs",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.cs",
+              "ViewState": "AQIAAO8AAAAAAAAAAAAuwPwAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T01:07:25.802Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainForm.cs",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.cs",
-              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.cs",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App_new\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.cs",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAH8AAAAZAAAA",
+              "DocumentIndex": 19,
+              "Title": "CalendarForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.Designer.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.Designer.cs",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.Designer.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAABYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-18T01:05:45.629Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T08:07:33.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CalendarForm.resx",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.resx",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.resx",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.resx",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-09-25T08:08:11.417Z"
             }
           ]
         }
