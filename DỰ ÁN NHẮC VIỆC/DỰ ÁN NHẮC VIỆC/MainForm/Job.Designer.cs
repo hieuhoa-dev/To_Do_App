@@ -31,11 +31,11 @@
             this.components = new System.ComponentModel.Container();
             this.cbJob = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnInfo = new System.Windows.Forms.Button();
             this.ctnsControlCV = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.ctmsSua = new System.Windows.Forms.ToolStripMenuItem();
             this.ctmsXoa = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnInfo = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.ctnsControlCV.SuspendLayout();
             this.SuspendLayout();
@@ -56,6 +56,21 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(459, 45);
             this.panel1.TabIndex = 2;
+            // 
+            // btnInfo
+            // 
+            this.btnInfo.ContextMenuStrip = this.ctnsControlCV;
+            this.btnInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInfo.ForeColor = System.Drawing.Color.Black;
+            this.btnInfo.Location = new System.Drawing.Point(0, 0);
+            this.btnInfo.Name = "btnInfo";
+            this.btnInfo.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.btnInfo.Size = new System.Drawing.Size(433, 42);
+            this.btnInfo.TabIndex = 0;
+            this.btnInfo.Text = "Làm winform";
+            this.btnInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInfo.UseVisualStyleBackColor = true;
+            this.btnInfo.Click += new System.EventHandler(this.btnInfo_Click);
             // 
             // ctnsControlCV
             // 
@@ -88,20 +103,6 @@
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(112, 6);
-            // 
-            // btnInfo
-            // 
-            this.btnInfo.ContextMenuStrip = this.ctnsControlCV;
-            this.btnInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInfo.ForeColor = System.Drawing.Color.Black;
-            this.btnInfo.Location = new System.Drawing.Point(0, 0);
-            this.btnInfo.Name = "btnInfo";
-            this.btnInfo.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.btnInfo.Size = new System.Drawing.Size(429, 42);
-            this.btnInfo.TabIndex = 0;
-            this.btnInfo.Text = "Làm winform";
-            this.btnInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInfo.UseVisualStyleBackColor = true;
             // 
             // Job
             // 

@@ -12,7 +12,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
 {
     public partial class Job : UserControl
     {
-
+        private MainForm _mainForm;
         private CongViec jobItem;
 
         public CongViec JobItem
@@ -33,6 +33,11 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         public Job()
         {
             InitializeComponent();
+        }
+        public Job(MainForm mainForm)
+        {
+            InitializeComponent();
+            _mainForm = mainForm;  // Gán MainForm hiện tại cho biến _mainForm
         }
 
         void ShowInfo()
@@ -72,7 +77,16 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             {
                 deleted(this, new EventArgs());
             }
+            MainForm mainForm = new MainForm();
+           
 
         }
-    }
+
+        public void btnInfo_Click(object sender, EventArgs e)
+        {
+            JobChild jobChild = new JobChild();
+            _mainForm.pnlJobChild.Controls.Add(jobChild);
+
+        }
+    } 
 }

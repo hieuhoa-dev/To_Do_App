@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 
 
+
 namespace DỰ_ÁN_NHẮC_VIỆC
 {
     public partial class CalendarForm : Form
@@ -29,15 +30,25 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             get { return matrix; }
             set { matrix = value; }
         }
+        DSCongViec dscv = new DSCongViec();
 
 
         private List<string> dateOfWeek = new List<string> { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
-        private List<string> NgayTrongTuan = new List<string> { "Hai", "Ba", "Tu", "Năm", "Sáu", "Bảy", "Chủ Nhật" };
+        private List<string> NgayTrongTuan = new List<string> { "Hai", "Ba", "Tư", "Năm", "Sáu", "Bảy", "Chủ Nhật" };
         public CalendarForm()
         {
+            CongViec a = new CongViec();
+            a.NameJob = "Làm destop";
+            a.ToDate = new DateTime(2024, 10, 1);
+            dscv.Them(a);
+            CongViec b = new CongViec();
+            b.NameJob = "Làm web";
+            b.ToDate = new DateTime(2024, 10, 7);
+            dscv.Them(b);
             InitializeComponent();
             LoadMatrix();
             ShowDateOnTop();
+        
 
         }
 
@@ -82,9 +93,20 @@ namespace DỰ_ÁN_NHẮC_VIỆC
 
         private void Btn_MouseClick(object sender, MouseEventArgs e)
         {
+            if (string.IsNullOrEmpty((sender as Button).Text))
+                return;
+            int month = dtpkDate.Value.Month;
+            int year = dtpkDate.Value.Year;
+            int day = int.Parse((sender as Button).Text);
+            DateTime dateTime = new DateTime(year, month, day);
+            if (KTCVByDay(dateTime) == false)
+                return;
+
+            // Lấy các giá trị tháng và năm từ `dtpkDate`
+
             if (e.Button == MouseButtons.Right)
             {
-                ShowJob(DateTime.Now);
+                ShowJob(dateTime);
             }
 
         }
@@ -128,10 +150,10 @@ namespace DỰ_ÁN_NHẮC_VIỆC
 
                 if (isEqualDate(useDate, DateTime.Now))
                 {
-                    btn.FlatAppearance.BorderColor = Color.Black;
-                    btn.BackColor = Color.Bisque;
+                    btn.FlatAppearance.BorderColor = Color.Black;  
                     btn.FlatAppearance.BorderSize = 2;
                     btn.FlatStyle = FlatStyle.Flat;
+                    btn.BackColor = Color.LightGray;
                 }
 
                 ChangeButtonColor(btn, useDate);
@@ -158,6 +180,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         }
 
         void SetDefaultDate()
+
         {
             dtpkDate.Value = DateTime.Now;
 
@@ -172,6 +195,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
                     Button btn = Matrix[i][j];
                     btn.Text = "";
                     btn.BackColor = Color.White;
+                    btn.FlatStyle = FlatStyle.Standard;
                 }
             }
         }
@@ -200,58 +224,40 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         void ShowJob(DateTime i)
         {
             ContextMenuStrip JobByI = new ContextMenuStrip();
+            JobByI.Items.Clear();
             string DateTimeByI = "Thứ " + HienNgayTrongTuan(i.DayOfWeek) + ", Ngày " + i.Day.ToString() + " ,Tháng " + i.Month.ToString()
                 + " ,Năm " + dtpkDate.Value.Year.ToString();
             JobByI.Items.Add(DateTimeByI);
             JobByI.Items[0].Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             JobByI.Items[0].BackColor = Color.FromArgb(64, 64, 64);
             JobByI.Items[0].ForeColor = Color.WhiteSmoke;
-            string CongViecA = "Làm Desktop";
-            string CongViecB = "Làm Web";
-            JobByI.Items.Add(CongViecA);
-            JobByI.Items.Add(CongViecB);
+            for (int j = 0; j < dscv.DanhSach.Count; j++)
+            {
+                if (dscv[j].ToDate.Day == i.Day && dscv[j].ToDate.Month == i.Month && dscv[j].ToDate.Year == i.Year)
+                    JobByI.Items.Add(dscv[j].NameJob);
+            }
             JobByI.Show(Cursor.Position);
-
-
         }
 
-        public int RandomColor(int i)
+        bool KTCVByDay(DateTime date)
         {
-            Random rd = new Random(unchecked((int)DateTime.Now.Millisecond));
-            return rd.Next(i); // Trả về số ngẫu nhiên từ 0 đến i-1
+            // Trả về true nếu danh sách có ít nhất một công việc
+            List<CongViec> toDayJob = GetJobByDay(date);
+            return toDayJob.Count > 0;
         }
 
-        //void RadomColor()
-        //{
-        //    //int rnd = RandomColor(2);
-        //    foreach (Button btn in pnlMatrix.Controls.OfType<Button>())
-        //    {
-        //        if (rnd == 0)
-        //            btn.BackColor = Color.LightBlue;
-        //        else btn.BackColor = Color.DarkBlue;
-        //    }
-
-        //    Random rnd = new Random();
-        //    Color randomColor = Color.FromArgb(rnd.Next(256), rnd.Next(256), rnd.Next(256));
-        //    BackColor = randomColor;
-        //}
-
-        //void Mau()
-        //{
-        //    for (int i = 0; i < 10; i++)
-        //    {
-        //        textBox1.Text += RandomColor(2).ToString();
-
-        //    }
-        //}
 
         void ChangeButtonColor(Button btn, DateTime date)
         {
-     
-            if (date.Day % 4 == 0)
+            if (KTCVByDay(date) == true)       
             {
-                btn.BackColor = Color.Bisque; 
-            }     
+                btn.BackColor = Color.Bisque;
+            }
+        }
+
+        List<CongViec> GetJobByDay(DateTime date)
+        {
+            return dscv.DanhSach.Where(p => p.ToDate.Year == date.Year && p.ToDate.Month == date.Month && p.ToDate.Day == date.Day).ToList();
         }
     }
 }

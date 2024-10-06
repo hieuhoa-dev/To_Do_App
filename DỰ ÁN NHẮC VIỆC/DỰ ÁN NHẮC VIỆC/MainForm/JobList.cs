@@ -125,5 +125,10 @@ namespace DỰ_ÁN_NHẮC_VIỆC
                 txtTenCV.ForeColor = Color.Silver;
             }
         }
+      
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

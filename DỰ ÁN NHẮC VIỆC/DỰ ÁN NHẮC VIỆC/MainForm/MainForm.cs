@@ -19,6 +19,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
     {
         DSCongViec dscv = new DSCongViec();
         Panel pnlDeskTops = new Panel();
+        public Panel pnlJobChild = new Panel();
         //Tạo khung, viền, bóng
         #region DesignFrom 
         private bool Drag;
@@ -131,6 +132,9 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             InitializeComponent();
             m_aeroEnabled = false;
             TaopnlDeskTops();
+
+            
+
 
         }
         //Tạo thoát, thu nhỏ
@@ -251,6 +255,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             pnlShowJob.Controls.Clear();
             JobList jobList = new JobList(new DateTime(mCalendar.SelectionStart.Year, mCalendar.SelectionStart.Month, mCalendar.SelectionStart.Day), dscv);
             pnlShowJob.Controls.Add(jobList);
+            
         }
 
         public MonthCalendar mouthCalendar
@@ -264,6 +269,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         {
             iconHome.IconColor = Color.FromArgb(17, 103, 177);
             dscv.DocTuFile(Application.StartupPath + "/CongViec.txt");
+            Job job = new Job(this);
         }
 
         void SetDefautDate()
@@ -278,8 +284,8 @@ namespace DỰ_ÁN_NHẮC_VIỆC
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            DSCongViec dSCV = new DSCongViec();
-            JobList jobList = new JobList(new DateTime(mCalendar.SelectionStart.Year, mCalendar.SelectionStart.Month, mCalendar.SelectionStart.Day), dSCV);
+           
+            JobList jobList = new JobList(new DateTime(mCalendar.SelectionStart.Year, mCalendar.SelectionStart.Month, mCalendar.SelectionStart.Day), dscv);
             jobList.ThemJob();
         }
 
@@ -309,5 +315,6 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         {
 
         }
+
     }
 }

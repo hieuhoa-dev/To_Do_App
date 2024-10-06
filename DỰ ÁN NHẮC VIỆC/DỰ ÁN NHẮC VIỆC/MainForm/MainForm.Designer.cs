@@ -49,7 +49,6 @@
             this.iconMinimize = new FontAwesome.Sharp.IconButton();
             this.iconXmark = new FontAwesome.Sharp.IconButton();
             this.cuiControlDrag1 = new CuoreUI.cuiControlDrag(this.components);
-            this.flpShowJobChild = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -63,11 +62,10 @@
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.ttControl = new System.Windows.Forms.ToolTip(this.components);
             this.ttAdd = new System.Windows.Forms.ToolTip(this.components);
-            this.jobChild1 = new DỰ_ÁN_NHẮC_VIỆC.JobChild();
+            this.pnlShowJobChild = new System.Windows.Forms.Panel();
             this.pnlControl2.SuspendLayout();
             this.pnlTop.SuspendLayout();
             this.pnlControl.SuspendLayout();
-            this.flpShowJobChild.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabPage1
@@ -345,14 +343,6 @@
             this.cuiControlDrag1.DragFrequency = 4;
             this.cuiControlDrag1.TargetControl = this.pnlControl;
             // 
-            // flpShowJobChild
-            // 
-            this.flpShowJobChild.Controls.Add(this.jobChild1);
-            this.flpShowJobChild.Location = new System.Drawing.Point(862, 92);
-            this.flpShowJobChild.Name = "flpShowJobChild";
-            this.flpShowJobChild.Size = new System.Drawing.Size(498, 747);
-            this.flpShowJobChild.TabIndex = 23;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -422,9 +412,9 @@
             // pnlShowJob
             // 
             this.pnlShowJob.BackColor = System.Drawing.Color.White;
-            this.pnlShowJob.Location = new System.Drawing.Point(379, 137);
+            this.pnlShowJob.Location = new System.Drawing.Point(379, 114);
             this.pnlShowJob.Name = "pnlShowJob";
-            this.pnlShowJob.Size = new System.Drawing.Size(469, 807);
+            this.pnlShowJob.Size = new System.Drawing.Size(469, 824);
             this.pnlShowJob.TabIndex = 0;
             // 
             // lbSeparator1
@@ -481,12 +471,12 @@
             this.ttAdd.ReshowDelay = 100;
             this.ttAdd.ShowAlways = true;
             // 
-            // jobChild1
+            // pnlShowJobChild
             // 
-            this.jobChild1.Location = new System.Drawing.Point(3, 3);
-            this.jobChild1.Name = "jobChild1";
-            this.jobChild1.Size = new System.Drawing.Size(501, 803);
-            this.jobChild1.TabIndex = 0;
+            this.pnlShowJobChild.Location = new System.Drawing.Point(862, 46);
+            this.pnlShowJobChild.Name = "pnlShowJobChild";
+            this.pnlShowJobChild.Size = new System.Drawing.Size(526, 892);
+            this.pnlShowJobChild.TabIndex = 26;
             // 
             // MainForm
             // 
@@ -495,8 +485,9 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1400, 950);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.pnlShowJob);
+            this.Controls.Add(this.pnlShowJobChild);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -504,7 +495,6 @@
             this.Controls.Add(this.mCalendar);
             this.Controls.Add(this.lbSeparator2);
             this.Controls.Add(this.lbSeparator1);
-            this.Controls.Add(this.flpShowJobChild);
             this.Controls.Add(this.pnlControl);
             this.Controls.Add(this.pnlControl2);
             this.Controls.Add(this.panel1);
@@ -519,7 +509,6 @@
             this.pnlControl2.PerformLayout();
             this.pnlTop.ResumeLayout(false);
             this.pnlControl.ResumeLayout(false);
-            this.flpShowJobChild.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -543,7 +532,6 @@
         private FontAwesome.Sharp.IconButton iconDonate;
         private FontAwesome.Sharp.IconButton iconList;
         private FontAwesome.Sharp.IconButton iconSetting;
-        private System.Windows.Forms.FlowLayoutPanel flpShowJobChild;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
@@ -554,12 +542,12 @@
         private System.Windows.Forms.Label lbSeparator2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel pnlShowJob;
-        private JobChild jobChild1;
         public System.Windows.Forms.NotifyIcon notifyIcon1;
         private FontAwesome.Sharp.IconButton iconAdd;
         private FontAwesome.Sharp.IconButton iconSearch;
         private System.Windows.Forms.ToolTip ttControl;
         private System.Windows.Forms.ToolTip ttAdd;
+        private System.Windows.Forms.Panel pnlShowJobChild;
     }
 }
 
