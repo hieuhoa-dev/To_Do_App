@@ -32,7 +32,6 @@
             this.pnlJob = new System.Windows.Forms.Panel();
             this.txtTenCV = new System.Windows.Forms.TextBox();
             this.iconSplitButton1 = new FontAwesome.Sharp.IconSplitButton();
-            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // dtpJob
@@ -78,21 +77,10 @@
             this.iconSplitButton1.Size = new System.Drawing.Size(23, 23);
             this.iconSplitButton1.Text = "iconSplitButton1";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(386, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // JobList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtTenCV);
             this.Controls.Add(this.pnlJob);
             this.Controls.Add(this.dtpJob);
@@ -109,6 +97,5 @@
         private System.Windows.Forms.Panel pnlJob;
         private System.Windows.Forms.TextBox txtTenCV;
         private FontAwesome.Sharp.IconSplitButton iconSplitButton1;
-        private System.Windows.Forms.Button button1;
     }
 }

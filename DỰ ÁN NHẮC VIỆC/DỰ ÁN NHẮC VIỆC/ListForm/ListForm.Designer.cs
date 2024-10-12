@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewGroup listViewGroup7 = new System.Windows.Forms.ListViewGroup("Học tập", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup8 = new System.Windows.Forms.ListViewGroup("Mua sắm", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup("Học tập", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup4 = new System.Windows.Forms.ListViewGroup("Mua sắm", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new string[] {
             "a",
             "Học tập",
             "10h",
             "20h",
             "Đang thực hiện",
             "Quan Trọng"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem12 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("");
             this.panel1 = new System.Windows.Forms.Panel();
             this.gbCVcon = new System.Windows.Forms.GroupBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -112,7 +112,7 @@
             this.toolStripProgressBar1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1263, 38);
+            this.toolStrip1.Size = new System.Drawing.Size(1263, 30);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -120,13 +120,13 @@
             // 
             this.toolStripLabel1.ForeColor = System.Drawing.Color.Black;
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(113, 33);
+            this.toolStripLabel1.Size = new System.Drawing.Size(113, 25);
             this.toolStripLabel1.Text = "Công việc : a";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 38);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 30);
             // 
             // toolStripProgressBar1
             // 
@@ -161,25 +161,25 @@
             this.columnHeader6,
             this.columnHeader7});
             this.lvDanhSachCV.FullRowSelect = true;
-            listViewGroup7.Header = "Học tập";
-            listViewGroup7.Name = "listViewGroup1";
-            listViewGroup8.Header = "Mua sắm";
-            listViewGroup8.Name = "listViewGroup2";
+            listViewGroup3.Header = "Học tập";
+            listViewGroup3.Name = "listViewGroup1";
+            listViewGroup4.Header = "Mua sắm";
+            listViewGroup4.Name = "listViewGroup2";
             this.lvDanhSachCV.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup7,
-            listViewGroup8});
+            listViewGroup3,
+            listViewGroup4});
             this.lvDanhSachCV.HideSelection = false;
-            listViewItem10.Group = listViewGroup7;
-            listViewItem10.StateImageIndex = 0;
-            listViewItem10.ToolTipText = "s";
-            listViewItem11.Group = listViewGroup8;
-            listViewItem11.StateImageIndex = 0;
-            listViewItem12.Group = listViewGroup8;
-            listViewItem12.StateImageIndex = 0;
+            listViewItem4.Group = listViewGroup3;
+            listViewItem4.StateImageIndex = 0;
+            listViewItem4.ToolTipText = "s";
+            listViewItem5.Group = listViewGroup4;
+            listViewItem5.StateImageIndex = 0;
+            listViewItem6.Group = listViewGroup4;
+            listViewItem6.StateImageIndex = 0;
             this.lvDanhSachCV.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem10,
-            listViewItem11,
-            listViewItem12});
+            listViewItem4,
+            listViewItem5,
+            listViewItem6});
             this.lvDanhSachCV.Location = new System.Drawing.Point(3, 25);
             this.lvDanhSachCV.Name = "lvDanhSachCV";
             this.lvDanhSachCV.Size = new System.Drawing.Size(1280, 316);

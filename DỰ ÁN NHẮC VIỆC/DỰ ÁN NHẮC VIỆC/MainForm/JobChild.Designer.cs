@@ -54,10 +54,11 @@
             // 
             // textBox1
             // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Location = new System.Drawing.Point(24, 198);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(405, 90);
+            this.textBox1.Size = new System.Drawing.Size(486, 90);
             this.textBox1.TabIndex = 1;
             // 
             // label2
@@ -81,7 +82,7 @@
             this.iconFlat.IconColor = System.Drawing.Color.Black;
             this.iconFlat.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconFlat.IconSize = 25;
-            this.iconFlat.Location = new System.Drawing.Point(353, 0);
+            this.iconFlat.Location = new System.Drawing.Point(425, 0);
             this.iconFlat.Name = "iconFlat";
             this.iconFlat.Size = new System.Drawing.Size(52, 38);
             this.iconFlat.TabIndex = 2;
@@ -93,7 +94,7 @@
             this.progressBar1.BackColor = System.Drawing.Color.Black;
             this.progressBar1.Location = new System.Drawing.Point(24, 131);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(405, 13);
+            this.progressBar1.Size = new System.Drawing.Size(486, 13);
             this.progressBar1.TabIndex = 4;
             this.progressBar1.Value = 60;
             // 
@@ -136,14 +137,13 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(24, 26);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(405, 38);
+            this.panel1.Size = new System.Drawing.Size(477, 38);
             this.panel1.TabIndex = 6;
             // 
             // checkedListBox1
             // 
             this.checkedListBox1.BackColor = System.Drawing.Color.White;
             this.checkedListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.checkedListBox1.CheckOnClick = true;
             this.checkedListBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.checkedListBox1.ForeColor = System.Drawing.Color.Black;
             this.checkedListBox1.Items.AddRange(new object[] {
@@ -152,7 +152,7 @@
             "Code"});
             this.checkedListBox1.Location = new System.Drawing.Point(24, 318);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(405, 448);
+            this.checkedListBox1.Size = new System.Drawing.Size(477, 544);
             this.checkedListBox1.TabIndex = 7;
             this.checkedListBox1.UseCompatibleTextRendering = true;
             // 
@@ -167,7 +167,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Name = "JobChild";
-            this.Size = new System.Drawing.Size(467, 803);
+            this.Size = new System.Drawing.Size(526, 892);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

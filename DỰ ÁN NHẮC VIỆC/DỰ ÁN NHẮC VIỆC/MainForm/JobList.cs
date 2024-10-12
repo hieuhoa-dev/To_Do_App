@@ -22,7 +22,10 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         }
 
         DSCongViec dscv;
-
+        public JobList()
+        {
+            InitializeComponent();
+        }
         public JobList(DateTime date, DSCongViec dscv)
         {
             InitializeComponent();
@@ -62,6 +65,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
                 for (int i = 0; i < toDayJob.Count; i++)
                 {
                     Job aJob = new Job(toDayJob[i]);
+                    aJob.JobClicked += button1_Click;
                     fPanel.Controls.Add(aJob);
 
                 }
@@ -125,10 +129,13 @@ namespace DỰ_ÁN_NHẮC_VIỆC
                 txtTenCV.ForeColor = Color.Silver;
             }
         }
-      
+
+
+        public event EventHandler ButtonDClicked ;
         private void button1_Click(object sender, EventArgs e)
         {
-           
+            ButtonDClicked?.Invoke(this, e);
+
         }
     }
 }
