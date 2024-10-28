@@ -13,7 +13,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
     public partial class Job : UserControl
     {
         private CongViec jobItem;
-        public event EventHandler JobClicked;
+        
         public CongViec JobItem
         {
             get { return jobItem; }
@@ -75,10 +75,15 @@ namespace DỰ_ÁN_NHẮC_VIỆC
                 deleted(this, new EventArgs());
             }
         }
+        public delegate void JobClickEventHandler(object sender, EventArgs e, CongViec cv);
+        public event JobClickEventHandler JobClicked;
         
-        public void btnInfo_Click(object sender, EventArgs e)
+        private void btnInfo_Click(object sender, EventArgs e)
         {
-            JobClicked?.Invoke(this, e);
+            CongViec cv = this.JobItem;
+            JobClicked?.Invoke(sender, e, cv);
         }
+
+    
     } 
 }

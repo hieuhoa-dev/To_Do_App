@@ -12,9 +12,33 @@ namespace DỰ_ÁN_NHẮC_VIỆC
 {
     public partial class JobChild : UserControl
     {
+        private CongViec jobItem;
+        public CongViec JobItem
+        {
+            get { return jobItem; }
+            set { jobItem = value; }
+        }
+
+        public JobChild(CongViec jobItem)
+        {
+            InitializeComponent();
+
+            this.JobItem = jobItem;
+
+            ShowInfo();
+        }
         public JobChild()
         {
             InitializeComponent();
+        }
+
+        public void ShowInfo()
+        {
+            if (JobItem == null)
+            {
+                return;
+            }
+            lbName.Text = jobItem.NameJob;
         }
 
         private void iconFlat_Click(object sender, EventArgs e)

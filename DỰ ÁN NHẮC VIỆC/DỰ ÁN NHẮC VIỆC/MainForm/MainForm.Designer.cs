@@ -245,6 +245,7 @@
             this.iconAdd.TabIndex = 2;
             this.ttAdd.SetToolTip(this.iconAdd, "Create Task");
             this.iconAdd.UseVisualStyleBackColor = false;
+            this.iconAdd.Click += new System.EventHandler(this.iconAdd_Click);
             // 
             // pnlControl
             // 

@@ -12,6 +12,7 @@ using System.Drawing.Drawing2D;
 using FontAwesome.Sharp;
 
 using ListForm;
+using FormPhu;
 
 namespace DỰ_ÁN_NHẮC_VIỆC
 {
@@ -133,12 +134,11 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         {
 
             InitializeComponent();
-           // m_aeroEnabled = false;
+            // m_aeroEnabled = false;
             TaopnlDeskTops();
-            //pnlShowJobChild = pnlJobChild;
 
-            Job job = new Job(this);
-            job.JobClicked += Job_JobClicked;
+            //Job job = new Job(this);
+            //job.JobClicked += Job_JobClicked;
 
             //JobList jobl = new JobList();
             //pnlShowJob.Controls.Add(jobl);
@@ -237,7 +237,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
 
         private void iconCalendar_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new CalendarForm(), sender);
+            OpenChildForm(new CalendarForm(dscv), sender);
         }
 
         private void iconList_Click(object sender, EventArgs e)
@@ -255,22 +255,14 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         #endregion
 
 
-
-
         private void mCalendar_DateChanged(object sender, DateRangeEventArgs e)
         {
-            pnlShowJob.Controls.Clear();
-            JobList jobList = new JobList(new DateTime(mCalendar.SelectionStart.Year, mCalendar.SelectionStart.Month, mCalendar.SelectionStart.Day), dscv);
-            pnlShowJob.Controls.Add(jobList);
-            jobList.ButtonDClicked += Job_JobClicked1;
-
+            //pnlShowJob.Controls.Clear();
+            //JobList jobList = new JobList(new DateTime(mCalendar.SelectionStart.Year, mCalendar.SelectionStart.Month, mCalendar.SelectionStart.Day), dscv);
+            //pnlShowJob.Controls.Add(jobList);
+            //jobList.ListJobClick += Job_JobClicked;
+            ShowJobbyDay(new DateTime(mCalendar.SelectionStart.Year, mCalendar.SelectionStart.Month, mCalendar.SelectionStart.Day), dscv);
         }
-
-        public MonthCalendar mouthCalendar
-        {
-            get { return mCalendar; }
-        }
-
 
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -278,6 +270,15 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             iconHome.IconColor = Color.FromArgb(17, 103, 177);
             dscv.DocTuFile(Application.StartupPath + "/CongViec.txt");
             //pnlShowJob.Controls.Add(new JobList(DateTime.Now, dscv));
+            ShowJobbyDay(DateTime.Now, dscv);
+        }
+
+        void ShowJobbyDay(DateTime time,DSCongViec dscv)
+        {
+            pnlShowJob.Controls.Clear();
+            JobList jobList = new JobList(new DateTime(time.Year, time.Month, time.Day), dscv);
+            pnlShowJob.Controls.Add(jobList);
+            jobList.ListJobClick += Job_JobClicked;
         }
 
         void SetDefautDate()
@@ -303,9 +304,30 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             ActivateButton(sender);
         }
 
+        Panel pnlNoti = null;
         private void iconNoti_Click(object sender, EventArgs e)
         {
-            notifyIcon1.ShowBalloonTip(1000);
+
+            if (pnlNoti != null)
+            {
+                this.Controls.Remove(pnlNoti);
+                pnlNoti.Dispose(); // Giải phóng tài nguyên nếu cần
+                pnlNoti = null; // Xóa tham chiếu đến Panel
+            }
+
+            else
+            {
+                // Tạo mới Panel và thêm vào form
+                pnlNoti = new Panel();
+                pnlNoti.Location = new System.Drawing.Point(1071, 46);
+                pnlNoti.Size = new System.Drawing.Size(211, 197);
+                this.Controls.Add(pnlNoti);
+                ThongBao NotiForm = new ThongBao();
+                NotiForm.TopLevel = false;
+                pnlNoti.Controls.Add(NotiForm);
+                pnlNoti.BringToFront();
+                NotiForm.Show();
+            }
         }
 
 
@@ -321,22 +343,32 @@ namespace DỰ_ÁN_NHẮC_VIỆC
 
         private void iconSearch_Click(object sender, EventArgs e)
         {
-      
+
         }
 
 
-        private void Job_JobClicked(object sender, EventArgs e)
+        private void Job_JobClicked(object sender, EventArgs e, CongViec cv)
         {
-            JobChild jobChild = new JobChild();
+            JobChild jobChild = new JobChild(cv);
             pnlShowJobChild.Controls.Clear();
+
             pnlShowJobChild.Controls.Add(jobChild);
         }
-        private void Job_JobClicked1(object sender, EventArgs e)
-        {
-            JobChild jobChild = new JobChild();
-            pnlShowJobChild.Controls.Clear();
-            pnlShowJobChild.Controls.Add(jobChild);
 
+
+        private void iconAdd_Click(object sender, EventArgs e)
+        {
+            Panel pnlAdd = new Panel();
+            pnlAdd.Location = new System.Drawing.Point(890, 456);
+            pnlAdd.Size = new System.Drawing.Size(500, 600);
+            this.Controls.Add(pnlAdd);
+            AddForm addForm = new AddForm();
+            addForm.TopLevel = false;
+            pnlAdd.Controls.Add(addForm);
+            pnlAdd.BringToFront();
+            addForm.Show();
         }
+
+
     }
 }

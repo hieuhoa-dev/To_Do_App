@@ -48,6 +48,9 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         public void AddJob(CongViec cv)
         {
             Job aJob = new Job(cv);
+            aJob.JobClicked += ListJobClick_Click;
+            cv.NameJob = txtTenCV.Text;
+
             aJob.Edited += aJob_Edited;
             aJob.Deleted += aJob_Deleted;
 
@@ -65,7 +68,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
                 for (int i = 0; i < toDayJob.Count; i++)
                 {
                     Job aJob = new Job(toDayJob[i]);
-                    aJob.JobClicked += button1_Click;
+                    aJob.JobClicked += ListJobClick_Click;
                     fPanel.Controls.Add(aJob);
 
                 }
@@ -75,7 +78,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
 
         void aJob_Edited(object sender, EventArgs e)
         {
-
+            
         }
 
         void aJob_Deleted(object sender, EventArgs e)
@@ -129,12 +132,14 @@ namespace DỰ_ÁN_NHẮC_VIỆC
                 txtTenCV.ForeColor = Color.Silver;
             }
         }
+        public delegate void JobClickEventHandler(object sender, EventArgs e, CongViec cv);
 
+        // Sự kiện JobClicked với kiểu delegate đã định nghĩa
+        public event JobClickEventHandler ListJobClick;
 
-        public event EventHandler ButtonDClicked ;
-        private void button1_Click(object sender, EventArgs e)
+        private void ListJobClick_Click(object sender, EventArgs e, CongViec cv)
         {
-            ButtonDClicked?.Invoke(this, e);
+            ListJobClick?.Invoke(this, e,cv);
 
         }
     }

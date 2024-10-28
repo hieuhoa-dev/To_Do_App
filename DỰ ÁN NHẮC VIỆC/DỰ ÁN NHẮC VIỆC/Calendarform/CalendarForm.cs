@@ -30,21 +30,22 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             get { return matrix; }
             set { matrix = value; }
         }
-        DSCongViec dscv = new DSCongViec();
+        DSCongViec dscv;
 
 
         private List<string> dateOfWeek = new List<string> { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
         private List<string> NgayTrongTuan = new List<string> { "Hai", "Ba", "Tư", "Năm", "Sáu", "Bảy", "Chủ Nhật" };
-        public CalendarForm()
+        public CalendarForm(DSCongViec dscv)
         {
-            CongViec a = new CongViec();
-            a.NameJob = "Làm destop";
-            a.ToDate = new DateTime(2024, 10, 1);
-            dscv.Them(a);
-            CongViec b = new CongViec();
-            b.NameJob = "Làm web";
-            b.ToDate = new DateTime(2024, 10, 7);
-            dscv.Them(b);
+            this.dscv = dscv;
+            //CongViec a = new CongViec();
+            //a.NameJob = "Làm destop";
+            //a.ToDate = new DateTime(2024, 10, 1);
+            //dscv.Them(a);
+            //CongViec b = new CongViec();
+            //b.NameJob = "Làm web";
+            //b.ToDate = new DateTime(2024, 10, 7);
+            //dscv.Them(b);
             InitializeComponent();
             LoadMatrix();
             ShowDateOnTop();

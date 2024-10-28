@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbName = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.iconFlat = new FontAwesome.Sharp.IconButton();
@@ -41,16 +41,16 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // lbName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(27, 80);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(248, 46);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Làm winform";
+            this.lbName.AutoSize = true;
+            this.lbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName.ForeColor = System.Drawing.Color.Black;
+            this.lbName.Location = new System.Drawing.Point(27, 80);
+            this.lbName.Name = "lbName";
+            this.lbName.Size = new System.Drawing.Size(248, 46);
+            this.lbName.TabIndex = 0;
+            this.lbName.Text = "Làm winform";
             // 
             // textBox1
             // 
@@ -164,7 +164,7 @@
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbName);
             this.Controls.Add(this.panel1);
             this.Name = "JobChild";
             this.Size = new System.Drawing.Size(526, 892);
@@ -177,7 +177,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbName;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private FontAwesome.Sharp.IconButton iconFlat;
