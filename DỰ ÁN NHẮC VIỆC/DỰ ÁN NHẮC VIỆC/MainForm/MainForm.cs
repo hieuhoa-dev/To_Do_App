@@ -11,8 +11,8 @@ using System.Runtime.InteropServices;
 using System.Drawing.Drawing2D;
 using FontAwesome.Sharp;
 
-using ListForm;
 using FormPhu;
+using ListForm;
 
 namespace DỰ_ÁN_NHẮC_VIỆC
 {
@@ -143,6 +143,8 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             //JobList jobl = new JobList();
             //pnlShowJob.Controls.Add(jobl);
             //jobl.ButtonDClicked += Job_JobClicked1;
+
+
         }
         //Tạo thoát, thu nhỏ
         #region 
@@ -247,7 +249,8 @@ namespace DỰ_ÁN_NHẮC_VIỆC
 
         private void iconSetting_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            Settings settings = new Settings();
+            settings.Show();
         }
 
 
@@ -359,14 +362,20 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         private void iconAdd_Click(object sender, EventArgs e)
         {
             Panel pnlAdd = new Panel();
-            pnlAdd.Location = new System.Drawing.Point(890, 456);
+            pnlAdd.Location = new System.Drawing.Point(890, 350);
             pnlAdd.Size = new System.Drawing.Size(500, 600);
             this.Controls.Add(pnlAdd);
-            AddForm addForm = new AddForm();
+
+            AddForm addForm = new AddForm((int)ChucNang.Tao);
             addForm.TopLevel = false;
             pnlAdd.Controls.Add(addForm);
             pnlAdd.BringToFront();
             addForm.Show();
+        }
+        public enum ChucNang
+        {
+            Tao,
+            Luu
         }
 
 

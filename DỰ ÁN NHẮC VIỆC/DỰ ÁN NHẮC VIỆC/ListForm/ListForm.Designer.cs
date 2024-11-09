@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("Học tập", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("Mua sắm", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewGroup listViewGroup5 = new System.Windows.Forms.ListViewGroup("Học tập", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup6 = new System.Windows.Forms.ListViewGroup("Mua sắm", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem(new string[] {
             "a",
             "Học tập",
             "10h",
             "20h",
             "Đang thực hiện",
             "Quan Trọng"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem("");
             this.panel1 = new System.Windows.Forms.Panel();
             this.gbCVcon = new System.Windows.Forms.GroupBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -61,7 +61,6 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.txtTenCV = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.gbCVcon.SuspendLayout();
@@ -161,25 +160,25 @@
             this.columnHeader6,
             this.columnHeader7});
             this.lvDanhSachCV.FullRowSelect = true;
-            listViewGroup1.Header = "Học tập";
-            listViewGroup1.Name = "listViewGroup1";
-            listViewGroup2.Header = "Mua sắm";
-            listViewGroup2.Name = "listViewGroup2";
+            listViewGroup5.Header = "Học tập";
+            listViewGroup5.Name = "listViewGroup1";
+            listViewGroup6.Header = "Mua sắm";
+            listViewGroup6.Name = "listViewGroup2";
             this.lvDanhSachCV.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup1,
-            listViewGroup2});
+            listViewGroup5,
+            listViewGroup6});
             this.lvDanhSachCV.HideSelection = false;
-            listViewItem1.Group = listViewGroup1;
-            listViewItem1.StateImageIndex = 0;
-            listViewItem1.ToolTipText = "s";
-            listViewItem2.Group = listViewGroup2;
-            listViewItem2.StateImageIndex = 0;
-            listViewItem3.Group = listViewGroup2;
-            listViewItem3.StateImageIndex = 0;
+            listViewItem7.Group = listViewGroup5;
+            listViewItem7.StateImageIndex = 0;
+            listViewItem7.ToolTipText = "s";
+            listViewItem8.Group = listViewGroup6;
+            listViewItem8.StateImageIndex = 0;
+            listViewItem9.Group = listViewGroup6;
+            listViewItem9.StateImageIndex = 0;
             this.lvDanhSachCV.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2,
-            listViewItem3});
+            listViewItem7,
+            listViewItem8,
+            listViewItem9});
             this.lvDanhSachCV.Location = new System.Drawing.Point(3, 25);
             this.lvDanhSachCV.Name = "lvDanhSachCV";
             this.lvDanhSachCV.Size = new System.Drawing.Size(1280, 316);
@@ -229,7 +228,6 @@
             this.gbTimKiem.Controls.Add(this.comboBox1);
             this.gbTimKiem.Controls.Add(this.dateTimePicker2);
             this.gbTimKiem.Controls.Add(this.dateTimePicker1);
-            this.gbTimKiem.Controls.Add(this.textBox1);
             this.gbTimKiem.Controls.Add(this.txtTenCV);
             this.gbTimKiem.Dock = System.Windows.Forms.DockStyle.Top;
             this.gbTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.System;
@@ -263,7 +261,7 @@
             "DOING",
             "COMING",
             "MISSED"});
-            this.comboBox2.Location = new System.Drawing.Point(933, 33);
+            this.comboBox2.Location = new System.Drawing.Point(1053, 35);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 28);
             this.comboBox2.TabIndex = 23;
@@ -277,7 +275,7 @@
             "DOING",
             "COMING",
             "MISSED"});
-            this.comboBox1.Location = new System.Drawing.Point(782, 33);
+            this.comboBox1.Location = new System.Drawing.Point(885, 37);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 28);
             this.comboBox1.TabIndex = 23;
@@ -286,28 +284,19 @@
             // 
             this.dateTimePicker2.CustomFormat = "dd/MM/yyyy";
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(482, 34);
+            this.dateTimePicker2.Location = new System.Drawing.Point(455, 34);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(117, 26);
             this.dateTimePicker2.TabIndex = 22;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.CustomFormat = "dd/MM/yyyy";
+            this.dateTimePicker1.CustomFormat = "hh:mm - dd/MM/yyyy ";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(632, 34);
+            this.dateTimePicker1.Location = new System.Drawing.Point(626, 37);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(112, 26);
+            this.dateTimePicker1.Size = new System.Drawing.Size(188, 26);
             this.dateTimePicker1.TabIndex = 22;
-            // 
-            // textBox1
-            // 
-            this.textBox1.ForeColor = System.Drawing.Color.Gray;
-            this.textBox1.Location = new System.Drawing.Point(1092, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(188, 26);
-            this.textBox1.TabIndex = 21;
-            this.textBox1.Text = "Địa điểm";
             // 
             // txtTenCV
             // 
@@ -361,7 +350,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;

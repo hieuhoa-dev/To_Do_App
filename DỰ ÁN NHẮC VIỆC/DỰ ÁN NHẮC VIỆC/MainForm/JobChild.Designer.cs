@@ -46,7 +46,7 @@
             this.lbName.AutoSize = true;
             this.lbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName.ForeColor = System.Drawing.Color.Black;
-            this.lbName.Location = new System.Drawing.Point(27, 80);
+            this.lbName.Location = new System.Drawing.Point(26, 82);
             this.lbName.Name = "lbName";
             this.lbName.Size = new System.Drawing.Size(248, 46);
             this.lbName.TabIndex = 0;

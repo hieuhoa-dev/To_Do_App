@@ -102,19 +102,6 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         }
 
 
-        private void txtTenCV_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                CongViec cv = new CongViec() { ToDate = dtpJob.Value };
-                dscv.Them(cv);
-                AddJob(cv);
-                txtTenCV.Text = "  + Add tasks";
-                txtTenCV.ForeColor = Color.Silver;
-            }
-
-        }
-
         private void txtTenCV_Enter(object sender, EventArgs e)
         {
             if (txtTenCV.Text == "  + Add tasks")
@@ -129,7 +116,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             if (txtTenCV.Text == "")
             {
                 txtTenCV.Text = "  + Add tasks";
-                txtTenCV.ForeColor = Color.Silver;
+                txtTenCV.ForeColor = Color.DimGray;
             }
         }
         public delegate void JobClickEventHandler(object sender, EventArgs e, CongViec cv);
@@ -141,6 +128,17 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         {
             ListJobClick?.Invoke(this, e,cv);
 
+        }
+
+        private void btnAddTask_Click(object sender, EventArgs e)
+        {
+            if (txtTenCV.Text == "  + Add tasks" || txtTenCV.Text.Trim() == "")
+                return;
+            CongViec cv = new CongViec() { ToDate = dtpJob.Value };
+            dscv.Them(cv);
+            AddJob(cv);
+            txtTenCV.Text = "  + Add tasks";
+            txtTenCV.ForeColor = Color.DimGray;
         }
     }
 }

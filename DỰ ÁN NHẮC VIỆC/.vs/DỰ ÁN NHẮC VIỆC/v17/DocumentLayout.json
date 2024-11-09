@@ -1,86 +1,134 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\",
+  "WorkspaceRootPath": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\joblist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\joblist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\joblist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\joblist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\jobchild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\jobchild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|d:\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\to_do_app - sao ch\u00E9p\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\other\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\other\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\calendarform\\calendarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\calendarform\\calendarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|d:\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\to_do_app - sao ch\u00E9p\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\other\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\other\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\calendarform\\calendarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\calendarform\\calendarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\resources\\congviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\resources\\congviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\listform\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\listform\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\listform\\listform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\listform\\listform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|d:\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\to_do_app\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|d:\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\to_do_app\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\job.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\job.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\resources\\dscongviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\resources\\dscongviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\resources\\dscongviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\jobchild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\jobchild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\notiandsettingform\\thongbaocon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\notiandsettingform\\thongbaocon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\notiandsettingform\\settings.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\notiandsettingform\\settings.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\notiandsettingform\\thongbao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\notiandsettingform\\thongbao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\notiandsettingform\\settings.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\notiandsettingform\\settings.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\notiandsettingform\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\notiandsettingform\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\notiandsettingform\\dulieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\joblist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\joblist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\jobchild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\jobchild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\joblist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\joblist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\calendarform\\calendarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\calendarform\\calendarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\properties\\settings.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\properties\\settings.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\notiandsettingform\\dulieu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\notiandsettingform\\dulieu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\mainform.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\mainform.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\notiandsettingform\\dulieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\notiandsettingform\\dulieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\listform\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\listform\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\notiandsettingform\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\notiandsettingform\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\notiandsettingform\\dulieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\notiandsettingform\\dulieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\notiandsettingform\\thongbaocon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\notiandsettingform\\thongbaocon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\calendarform\\calendarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\calendarform\\calendarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\job.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\job.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\jobchild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13878BB4-7AB6-498C-A71E-8E3347D1A591}|D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C.csproj|solutionrelative:d\u1EF1 \u00E1n nh\u1EAFc vi\u1EC7c\\mainform\\jobchild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,41 +138,65 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainForm.cs",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.cs",
-              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.cs",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.cs",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.cs",
-              "ViewState": "AQIAAPsAAAAAAAAAAAAiwBABAAAYAAAA",
+              "DocumentIndex": 1,
+              "Title": "AddForm.cs",
+              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Other\\AddForm.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Other\\AddForm.cs",
+              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Other\\AddForm.cs",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Other\\AddForm.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAswA4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T08:35:41.675Z",
+              "WhenOpened": "2024-11-09T08:09:18.776Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddForm.cs [Design]",
+              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Other\\AddForm.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Other\\AddForm.cs",
+              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Other\\AddForm.cs [Design]",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Other\\AddForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T08:09:17.448Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CongViec.cs",
+              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Resources\\CongViec.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Resources\\CongViec.cs",
+              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Resources\\CongViec.cs",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Resources\\CongViec.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACsAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T00:55:49.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Program.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Program.cs",
+              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Program.cs",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T00:55:52.143Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "CalendarForm.cs",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.cs",
-              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.cs",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.cs",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAAwCoAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T10:03:36.028Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "MainForm.cs [Design]",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.cs",
+              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.cs",
               "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.cs",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.cs [Design]",
+              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.cs [Design]",
               "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T08:35:34.62Z",
@@ -132,211 +204,321 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "JobList.cs [Design]",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobList.cs",
-              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobList.cs",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobList.cs [Design]",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobList.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T08:37:09.319Z",
-              "EditorCaption": " [Design]"
+              "DocumentIndex": 7,
+              "Title": "Settings.resx",
+              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\Settings.resx",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\Settings.resx",
+              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\Settings.resx",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\Settings.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-11-09T07:44:54.669Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "JobList.cs",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobList.cs",
-              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobList.cs",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobList.cs",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobList.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAmwDMAAAAMAAAA",
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.cs",
+              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.cs",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.cs",
+              "ViewState": "AQIAAF8BAAAAAAAAAAAswHIBAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T08:37:22.763Z",
+              "WhenOpened": "2024-10-11T08:35:41.675Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "JobChild.cs [Design]",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobChild.cs",
-              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobChild.cs",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobChild.cs [Design]",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobChild.cs [Design]",
+              "DocumentIndex": 4,
+              "Title": "DSCongViec.cs",
+              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Resources\\DSCongViec.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Resources\\DSCongViec.cs",
+              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Resources\\DSCongViec.cs",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Resources\\DSCongViec.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T08:37:07.486Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CalendarForm.cs [Design]",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.cs",
-              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.cs",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.cs [Design]",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T08:40:26.205Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AddForm.cs [Design]",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\ListForm\\AddForm.cs",
-              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\ListForm\\AddForm.cs",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\ListForm\\AddForm.cs [Design]",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\ListForm\\AddForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T08:40:25.019Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ListForm.cs [Design]",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\ListForm\\ListForm.cs",
-              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\ListForm\\ListForm.cs",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\ListForm\\ListForm.cs [Design]",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\ListForm\\ListForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T08:40:23.06Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-05T15:35:29.955Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "Job.cs",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.cs",
-              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.cs",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.cs",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAnwCwAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T01:40:44.622Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "Job.cs [Design]",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.cs",
+              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.cs",
               "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.cs",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.cs [Design]",
+              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.cs [Design]",
               "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T08:36:50.975Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-11T08:36:50.975Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Job.Designer.cs",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.Designer.cs",
-              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.Designer.cs",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.Designer.cs",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.Designer.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAASwEgAAAAiAAAA",
+              "DocumentIndex": 6,
+              "Title": "Settings.Designer.cs",
+              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\Settings.Designer.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\Settings.Designer.cs",
+              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\Settings.Designer.cs",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\Settings.Designer.cs",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAYwGcAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T03:52:25.378Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-09T07:44:52.984Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "DSCongViec.cs",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Resources\\DSCongViec.cs",
-              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Resources\\DSCongViec.cs",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Resources\\DSCongViec.cs",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Resources\\DSCongViec.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAswBMAAAAAAAAA",
+              "Title": "JobList.cs",
+              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobList.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobList.cs",
+              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobList.cs",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobList.cs",
+              "ViewState": "AQIAAHQAAAAAAAAAAAAhwIQAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T15:35:29.955Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-11T08:37:22.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "JobList.cs [Design]",
+              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobList.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobList.cs",
+              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobList.cs [Design]",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobList.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T08:37:09.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "JobChild.cs [Design]",
+              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobChild.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobChild.cs",
+              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobChild.cs [Design]",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobChild.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T08:37:07.486Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "JobChild.cs",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobChild.cs",
-              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobChild.cs",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobChild.cs",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobChild.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAwBUAAAANAAAA",
+              "Title": "CalendarForm.cs [Design]",
+              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.cs",
+              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.cs [Design]",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T08:43:17.912Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-11T08:40:26.205Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "ThongBaoCon.cs [Design]",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\ThongBaoCon.cs",
-              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\ThongBaoCon.cs",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\ThongBaoCon.cs [Design]",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\ThongBaoCon.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T12:26:01.802Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ThongBao.cs [Design]",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\ThongBao.cs",
-              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\ThongBao.cs",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\ThongBao.cs [Design]",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\ThongBao.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T12:26:00.412Z"
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\App.config",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\App.config",
+              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\App.config",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-09T06:41:28.712Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "Settings.cs [Design]",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\Settings.cs",
-              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\Settings.cs",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\Settings.cs [Design]",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\Settings.cs [Design]",
+              "Title": "Settings.Designer.cs",
+              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\Settings.Designer.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\Settings.Designer.cs",
+              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\Settings.Designer.cs",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\Settings.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T14:45:31.112Z"
+              "WhenOpened": "2024-11-09T06:42:45.178Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
+              "Title": "Settings.settings",
+              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\Settings.settings",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\Settings.settings",
+              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\Settings.settings",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\Settings.settings",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
+              "WhenOpened": "2024-11-09T06:43:08.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Resources.Designer.cs",
+              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\Resources.Designer.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\Resources.Designer.cs",
+              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\Resources.Designer.cs",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\Resources.Designer.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAQwAUAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T06:43:12.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "packages.config",
+              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\packages.config",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\packages.config",
+              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\packages.config",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\packages.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-09T06:45:10.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\Resources.resx",
+              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\Resources.resx",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\Resources.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-11-09T06:43:09.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T06:42:32.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DuLieu.Designer.cs",
+              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\DuLieu.Designer.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\DuLieu.Designer.cs",
+              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\DuLieu.Designer.cs",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\DuLieu.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T06:36:45.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MainForm.resx",
+              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.resx",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.resx",
+              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.resx",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-11-09T06:35:30.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "MainForm.Designer.cs",
+              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.Designer.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.Designer.cs",
+              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.Designer.cs",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEEAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T11:50:56.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Settings.cs",
+              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\Settings.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\Settings.cs",
+              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\Settings.cs",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\Settings.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAcwB0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T04:35:20.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "DuLieu.cs [Design]",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\DuLieu.cs",
+              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\DuLieu.cs",
               "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\DuLieu.cs",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\DuLieu.cs [Design]",
+              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\DuLieu.cs [Design]",
               "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\DuLieu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-23T14:45:30.252Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "AddForm.cs",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\ListForm\\AddForm.cs",
-              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\ListForm\\AddForm.cs",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\ListForm\\AddForm.cs",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\ListForm\\AddForm.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAJAAAA",
+              "DocumentIndex": 26,
+              "Title": "DuLieu.cs",
+              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\DuLieu.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\DuLieu.cs",
+              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\DuLieu.cs",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\DuLieu.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T11:43:01.004Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-09T04:36:50.086Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "MainForm.Designer.cs",
-              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.Designer.cs",
-              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.Designer.cs",
-              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.Designer.cs",
-              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\MainForm.Designer.cs",
-              "ViewState": "AQIAANQBAAAAAAAAAAAAAOEBAAAAAAAA",
+              "DocumentIndex": 27,
+              "Title": "ThongBaoCon.cs [Design]",
+              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\ThongBaoCon.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\ThongBaoCon.cs",
+              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\ThongBaoCon.cs [Design]",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\NotiAndSettingForm\\ThongBaoCon.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T11:50:56.577Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T12:26:01.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CalendarForm.cs",
+              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.cs",
+              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.cs",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\Calendarform\\CalendarForm.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAwCoAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T10:03:36.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Job.cs",
+              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.cs",
+              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.cs",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAnwCwAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T01:40:44.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Job.Designer.cs",
+              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.Designer.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.Designer.cs",
+              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.Designer.cs",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\Job.Designer.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAASwEgAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T03:52:25.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "JobChild.cs",
+              "DocumentMoniker": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobChild.cs",
+              "RelativeDocumentMoniker": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobChild.cs",
+              "ToolTip": "D:\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\To_do_App - Sao ch\u00E9p\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobChild.cs",
+              "RelativeToolTip": "D\u1EF0 \u00C1N NH\u1EAEC VI\u1EC6C\\MainForm\\JobChild.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwBUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T08:43:17.912Z"
             }
           ]
         }

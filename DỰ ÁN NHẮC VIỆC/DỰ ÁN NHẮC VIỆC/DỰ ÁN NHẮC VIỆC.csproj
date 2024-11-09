@@ -67,12 +67,6 @@
     <Compile Include="Calendarform\CalendarForm.Designer.cs">
       <DependentUpon>CalendarForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListForm\AddForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ListForm\AddForm.Designer.cs">
-      <DependentUpon>AddForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="ListForm\ListForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,15 +121,18 @@
     <Compile Include="NotiAndSettingForm\ThongBaoCon.Designer.cs">
       <DependentUpon>ThongBaoCon.cs</DependentUpon>
     </Compile>
+    <Compile Include="Other\AddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\AddForm.Designer.cs">
+      <DependentUpon>AddForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Resources\DSCongViec.cs" />
     <Compile Include="Resources\CongViec.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Calendarform\CalendarForm.resx">
       <DependentUpon>CalendarForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ListForm\AddForm.resx">
-      <DependentUpon>AddForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListForm\ListForm.resx">
       <DependentUpon>ListForm.cs</DependentUpon>
@@ -163,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NotiAndSettingForm\ThongBaoCon.resx">
       <DependentUpon>ThongBaoCon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\AddForm.resx">
+      <DependentUpon>AddForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
