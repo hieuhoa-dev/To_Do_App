@@ -1,4 +1,4 @@
-﻿namespace ListForm
+﻿namespace Other
 {
     partial class AddForm
     {
@@ -28,13 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtTen = new System.Windows.Forms.TextBox();
             this.dtpNgayKT = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtpNgayBD = new System.Windows.Forms.DateTimePicker();
             this.cmbMucDo = new System.Windows.Forms.ComboBox();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.dtpNgayBD = new System.Windows.Forms.TabControl();
+            this.tcNgayThang = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.nupPhutBD = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
@@ -49,12 +51,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNotes = new System.Windows.Forms.TextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.dtgvJobChild = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.cbTheLoai = new System.Windows.Forms.ComboBox();
-            this.dtpNgayBD.SuspendLayout();
+            this.txtTheLoai = new System.Windows.Forms.TextBox();
+            this.chbJob = new System.Windows.Forms.CheckBox();
+            this.clStatus = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.clJobChild = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clRemove = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.tcNgayThang.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nupPhutBD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nupGioBD)).BeginInit();
@@ -63,16 +70,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.nupGioKT)).BeginInit();
             this.tabControl2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvJobChild)).BeginInit();
             this.SuspendLayout();
             // 
             // txtTen
             // 
             this.txtTen.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTen.Location = new System.Drawing.Point(17, 35);
+            this.txtTen.Location = new System.Drawing.Point(55, 35);
             this.txtTen.Multiline = true;
             this.txtTen.Name = "txtTen";
             this.txtTen.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtTen.Size = new System.Drawing.Size(318, 29);
+            this.txtTen.Size = new System.Drawing.Size(291, 29);
             this.txtTen.TabIndex = 4;
             // 
             // dtpNgayKT
@@ -84,22 +93,20 @@
             this.dtpNgayKT.Size = new System.Drawing.Size(145, 26);
             this.dtpNgayKT.TabIndex = 7;
             // 
-            // dateTimePicker2
+            // dtpNgayBD
             // 
-            this.dateTimePicker2.CustomFormat = "dd/MM/yyyy";
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(16, 10);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(145, 26);
-            this.dateTimePicker2.TabIndex = 8;
+            this.dtpNgayBD.CustomFormat = "dd/MM/yyyy";
+            this.dtpNgayBD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpNgayBD.Location = new System.Drawing.Point(16, 10);
+            this.dtpNgayBD.Name = "dtpNgayBD";
+            this.dtpNgayBD.Size = new System.Drawing.Size(145, 26);
+            this.dtpNgayBD.TabIndex = 8;
             // 
             // cmbMucDo
             // 
             this.cmbMucDo.FormattingEnabled = true;
             this.cmbMucDo.Items.AddRange(new object[] {
             "None",
-            "Weak",
-            "Normal",
             "Important"});
             this.cmbMucDo.Location = new System.Drawing.Point(96, 90);
             this.cmbMucDo.Name = "cmbMucDo";
@@ -131,15 +138,15 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // dtpNgayBD
+            // tcNgayThang
             // 
-            this.dtpNgayBD.Controls.Add(this.tabPage1);
-            this.dtpNgayBD.Controls.Add(this.tabPage2);
-            this.dtpNgayBD.Location = new System.Drawing.Point(21, 140);
-            this.dtpNgayBD.Name = "dtpNgayBD";
-            this.dtpNgayBD.SelectedIndex = 0;
-            this.dtpNgayBD.Size = new System.Drawing.Size(449, 80);
-            this.dtpNgayBD.TabIndex = 13;
+            this.tcNgayThang.Controls.Add(this.tabPage1);
+            this.tcNgayThang.Controls.Add(this.tabPage2);
+            this.tcNgayThang.Location = new System.Drawing.Point(21, 140);
+            this.tcNgayThang.Name = "tcNgayThang";
+            this.tcNgayThang.SelectedIndex = 0;
+            this.tcNgayThang.Size = new System.Drawing.Size(449, 80);
+            this.tcNgayThang.TabIndex = 13;
             // 
             // tabPage1
             // 
@@ -147,7 +154,7 @@
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.label6);
             this.tabPage1.Controls.Add(this.nupGioBD);
-            this.tabPage1.Controls.Add(this.dateTimePicker2);
+            this.tabPage1.Controls.Add(this.dtpNgayBD);
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -159,6 +166,11 @@
             // nupPhutBD
             // 
             this.nupPhutBD.Location = new System.Drawing.Point(302, 10);
+            this.nupPhutBD.Maximum = new decimal(new int[] {
+            59,
+            0,
+            0,
+            0});
             this.nupPhutBD.Name = "nupPhutBD";
             this.nupPhutBD.Size = new System.Drawing.Size(65, 26);
             this.nupPhutBD.TabIndex = 12;
@@ -189,6 +201,11 @@
             // nupGioBD
             // 
             this.nupGioBD.Location = new System.Drawing.Point(184, 10);
+            this.nupGioBD.Maximum = new decimal(new int[] {
+            11,
+            0,
+            0,
+            0});
             this.nupGioBD.Name = "nupGioBD";
             this.nupGioBD.Size = new System.Drawing.Size(65, 26);
             this.nupGioBD.TabIndex = 9;
@@ -211,6 +228,11 @@
             // nupPhutKT
             // 
             this.nupPhutKT.Location = new System.Drawing.Point(302, 10);
+            this.nupPhutKT.Maximum = new decimal(new int[] {
+            59,
+            0,
+            0,
+            0});
             this.nupPhutKT.Name = "nupPhutKT";
             this.nupPhutKT.Size = new System.Drawing.Size(65, 26);
             this.nupPhutKT.TabIndex = 9;
@@ -218,6 +240,11 @@
             // nupGioKT
             // 
             this.nupGioKT.Location = new System.Drawing.Point(184, 10);
+            this.nupGioKT.Maximum = new decimal(new int[] {
+            11,
+            0,
+            0,
+            0});
             this.nupGioKT.Name = "nupGioKT";
             this.nupGioKT.Size = new System.Drawing.Size(65, 26);
             this.nupGioKT.TabIndex = 9;
@@ -249,7 +276,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(17, 12);
+            this.label1.Location = new System.Drawing.Point(17, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 20);
             this.label1.TabIndex = 0;
@@ -278,7 +305,7 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.textBox2);
+            this.tabPage3.Controls.Add(this.txtNotes);
             this.tabPage3.Location = new System.Drawing.Point(4, 29);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -287,17 +314,18 @@
             this.tabPage3.Text = "     Mô tả     ";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // txtNotes
             // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Location = new System.Drawing.Point(3, 3);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(439, 258);
-            this.textBox2.TabIndex = 4;
+            this.txtNotes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtNotes.Location = new System.Drawing.Point(3, 3);
+            this.txtNotes.Multiline = true;
+            this.txtNotes.Name = "txtNotes";
+            this.txtNotes.Size = new System.Drawing.Size(439, 258);
+            this.txtNotes.TabIndex = 4;
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.dtgvJobChild);
             this.tabPage4.Location = new System.Drawing.Point(4, 29);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
@@ -305,6 +333,37 @@
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "     Công việc con     ";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // dtgvJobChild
+            // 
+            this.dtgvJobChild.AllowUserToResizeColumns = false;
+            this.dtgvJobChild.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvJobChild.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dtgvJobChild.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dtgvJobChild.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvJobChild.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgvJobChild.ColumnHeadersHeight = 34;
+            this.dtgvJobChild.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dtgvJobChild.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clStatus,
+            this.clJobChild,
+            this.clRemove});
+            this.dtgvJobChild.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtgvJobChild.Location = new System.Drawing.Point(3, 3);
+            this.dtgvJobChild.Name = "dtgvJobChild";
+            this.dtgvJobChild.RowHeadersWidth = 30;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            this.dtgvJobChild.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dtgvJobChild.Size = new System.Drawing.Size(439, 258);
+            this.dtgvJobChild.TabIndex = 0;
             // 
             // button1
             // 
@@ -328,18 +387,51 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Thể loại:";
             // 
-            // cbTheLoai
+            // txtTheLoai
             // 
-            this.cbTheLoai.FormattingEnabled = true;
-            this.cbTheLoai.Items.AddRange(new object[] {
-            "DONE",
-            "DOING",
-            "COMING",
-            "MISSED"});
-            this.cbTheLoai.Location = new System.Drawing.Point(342, 90);
-            this.cbTheLoai.Name = "cbTheLoai";
-            this.cbTheLoai.Size = new System.Drawing.Size(123, 28);
-            this.cbTheLoai.TabIndex = 9;
+            this.txtTheLoai.Location = new System.Drawing.Point(342, 90);
+            this.txtTheLoai.Name = "txtTheLoai";
+            this.txtTheLoai.Size = new System.Drawing.Size(100, 26);
+            this.txtTheLoai.TabIndex = 15;
+            // 
+            // chbJob
+            // 
+            this.chbJob.AutoSize = true;
+            this.chbJob.Location = new System.Drawing.Point(21, 36);
+            this.chbJob.Name = "chbJob";
+            this.chbJob.Size = new System.Drawing.Size(22, 21);
+            this.chbJob.TabIndex = 16;
+            this.chbJob.UseVisualStyleBackColor = true;
+            // 
+            // clStatus
+            // 
+            this.clStatus.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.clStatus.FillWeight = 39.51447F;
+            this.clStatus.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.clStatus.Frozen = true;
+            this.clStatus.HeaderText = "";
+            this.clStatus.MinimumWidth = 8;
+            this.clStatus.Name = "clStatus";
+            this.clStatus.Width = 39;
+            // 
+            // clJobChild
+            // 
+            this.clJobChild.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.clJobChild.FillWeight = 300F;
+            this.clJobChild.Frozen = true;
+            this.clJobChild.HeaderText = "Tên công việc con";
+            this.clJobChild.MinimumWidth = 8;
+            this.clJobChild.Name = "clJobChild";
+            this.clJobChild.Width = 300;
+            // 
+            // clRemove
+            // 
+            this.clRemove.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.clRemove.FillWeight = 68.18182F;
+            this.clRemove.HeaderText = "Xóa";
+            this.clRemove.MinimumWidth = 8;
+            this.clRemove.Name = "clRemove";
+            this.clRemove.Width = 68;
             // 
             // AddForm
             // 
@@ -347,12 +439,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(486, 600);
+            this.Controls.Add(this.chbJob);
+            this.Controls.Add(this.txtTheLoai);
             this.Controls.Add(this.tabControl2);
-            this.Controls.Add(this.dtpNgayBD);
+            this.Controls.Add(this.tcNgayThang);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.cbTheLoai);
             this.Controls.Add(this.cmbMucDo);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label3);
@@ -361,7 +454,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddForm";
             this.Text = "Add";
-            this.dtpNgayBD.ResumeLayout(false);
+            this.tcNgayThang.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nupPhutBD)).EndInit();
@@ -373,6 +466,8 @@
             this.tabControl2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvJobChild)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -381,11 +476,11 @@
         #endregion
         private System.Windows.Forms.TextBox txtTen;
         private System.Windows.Forms.DateTimePicker dtpNgayKT;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtpNgayBD;
         private System.Windows.Forms.ComboBox cmbMucDo;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.TabControl dtpNgayBD;
+        private System.Windows.Forms.TabControl tcNgayThang;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.NumericUpDown nupGioBD;
@@ -402,8 +497,13 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtNotes;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox cbTheLoai;
+        private System.Windows.Forms.TextBox txtTheLoai;
+        private System.Windows.Forms.CheckBox chbJob;
+        private System.Windows.Forms.DataGridView dtgvJobChild;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn clStatus;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clJobChild;
+        private System.Windows.Forms.DataGridViewButtonColumn clRemove;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace DỰ_ÁN_NHẮC_VIỆC
 {
-    partial class Job
+    partial class UCJob
     {
         /// <summary> 
         /// Required designer variable.

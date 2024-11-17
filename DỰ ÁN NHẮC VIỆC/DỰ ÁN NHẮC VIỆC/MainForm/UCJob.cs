@@ -7,32 +7,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DataAccess;
 
 namespace DỰ_ÁN_NHẮC_VIỆC
 {
-    public partial class Job : UserControl
+    public partial class UCJob : UserControl
     {
-        private CongViec jobItem;
+        private Job jobItem;
         
-        public CongViec JobItem
+        public Job JobItem
         {
             get { return jobItem; }
             set { jobItem = value; }
-        }
-        private MainForm _mainForm;
-        public Job(MainForm mainForm)
-        {
-            _mainForm = mainForm;
-        }
-        public Job(CongViec jobItem)
+        } 
+
+        public UCJob(Job jobItem)
         {
             InitializeComponent();
 
             this.JobItem = jobItem;
-
             ShowInfo();
         }
-        public Job()
+        public UCJob()
         {
             InitializeComponent();
         }
@@ -75,12 +71,13 @@ namespace DỰ_ÁN_NHẮC_VIỆC
                 deleted(this, new EventArgs());
             }
         }
-        public delegate void JobClickEventHandler(object sender, EventArgs e, CongViec cv);
+
+        public delegate void JobClickEventHandler(object sender, EventArgs e, DataAccess.Job cv);
         public event JobClickEventHandler JobClicked;
         
         private void btnInfo_Click(object sender, EventArgs e)
         {
-            CongViec cv = this.JobItem;
+            DataAccess.Job cv = this.JobItem;
             JobClicked?.Invoke(sender, e, cv);
         }
 

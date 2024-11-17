@@ -1,4 +1,4 @@
-﻿namespace DỰ_ÁN_NHẮC_VIỆC
+﻿namespace DỰ_ÁN_NHẮC_VIỆC.Calendarform
 {
     partial class CalendarForm
     {

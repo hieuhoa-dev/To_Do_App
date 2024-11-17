@@ -1,26 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+
+using DataAccess;
+using BusinessLogic;
+using System.Reflection;
+using DỰ_ÁN_NHẮC_VIỆC;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-namespace ListForm
+namespace Other
 {
     public partial class AddForm : Form
     {
+
         int ChonChuNang; // 0: là tạo, 1 là lưu
 
         public AddForm(int chonChuNang)
         {
             InitializeComponent();
             ChonChuNang = chonChuNang;
+            cmbMucDo.SelectedIndex = 0;
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -28,121 +27,118 @@ namespace ListForm
             this.Close();
         }
 
+        public event EventHandler btnSaveClick; // Truyền sự kiện
         private void btnSave_Click(object sender, EventArgs e)
         {
             if (ChonChuNang == 0)
                 AddJobToSql();
             else
                 UpdateJobToSql();
+            btnSaveClick?.Invoke(this, e);
 
         }
 
         void AddJobToSql()
         {
-            //try
-            //{
-            //    string connectionString = "server=.; database = Work Management; Integrated Security = true; ";
-            //    using (SqlConnection conn = new SqlConnection(connectionString))
-            //    {
-            //        SqlCommand cmd = conn.CreateCommand();
-            //        cmd.CommandText = "EXECUTE InsertFood @id OUTPUT, @NameJob, @Status, @Level, @DSCongViecCon";
+            int result = InsertJob();
+            InsertJobChild(result);
+            if (result > 0) // Nếu thêm thành công
+            {
+                // Thông báo kết quả
+                MessageBox.Show("Thêm dữ liệu thành công");
+                // Tải lại dữ liệu cho ListView
+                //LoadFoodDataToListView();
+            }
+        }
+        public int InsertJob()
+        {
 
-            //        // Thêm tham số vào đối tượng Command
-            //        cmd.Parameters.Add("@id", SqlDbType.Int);
-            //        cmd.Parameters.Add("@name", SqlDbType.NVarChar, 3000);
-            //        cmd.Parameters.Add("@unit", SqlDbType.NVarChar, 100);
-            //        cmd.Parameters.Add("@foodCategoryId", SqlDbType.Int);
-            //        cmd.Parameters.Add("@price", SqlDbType.Int);
-            //        cmd.Parameters.Add("@notes", SqlDbType.VarChar, 3000);
-            //        cmd.Parameters["@id"].Direction = ParameterDirection.Output;
+            //Khai báo đối tượng Job từ tầng DataAccess
+            Job job = new Job();
+            job.ID = 0;
+            // Kiểm tra nếu các ô nhập khác rỗng
+            if (txtTen.Text == "")
+                MessageBox.Show("Chưa nhập dữ liệu cho các ô, vui lòng nhập lại");
+            else
+            {
+                //Nhận giá trị Name, Unit, và Notes từ người dùng nhập vào
+                job.NameJob = txtTen.Text;
 
-            //        // Truyền giá trị vào thủ tục qua tham số
-            //        cmd.Parameters["@name"].Value = txtTen.Text;
-            //        cmd.Parameters["@unit"].Value = txtUnit.Text;
-            //        cmd.Parameters["@foodCategoryId"].Value = cbbCatName.SelectedValue;
-            //        cmd.Parameters["@price"].Value = nudPrice.Value;
-            //        cmd.Parameters["@notes"].Value = txtNotes.Text;
-            //        //mở kết nối
-            //        conn.Open();
-            //        int numRowAffected = cmd.ExecuteNonQuery();
+                //Thêm thời gian bắt đầu
+                job.ToDate = new DateTime(
+                 dtpNgayBD.Value.Year,
+                 dtpNgayBD.Value.Month,
+                 dtpNgayBD.Value.Day,
+                 (int)nupGioBD.Value,  // Ép trực tiếp giá trị decimal thành int
+                 (int)nupPhutBD.Value, // Tương tự
+                 0                     // Giây
+                );
 
-            //        // Thông báo kết quả
-            //        if (numRowAffected > 0)
-            //        {
-            //            string foodID = cmd.Parameters["@id"].Value.ToString();
-            //            MessageBox.Show("Successfully adding new food, Food ID =" + foodID, "Message");
-            //            this.ResetText();
-            //        }
-            //        else
-            //        {
-            //            MessageBox.Show("Adding food failed");
-            //        }
-            //    }
-            //}
-            //// Bắt lỗi SQL và các lỗi khác
-            //catch (SqlException exception)
-            //{
-            //    MessageBox.Show(exception.Message, "SQL Error");
-            //}
-            //catch (Exception exception)
-            //{
-            //    MessageBox.Show(exception.Message, "Error");
-            //}
+                //Thêm thời gian kết thúc
+                job.FromDate = new DateTime(
+                 dtpNgayBD.Value.Year,
+                 dtpNgayBD.Value.Month,
+                 dtpNgayBD.Value.Day,
+                 (int)nupGioBD.Value,  // Ép trực tiếp giá trị decimal thành int
+                 (int)nupPhutBD.Value, // Tương tự
+                 0                     // Giây
+                );
+
+                // Nếu thời gian bắt đầu lớn hơn hoặc bằng thời gian kết thúc
+                if (job.FromDate >= job.ToDate)
+                {
+                    // Điều chỉnh lại thời gian bắt đầu: cộng thêm 5 phút vào thời gian kết thúc
+                    job.FromDate = job.ToDate.AddMinutes(5);
+                }
+
+                //Trang thái
+                if (chbJob.Checked)
+                    job.Status = 1; // Đã hoàn thành
+                else job.Status = 0; // Chưa check
+
+                job.Category = txtTheLoai.Text;
+
+                if (cmbMucDo.SelectedIndex == -1) // Auto chon Item 0
+                    cmbMucDo.SelectedIndex = 0;
+                if (cmbMucDo.SelectedIndex == 0)
+                    job.LevelJob = 0;
+                else job.LevelJob = 1;
+
+                job.Notes = txtNotes.Text;
+
+                JobBL jobBL = new JobBL();
+                // Chèn dữ liệu vào bảng
+                return jobBL.Insert(job);
+            }
+            return -1;
+        }
+
+        public void InsertJobChild(int Job)
+        {
+            //Khai báo đối tượng JobChild từ tầng DataAccess
+            if (dtgvJobChild.Rows.Count > 1) // Kiểm tra có ít nhất 1 hàng
+            {
+                foreach (DataGridViewRow row in dtgvJobChild.Rows)
+                {
+                    // Bỏ qua hàng "New Row" (hàng trống được tạo tự động)
+                    if (row.IsNewRow) continue;
+
+                    JobChild jobChild = new JobChild();
+                    jobChild.ID = 0;
+                    jobChild.Name = row.Cells["clJobChild"].Value?.ToString(); // Lấy tên công việc
+                    jobChild.Status = row.Cells["clStatus"].Value != null && (bool)row.Cells["clStatus"].Value ? 1 : 0;// Lấy trạng thái                                                                                                    
+                    jobChild.JobID = Job;
+                    JobChildBL jobChildBL = new JobChildBL();
+                    jobChildBL.Insert(jobChild);
+                }
+
+            }
+
         }
 
         void UpdateJobToSql()
         {
-            //    try
-            //    {
-            //        string connectionString = "server=PC822; database = RestaurantManagement; Integrated Security = true; ";
-            //        SqlConnection conn = new SqlConnection(connectionString);
 
-            //        SqlCommand cmd = conn.CreateCommand();
-            //        cmd.CommandText = "EXECUTE UpdateFood @id, @name, @unit, @foodCategoryID, @price, @notes";
-
-            //        // Thêm tham số vào đối tượng Command
-            //        cmd.Parameters.Add("@id", SqlDbType.Int);
-            //        cmd.Parameters.Add("@name", SqlDbType.NVarChar, 1000);
-            //        cmd.Parameters.Add("@unit", SqlDbType.NVarChar, 100);
-            //        cmd.Parameters.Add("@foodCategoryId", SqlDbType.Int);
-            //        cmd.Parameters.Add("@price", SqlDbType.Int);
-            //        cmd.Parameters.Add("@notes", SqlDbType.NVarChar, 3000);
-
-            //        // Truyền giá trị vào thủ tục qua tham số
-            //        cmd.Parameters["@id"].Value = int.Parse(txtFoodID.Text);
-            //        cmd.Parameters["@name"].Value = txtName.Text;
-            //        cmd.Parameters["@unit"].Value = txtUnit.Text;
-            //        cmd.Parameters["@foodCategoryId"].Value = cbbCatName.SelectedValue;
-            //        cmd.Parameters["@price"].Value = nudPrice.Value;
-            //        cmd.Parameters["@notes"].Value = txtNotes.Text;
-
-            //        // mà kết nối
-            //        conn.Open();
-
-            //        int numRowAffected = cmd.ExecuteNonQuery();
-            //        // Thông báo kết quả
-            //        if (numRowAffected > 0)
-            //        {
-            //            MessageBox.Show("Successfully updating food", "Message");
-            //            this.ResetText();
-            //        }
-            //        else
-            //        {
-            //            MessageBox.Show("Updating food failed");
-            //        }
-            //        // đóng kết nối
-            //        conn.Close();
-            //        conn.Dispose();
-            //    }
-            //    // Bắt lỗi SQL và các lỗi khác
-            //    catch (SqlException exception)
-            //    {
-            //        MessageBox.Show(exception.Message, "SQL, Error");
-            //    }
-            //    catch (Exception exception)
-            //    {
-            //        MessageBox.Show(exception.Message, "Error");
-            //    }
         }
 
     }

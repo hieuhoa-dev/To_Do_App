@@ -9,9 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 
+using DataAccess;
 
 
-namespace DỰ_ÁN_NHẮC_VIỆC
+namespace DỰ_ÁN_NHẮC_VIỆC.Calendarform
 {
     public partial class CalendarForm : Form
     {
@@ -30,12 +31,12 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             get { return matrix; }
             set { matrix = value; }
         }
-        DSCongViec dscv;
+        JobDA dscv;
 
 
         private List<string> dateOfWeek = new List<string> { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
         private List<string> NgayTrongTuan = new List<string> { "Hai", "Ba", "Tư", "Năm", "Sáu", "Bảy", "Chủ Nhật" };
-        public CalendarForm(DSCongViec dscv)
+        public CalendarForm(JobDA dscv)
         {
             this.dscv = dscv;
             //CongViec a = new CongViec();
@@ -243,7 +244,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         bool KTCVByDay(DateTime date)
         {
             // Trả về true nếu danh sách có ít nhất một công việc
-            List<CongViec> toDayJob = GetJobByDay(date);
+            List<DataAccess.Job> toDayJob = GetJobByDay(date);
             return toDayJob.Count > 0;
         }
 
@@ -256,7 +257,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             }
         }
 
-        List<CongViec> GetJobByDay(DateTime date)
+        List<DataAccess.Job> GetJobByDay(DateTime date)
         {
             return dscv.DanhSach.Where(p => p.ToDate.Year == date.Year && p.ToDate.Month == date.Month && p.ToDate.Day == date.Day).ToList();
         }

@@ -1,0 +1,24 @@
+C:\Users\PC602\Downloads\RestaurantManagementProject\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\PC602\Downloads\RestaurantManagementProject\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\PC602\Downloads\RestaurantManagementProject\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+C:\Users\PC602\Downloads\RestaurantManagementProject\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\PC602\Downloads\RestaurantManagementProject\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\PC602\Downloads\RestaurantManagementProject\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\Lenovo\Downloads\lab8_winform\RestaurantManagementProject\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\Lenovo\Downloads\lab8_winform\RestaurantManagementProject\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\Lenovo\Downloads\lab8_winform\RestaurantManagementProject\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Downloads\lab8_winform\RestaurantManagementProject\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Downloads\lab8_winform\RestaurantManagementProject\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\Lenovo\Downloads\lab8_winform\RestaurantManagementProject\DataAccess\obj\Debug\DataAccess.pdb
+D:\DỰ ÁN NHẮC VIỆC\To_do_App - Sao chép\DỰ ÁN NHẮC VIỆC\DataAccess\bin\Debug\DataAccess.dll
+D:\DỰ ÁN NHẮC VIỆC\To_do_App - Sao chép\DỰ ÁN NHẮC VIỆC\DataAccess\bin\Debug\DataAccess.pdb
+D:\DỰ ÁN NHẮC VIỆC\To_do_App - Sao chép\DỰ ÁN NHẮC VIỆC\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+D:\DỰ ÁN NHẮC VIỆC\To_do_App - Sao chép\DỰ ÁN NHẮC VIỆC\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+D:\DỰ ÁN NHẮC VIỆC\To_do_App - Sao chép\DỰ ÁN NHẮC VIỆC\DataAccess\obj\Debug\DataAccess.dll
+D:\DỰ ÁN NHẮC VIỆC\To_do_App - Sao chép\DỰ ÁN NHẮC VIỆC\DataAccess\obj\Debug\DataAccess.pdb
+D:\DỰ ÁN NHẮC VIỆC\To_do_App (2)\DỰ ÁN NHẮC VIỆC\DataAccess\bin\Debug\DataAccess.dll
+D:\DỰ ÁN NHẮC VIỆC\To_do_App (2)\DỰ ÁN NHẮC VIỆC\DataAccess\bin\Debug\DataAccess.pdb
+D:\DỰ ÁN NHẮC VIỆC\To_do_App (2)\DỰ ÁN NHẮC VIỆC\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+D:\DỰ ÁN NHẮC VIỆC\To_do_App (2)\DỰ ÁN NHẮC VIỆC\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+D:\DỰ ÁN NHẮC VIỆC\To_do_App (2)\DỰ ÁN NHẮC VIỆC\DataAccess\obj\Debug\DataAccess.dll
+D:\DỰ ÁN NHẮC VIỆC\To_do_App (2)\DỰ ÁN NHẮC VIỆC\DataAccess\obj\Debug\DataAccess.pdb

@@ -73,23 +73,23 @@
     <Compile Include="ListForm\ListForm.Designer.cs">
       <DependentUpon>ListForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm\Job.cs">
+    <Compile Include="MainForm\UCJob.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="MainForm\Job.Designer.cs">
-      <DependentUpon>Job.cs</DependentUpon>
+    <Compile Include="MainForm\UCJob.Designer.cs">
+      <DependentUpon>UCJob.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm\JobChild.cs">
+    <Compile Include="MainForm\UCJobChild.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="MainForm\JobChild.Designer.cs">
-      <DependentUpon>JobChild.cs</DependentUpon>
+    <Compile Include="MainForm\UCJobChild.Designer.cs">
+      <DependentUpon>UCJobChild.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm\JobList.cs">
+    <Compile Include="MainForm\UCJobList.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="MainForm\JobList.Designer.cs">
-      <DependentUpon>JobList.cs</DependentUpon>
+    <Compile Include="MainForm\UCJobList.Designer.cs">
+      <DependentUpon>UCJobList.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm\MainForm.cs">
       <SubType>Form</SubType>
@@ -127,8 +127,6 @@
     <Compile Include="Other\AddForm.Designer.cs">
       <DependentUpon>AddForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Resources\DSCongViec.cs" />
-    <Compile Include="Resources\CongViec.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Calendarform\CalendarForm.resx">
@@ -137,14 +135,14 @@
     <EmbeddedResource Include="ListForm\ListForm.resx">
       <DependentUpon>ListForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm\Job.resx">
-      <DependentUpon>Job.cs</DependentUpon>
+    <EmbeddedResource Include="MainForm\UCJob.resx">
+      <DependentUpon>UCJob.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm\JobChild.resx">
-      <DependentUpon>JobChild.cs</DependentUpon>
+    <EmbeddedResource Include="MainForm\UCJobChild.resx">
+      <DependentUpon>UCJobChild.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm\JobList.resx">
-      <DependentUpon>JobList.cs</DependentUpon>
+    <EmbeddedResource Include="MainForm\UCJobList.resx">
+      <DependentUpon>UCJobList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -187,6 +185,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj">
+      <Project>{7271a765-1b39-4932-9536-3d42336408e7}</Project>
+      <Name>BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{eb032ac8-6f5c-4cbd-8730-7bcda30e7e12}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,6 +1,6 @@
 ﻿namespace DỰ_ÁN_NHẮC_VIỆC
 {
-    partial class JobList
+    partial class UCJobList
     {
         /// <summary> 
         /// Required designer variable.
@@ -32,22 +32,21 @@
             this.txtTenCV = new System.Windows.Forms.TextBox();
             this.iconSplitButton1 = new FontAwesome.Sharp.IconSplitButton();
             this.btnAddTask = new System.Windows.Forms.Button();
-            this.dtpJob = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // pnlJob
             // 
             this.pnlJob.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlJob.Location = new System.Drawing.Point(0, 77);
+            this.pnlJob.Location = new System.Drawing.Point(0, 45);
             this.pnlJob.Name = "pnlJob";
-            this.pnlJob.Size = new System.Drawing.Size(469, 730);
+            this.pnlJob.Size = new System.Drawing.Size(469, 762);
             this.pnlJob.TabIndex = 2;
             // 
             // txtTenCV
             // 
             this.txtTenCV.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenCV.ForeColor = System.Drawing.Color.DimGray;
-            this.txtTenCV.Location = new System.Drawing.Point(3, 35);
+            this.txtTenCV.Location = new System.Drawing.Point(3, 3);
             this.txtTenCV.Multiline = true;
             this.txtTenCV.Name = "txtTenCV";
             this.txtTenCV.Size = new System.Drawing.Size(387, 36);
@@ -74,7 +73,7 @@
             this.btnAddTask.FlatAppearance.BorderSize = 0;
             this.btnAddTask.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddTask.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnAddTask.Location = new System.Drawing.Point(384, 35);
+            this.btnAddTask.Location = new System.Drawing.Point(384, 3);
             this.btnAddTask.Name = "btnAddTask";
             this.btnAddTask.Size = new System.Drawing.Size(75, 36);
             this.btnAddTask.TabIndex = 23;
@@ -82,24 +81,14 @@
             this.btnAddTask.UseVisualStyleBackColor = false;
             this.btnAddTask.Click += new System.EventHandler(this.btnAddTask_Click);
             // 
-            // dtpJob
-            // 
-            this.dtpJob.Location = new System.Drawing.Point(79, 3);
-            this.dtpJob.Name = "dtpJob";
-            this.dtpJob.Size = new System.Drawing.Size(285, 26);
-            this.dtpJob.TabIndex = 0;
-            this.dtpJob.Visible = false;
-            this.dtpJob.ValueChanged += new System.EventHandler(this.dtpJob_ValueChanged);
-            // 
-            // JobList
+            // UCJobList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnAddTask);
             this.Controls.Add(this.txtTenCV);
             this.Controls.Add(this.pnlJob);
-            this.Controls.Add(this.dtpJob);
-            this.Name = "JobList";
+            this.Name = "UCJobList";
             this.Size = new System.Drawing.Size(469, 807);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -111,6 +100,5 @@
         private System.Windows.Forms.TextBox txtTenCV;
         private FontAwesome.Sharp.IconSplitButton iconSplitButton1;
         private System.Windows.Forms.Button btnAddTask;
-        private System.Windows.Forms.DateTimePicker dtpJob;
     }
 }

@@ -4,13 +4,13 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using DataAccess;
+
 
 namespace DỰ_ÁN_NHẮC_VIỆC
 {
-    public partial class JobList : UserControl
+    public partial class UCJobList : UserControl
     {
         FlowLayoutPanel fPanel = new FlowLayoutPanel();
         private DateTime _date;
@@ -21,12 +21,12 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             set { _date = value; }
         }
 
-        DSCongViec dscv;
-        public JobList()
-        {
-            InitializeComponent();
-        }
-        public JobList(DateTime date, DSCongViec dscv)
+        JobDA dscv;
+        //public UCJobList()
+        //{
+        //    InitializeComponent();
+        //}
+        public UCJobList(DateTime date, JobDA dscv)
         {
             InitializeComponent();
             this.Date = date;
@@ -35,19 +35,19 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             fPanel.Width = pnlJob.Width;
             fPanel.Height = pnlJob.Height;
             pnlJob.Controls.Add(fPanel);
-            dtpJob.Value = date;
+            //dtpJob.Value = date;
             ShowJobByDay(date);
         }
 
-        public void ThemJob()
-        {
-            Job job = new Job();
-            pnlJob.Controls.Add(job);
-        }
+        //public void ThemJob()
+        //{
+        //    UCJob job = new UCJob();
+        //    pnlJob.Controls.Add(job);
+        //}
 
-        public void AddJob(CongViec cv)
+        public void AddJob(Job cv)
         {
-            Job aJob = new Job(cv);
+            UCJob aJob = new UCJob(cv);
             aJob.JobClicked += ListJobClick_Click;
             cv.NameJob = txtTenCV.Text;
 
@@ -64,10 +64,10 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             fPanel.Controls.Clear();
             if (dscv != null && dscv.DanhSach != null)
             {
-                List<CongViec> toDayJob = GetJobByDay(date);
+                List<Job> toDayJob = GetJobByDay(date);
                 for (int i = 0; i < toDayJob.Count; i++)
                 {
-                    Job aJob = new Job(toDayJob[i]);
+                    UCJob aJob = new UCJob(toDayJob[i]);
                     aJob.JobClicked += ListJobClick_Click;
                     fPanel.Controls.Add(aJob);
 
@@ -83,8 +83,8 @@ namespace DỰ_ÁN_NHẮC_VIỆC
 
         void aJob_Deleted(object sender, EventArgs e)
         {
-            Job uc = sender as Job;
-            CongViec congViec = uc.JobItem;
+            UCJob uc = sender as UCJob;
+            DataAccess.Job congViec = uc.JobItem;
 
             fPanel.Controls.Remove(uc);
             dscv.DanhSach.Remove(congViec);
@@ -96,7 +96,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             ShowJobByDay((sender as DateTimePicker).Value);
         }
 
-        List<CongViec> GetJobByDay(DateTime date)
+        List<DataAccess.Job> GetJobByDay(DateTime date)
         {
             return dscv.DanhSach.Where(p => p.ToDate.Year == date.Year && p.ToDate.Month == date.Month && p.ToDate.Day == date.Day).ToList();
         }
@@ -119,12 +119,12 @@ namespace DỰ_ÁN_NHẮC_VIỆC
                 txtTenCV.ForeColor = Color.DimGray;
             }
         }
-        public delegate void JobClickEventHandler(object sender, EventArgs e, CongViec cv);
+        public delegate void JobClickEventHandler(object sender, EventArgs e, DataAccess.Job cv);
 
         // Sự kiện JobClicked với kiểu delegate đã định nghĩa
         public event JobClickEventHandler ListJobClick;
 
-        private void ListJobClick_Click(object sender, EventArgs e, CongViec cv)
+        private void ListJobClick_Click(object sender, EventArgs e, DataAccess.Job cv)
         {
             ListJobClick?.Invoke(this, e,cv);
 
@@ -134,8 +134,8 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         {
             if (txtTenCV.Text == "  + Add tasks" || txtTenCV.Text.Trim() == "")
                 return;
-            CongViec cv = new CongViec() { ToDate = dtpJob.Value };
-            dscv.Them(cv);
+            DataAccess.Job cv = new DataAccess.Job()/* { ToDate = dtpJob.Value }*/;
+            dscv.DanhSach.Add(cv);
             AddJob(cv);
             txtTenCV.Text = "  + Add tasks";
             txtTenCV.ForeColor = Color.DimGray;

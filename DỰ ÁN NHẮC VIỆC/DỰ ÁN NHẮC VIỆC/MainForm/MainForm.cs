@@ -1,28 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Runtime.InteropServices;
-using System.Drawing.Drawing2D;
 using FontAwesome.Sharp;
 
 using FormPhu;
-using ListForm;
+using Other;
+using DataAccess;
+using BusinessLogic;
 
 namespace DỰ_ÁN_NHẮC_VIỆC
 {
     public partial class MainForm : Form
     {
-        DSCongViec dscv = new DSCongViec();
+        JobDA dscv = new JobDA();
         Panel pnlDeskTops = new Panel();
         public Panel pnlJobChild = new Panel();
 
-
+        List<Job> DScv = new List<Job>();
+        //List<JobChild> dscv_con = new List<JobChild>();
         //Tạo khung, viền, bóng
         #region DesignFrom 
         private bool Drag;
@@ -122,29 +118,12 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         private void PanelMove_MouseUp(object sender, MouseEventArgs e) { Drag = false; }
         #endregion
 
-        private DSCongViec _dsCongViec;
-        private DSCongViec DsCongViec
-        {
-            get { return _dsCongViec; }
-            set { _dsCongViec = value; }
-
-        }
-
         public MainForm()
         {
 
             InitializeComponent();
             // m_aeroEnabled = false;
             TaopnlDeskTops();
-
-            //Job job = new Job(this);
-            //job.JobClicked += Job_JobClicked;
-
-            //JobList jobl = new JobList();
-            //pnlShowJob.Controls.Add(jobl);
-            //jobl.ButtonDClicked += Job_JobClicked1;
-
-
         }
         //Tạo thoát, thu nhỏ
         #region 
@@ -239,7 +218,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
 
         private void iconCalendar_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new CalendarForm(dscv), sender);
+            OpenChildForm(new Calendarform.CalendarForm(dscv), sender);
         }
 
         private void iconList_Click(object sender, EventArgs e)
@@ -260,10 +239,6 @@ namespace DỰ_ÁN_NHẮC_VIỆC
 
         private void mCalendar_DateChanged(object sender, DateRangeEventArgs e)
         {
-            //pnlShowJob.Controls.Clear();
-            //JobList jobList = new JobList(new DateTime(mCalendar.SelectionStart.Year, mCalendar.SelectionStart.Month, mCalendar.SelectionStart.Day), dscv);
-            //pnlShowJob.Controls.Add(jobList);
-            //jobList.ListJobClick += Job_JobClicked;
             ShowJobbyDay(new DateTime(mCalendar.SelectionStart.Year, mCalendar.SelectionStart.Month, mCalendar.SelectionStart.Day), dscv);
         }
 
@@ -271,15 +246,33 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         private void MainForm_Load(object sender, EventArgs e)
         {
             iconHome.IconColor = Color.FromArgb(17, 103, 177);
-            dscv.DocTuFile(Application.StartupPath + "/CongViec.txt");
+            //dscv.DocTuFile(Application.StartupPath + "/CongViec.txt");
             //pnlShowJob.Controls.Add(new JobList(DateTime.Now, dscv));
+            LoadJobToSQL();
+            LoadJobChildToSQL();
             ShowJobbyDay(DateTime.Now, dscv);
         }
-
-        void ShowJobbyDay(DateTime time,DSCongViec dscv)
+        private void LoadJobToSQL()
         {
+            //Gọi đối tượng CategoryBL từ tầng BusinessLogic
+            JobBL jobBL = new JobBL();
+            DScv = jobBL.GetAll();
+            dscv.DanhSach = DScv;
+        }
+
+        private void LoadJobChildToSQL()
+        {
+            //Gọi đối tượng CategoryBL từ tầng BusinessLogic
+            JobChildBL jobChildBL = new JobChildBL();
+            //dscv_con = jobChildBL.GetAll();   
+        }
+
+
+        void ShowJobbyDay(DateTime time, JobDA dscv)
+        {
+            LoadHienThiThongTin(time);
             pnlShowJob.Controls.Clear();
-            JobList jobList = new JobList(new DateTime(time.Year, time.Month, time.Day), dscv);
+            UCJobList jobList = new UCJobList(new DateTime(time.Year, time.Month, time.Day), dscv);
             pnlShowJob.Controls.Add(jobList);
             jobList.ListJobClick += Job_JobClicked;
         }
@@ -292,14 +285,45 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         private void btnToday_Click(object sender, EventArgs e)
         {
             SetDefautDate();
+
+
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        void LoadHienThiThongTin(DateTime time)
         {
+            DateTime now = DateTime.Now.Date; // Lấy phần ngày hiện tại, bỏ giờ phút giây
+            int diff = (time.Date - now).Days; // Tính số ngày chênh lệch
 
-            JobList jobList = new JobList(new DateTime(mCalendar.SelectionStart.Year, mCalendar.SelectionStart.Month, mCalendar.SelectionStart.Day), dscv);
-            jobList.ThemJob();
+            if (diff == 0)
+            {
+                lbHienThiThongTin.Text = $"Hôm nay, {time:dd/MM/yyyy}";
+                return;
+            }   
+            if (diff == 1)
+            {
+            lbHienThiThongTin.Text = $"Ngày mai, {time:dd/MM/yyyy}";
+                return ;
+            }
+            if (diff == -1)
+            {
+                lbHienThiThongTin.Text = $"Hôm qua, {time:dd/MM/yyyy}";
+                return;          
+            }
+            else
+            {
+                lbHienThiThongTin.Text = time.ToString("dd/MM/yyyy");
+            }
         }
+
+
+
+
+        //private void btnAdd_Click(object sender, EventArgs e)
+        //{
+
+        //    UCJobList jobList = new UCJobList(new DateTime(mCalendar.SelectionStart.Year, mCalendar.SelectionStart.Month, mCalendar.SelectionStart.Day), dscv);
+        //    jobList.ThemJob();
+        //}
 
 
         private void iconDonate_Click(object sender, EventArgs e)
@@ -317,7 +341,6 @@ namespace DỰ_ÁN_NHẮC_VIỆC
                 pnlNoti.Dispose(); // Giải phóng tài nguyên nếu cần
                 pnlNoti = null; // Xóa tham chiếu đến Panel
             }
-
             else
             {
                 // Tạo mới Panel và thêm vào form
@@ -333,8 +356,6 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             }
         }
 
-
-
         void TaopnlDeskTops()
         {
             pnlDeskTops.Location = new System.Drawing.Point(80, 46);
@@ -349,28 +370,49 @@ namespace DỰ_ÁN_NHẮC_VIỆC
 
         }
 
-
-        private void Job_JobClicked(object sender, EventArgs e, CongViec cv)
+        private void Job_JobClicked(object sender, EventArgs e, Job cv)
         {
-            JobChild jobChild = new JobChild(cv);
-            pnlShowJobChild.Controls.Clear();
+            //Tìm ds công việc con của cv
+            JobChildBL jobChildBL = new JobChildBL();
+            List<JobChild> cvCon = jobChildBL.FindID(cv.ID);
 
+            UCJobChild jobChild = new UCJobChild(cv, cvCon);
+            pnlShowJobChild.Controls.Clear();
             pnlShowJobChild.Controls.Add(jobChild);
         }
 
 
+        Panel pnlAdd = null;
         private void iconAdd_Click(object sender, EventArgs e)
         {
-            Panel pnlAdd = new Panel();
+            Clear_pnlAdd();
+            pnlAdd = new Panel();
             pnlAdd.Location = new System.Drawing.Point(890, 350);
             pnlAdd.Size = new System.Drawing.Size(500, 600);
             this.Controls.Add(pnlAdd);
 
             AddForm addForm = new AddForm((int)ChucNang.Tao);
+            addForm.FormClosed += new FormClosedEventHandler(addForm_FormClosed);
             addForm.TopLevel = false;
             pnlAdd.Controls.Add(addForm);
             pnlAdd.BringToFront();
             addForm.Show();
+
+            addForm.btnSaveClick += LoadJob;
+        }
+        void addForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Clear_pnlAdd();
+        }
+
+        void Clear_pnlAdd()
+        {
+            if (pnlAdd != null) // Có thì mới xóa 
+            {
+                this.Controls.Remove(pnlAdd);
+                pnlAdd.Dispose();
+                pnlAdd = null;
+            }
         }
         public enum ChucNang
         {
@@ -378,6 +420,11 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             Luu
         }
 
+        private void LoadJob(object sender, EventArgs e)
+        {
+            LoadJobToSQL();
+            ShowJobbyDay(new DateTime(mCalendar.SelectionStart.Year, mCalendar.SelectionStart.Month, mCalendar.SelectionStart.Day), dscv);
+        }
 
     }
 }

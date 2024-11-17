@@ -49,7 +49,6 @@
             this.iconMinimize = new FontAwesome.Sharp.IconButton();
             this.iconXmark = new FontAwesome.Sharp.IconButton();
             this.cuiControlDrag1 = new CuoreUI.cuiControlDrag(this.components);
-            this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -63,6 +62,10 @@
             this.ttControl = new System.Windows.Forms.ToolTip(this.components);
             this.ttAdd = new System.Windows.Forms.ToolTip(this.components);
             this.pnlShowJobChild = new System.Windows.Forms.Panel();
+            this.lbHienThiThongTin = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.pnlControl2.SuspendLayout();
             this.pnlTop.SuspendLayout();
             this.pnlControl.SuspendLayout();
@@ -344,18 +347,6 @@
             this.cuiControlDrag1.DragFrequency = 4;
             this.cuiControlDrag1.TargetControl = this.pnlControl;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(379, 57);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(292, 36);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "Danh sách công việc";
-            // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -363,7 +354,7 @@
             this.button3.Location = new System.Drawing.Point(95, 483);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(246, 41);
-            this.button3.TabIndex = 16;
+            this.button3.TabIndex = 3;
             this.button3.Text = "Sắp đến";
             this.button3.UseVisualStyleBackColor = true;
             // 
@@ -374,7 +365,7 @@
             this.button2.Location = new System.Drawing.Point(95, 436);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(246, 41);
-            this.button2.TabIndex = 17;
+            this.button2.TabIndex = 2;
             this.button2.Text = "Quá hạn";
             this.button2.UseVisualStyleBackColor = true;
             // 
@@ -385,7 +376,7 @@
             this.button1.Location = new System.Drawing.Point(95, 389);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(246, 41);
-            this.button1.TabIndex = 18;
+            this.button1.TabIndex = 1;
             this.button1.Text = "Hoàn thành";
             this.button1.UseVisualStyleBackColor = true;
             // 
@@ -396,7 +387,7 @@
             this.btnToday.Location = new System.Drawing.Point(92, 342);
             this.btnToday.Name = "btnToday";
             this.btnToday.Size = new System.Drawing.Size(246, 41);
-            this.btnToday.TabIndex = 19;
+            this.btnToday.TabIndex = 0;
             this.btnToday.Text = "Hôm nay";
             this.btnToday.UseVisualStyleBackColor = true;
             this.btnToday.Click += new System.EventHandler(this.btnToday_Click);
@@ -413,10 +404,10 @@
             // pnlShowJob
             // 
             this.pnlShowJob.BackColor = System.Drawing.Color.White;
-            this.pnlShowJob.Location = new System.Drawing.Point(379, 114);
+            this.pnlShowJob.Location = new System.Drawing.Point(379, 138);
             this.pnlShowJob.Name = "pnlShowJob";
-            this.pnlShowJob.Size = new System.Drawing.Size(469, 824);
-            this.pnlShowJob.TabIndex = 0;
+            this.pnlShowJob.Size = new System.Drawing.Size(469, 800);
+            this.pnlShowJob.TabIndex = 4;
             // 
             // lbSeparator1
             // 
@@ -479,6 +470,46 @@
             this.pnlShowJobChild.Size = new System.Drawing.Size(526, 892);
             this.pnlShowJobChild.TabIndex = 26;
             // 
+            // lbHienThiThongTin
+            // 
+            this.lbHienThiThongTin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbHienThiThongTin.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.lbHienThiThongTin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbHienThiThongTin.Location = new System.Drawing.Point(400, 83);
+            this.lbHienThiThongTin.Name = "lbHienThiThongTin";
+            this.lbHienThiThongTin.Size = new System.Drawing.Size(438, 30);
+            this.lbHienThiThongTin.TabIndex = 22;
+            this.lbHienThiThongTin.Text = "Hiển thị thông tin";
+            this.lbHienThiThongTin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(379, 47);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(269, 30);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "Danh sách công việc";
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label2.Location = new System.Drawing.Point(380, 92);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(184, 10);
+            this.label2.TabIndex = 27;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label3.Location = new System.Drawing.Point(664, 56);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(184, 10);
+            this.label3.TabIndex = 27;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -486,8 +517,11 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1400, 950);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.pnlShowJob);
             this.Controls.Add(this.pnlShowJobChild);
+            this.Controls.Add(this.lbHienThiThongTin);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -533,7 +567,6 @@
         private FontAwesome.Sharp.IconButton iconDonate;
         private FontAwesome.Sharp.IconButton iconList;
         private FontAwesome.Sharp.IconButton iconSetting;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
@@ -549,6 +582,10 @@
         private System.Windows.Forms.ToolTip ttControl;
         private System.Windows.Forms.ToolTip ttAdd;
         private System.Windows.Forms.Panel pnlShowJobChild;
+        private System.Windows.Forms.Label lbHienThiThongTin;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 
