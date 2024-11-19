@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataAccess;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,13 +9,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FormPhu
+namespace DỰ_ÁN_NHẮC_VIỆC
 {
-    public partial class frmTBCon : Form
+    public partial class ThongBaoCon : UserControl
     {
-        public frmTBCon()
+
+        public ThongBaoCon(Job job)
         {
             InitializeComponent();
+            lbLoaiTB.Text = "Sắp đến";
+            lbTenCV.Text = job.NameJob;
         }
+
     }
 }

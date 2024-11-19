@@ -52,6 +52,8 @@ namespace DataAccess
                 job.Category = reader["Category"].ToString();
                 job.LevelJob = Convert.ToInt32(reader["LevelJob"]);
                 job.Notes = reader["Notes"].ToString();
+                job.Delete = Convert.ToInt32(reader["Delete"]);
+                job.TimeDelete = (DateTime)reader["TimeDelete"];
                 list.Add(job);
             }
             // Đóng kết nối và trả về danh sách
@@ -83,6 +85,8 @@ namespace DataAccess
             command.Parameters.Add("@Category", SqlDbType.NVarChar, 100).Value = job.Category;
             command.Parameters.Add("@LevelJob", SqlDbType.Int).Value = job.LevelJob;
             command.Parameters.Add("@Notes", SqlDbType.NVarChar, 1000).Value = job.Notes;
+            command.Parameters.Add("@Delete", SqlDbType.Int).Value = job.Delete;
+            command.Parameters.Add("@TimeDelete", SqlDbType.DateTime).Value = job.TimeDelete;
             command.Parameters.Add("@Action", SqlDbType.Int).Value = action;
 
             // Thực thi lệnh

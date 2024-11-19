@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DataAccess;
-
+using BusinessLogic;
 
 namespace DỰ_ÁN_NHẮC_VIỆC
 {
@@ -40,7 +40,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             //    return;
             //}
             txtName.Text = jobItem.NameJob;
-            textBox1.Text = jobItem.Notes;
+            txtNotes.Text = jobItem.Notes;
             if (jobItem.Status == 1)
             {
                 cbTrangThai.Checked = true;
@@ -84,10 +84,12 @@ namespace DỰ_ÁN_NHẮC_VIỆC
                 progressBarJob.Value = 0; // Nếu không có công việc nào, đặt giá trị progressBar về 0
             }
         }
+
+        int BienLuuMucDo;
         void LoadMucDo()
         {
             if (jobItem.LevelJob == 1)
-            {            
+            {
                 iconFlat.IconColor = Color.FromArgb(174, 68, 90);
                 iconFlat.IconFont = FontAwesome.Sharp.IconFont.Solid;
             }
@@ -96,6 +98,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
                 iconFlat.IconColor = Color.Black;
                 iconFlat.IconFont = FontAwesome.Sharp.IconFont.Auto;
             }
+            BienLuuMucDo = jobItem.LevelJob;
         }
         void LoadNgay()
         {
@@ -116,7 +119,21 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         }
         private void iconFlat_Click(object sender, EventArgs e)
         {
-
+            if (BienLuuMucDo == 0)
+            {
+                iconFlat.IconColor = Color.FromArgb(174, 68, 90);
+                iconFlat.IconFont = FontAwesome.Sharp.IconFont.Solid;
+                jobItem.LevelJob = 1;
+                BienLuuMucDo = 1;
+            }
+            else
+            {
+                iconFlat.IconColor = Color.Black;
+                iconFlat.IconFont = FontAwesome.Sharp.IconFont.Auto;
+                jobItem.LevelJob = 0;
+                BienLuuMucDo = 0;
+            }
+            CapNhatThongTin(sender, e);
         }
 
         private void txtName_Enter(object sender, EventArgs e)
@@ -137,12 +154,109 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             }
         }
 
+        public event EventHandler JobLoad;
         private void txtName_TextChanged(object sender, EventArgs e)
         {
             if (txtName.Text != "Nhập tên công việc")
             {
                 jobItem.NameJob = txtName.Text; // Lưu dữ liệu chỉ khi là nội dung hợp lệ
+                CapNhatThongTin(sender, e);
             }
+        }
+
+        private void cbTrangThai_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbTrangThai.Checked)
+            {
+                jobItem.Status = 1;
+            }
+            else jobItem.Status = 0;
+            CapNhatThongTin(sender, e);
+        }
+
+        void CapNhatThongTin(object sender, EventArgs e)
+        {
+            JobBL jobBL = new JobBL();
+            // Cập nhật dữ liệu trong bảng
+            jobBL.Update(jobItem);
+            JobLoad?.Invoke(this, e);
+        }
+
+        private void txtNotes_TextChanged(object sender, EventArgs e)
+        {
+            jobItem.Notes = txtNotes.Text;
+            JobBL jobBL = new JobBL();
+            jobBL.Update(jobItem);
+        }
+
+        private void dtpNgayBD_ValueChanged(object sender, EventArgs e)
+        {
+            jobItem.ToDate = dtpNgayBD.Value;
+            JobBL jobBL = new JobBL();
+            jobBL.Update(jobItem);
+        }
+
+        private void nupGioBD_ValueChanged(object sender, EventArgs e)
+        {
+            jobItem.ToDate = new DateTime(
+                jobItem.ToDate.Year,
+                jobItem.ToDate.Month,
+                jobItem.ToDate.Day,
+                (int)nupGioBD.Value, // Lấy giờ từ NumericUpDown
+                jobItem.ToDate.Minute,
+                jobItem.ToDate.Second
+            );
+            JobBL jobBL = new JobBL();
+            jobBL.Update(jobItem);
+        }
+
+        private void nupPhutBD_ValueChanged(object sender, EventArgs e)
+        {
+            jobItem.ToDate = new DateTime(
+               jobItem.ToDate.Year,
+               jobItem.ToDate.Month,
+               jobItem.ToDate.Day,
+               jobItem.ToDate.Hour,
+               (int)nupPhutBD.Value, // Lấy giờ từ NumericUpDown
+               jobItem.ToDate.Second
+             );
+            JobBL jobBL = new JobBL();
+            jobBL.Update(jobItem);
+        }
+
+        private void dtpNgayKT_ValueChanged(object sender, EventArgs e)
+        {
+            jobItem.FromDate = dtpNgayKT.Value;
+            JobBL jobBL = new JobBL();
+            jobBL.Update(jobItem);
+        }
+
+        private void nupGioKT_ValueChanged(object sender, EventArgs e)
+        {
+            jobItem.FromDate = new DateTime(
+               jobItem.FromDate.Year,
+               jobItem.FromDate.Month,
+               jobItem.FromDate.Day,
+               (int)nupGioKT.Value, // Lấy giờ từ NumericUpDown
+               jobItem.FromDate.Minute,
+               jobItem.FromDate.Second
+           );
+            JobBL jobBL = new JobBL();
+            jobBL.Update(jobItem);
+        }
+
+        private void nupPhutKT_ValueChanged(object sender, EventArgs e)
+        {
+            jobItem.FromDate = new DateTime(
+               jobItem.FromDate.Year,
+               jobItem.FromDate.Month,
+               jobItem.FromDate.Day,
+               jobItem.FromDate.Hour,
+               (int)nupPhutKT.Value, // Lấy giờ từ NumericUpDown
+               jobItem.FromDate.Second
+             );
+            JobBL jobBL = new JobBL();
+            jobBL.Update(jobItem);
         }
     }
 }

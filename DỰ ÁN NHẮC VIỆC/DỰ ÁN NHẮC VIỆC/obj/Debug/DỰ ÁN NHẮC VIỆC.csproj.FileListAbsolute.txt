@@ -159,7 +159,6 @@ D:\DỰ ÁN NHẮC VIỆC\To_do_App (2)\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC V
 D:\DỰ ÁN NHẮC VIỆC\To_do_App (2)\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\FormPhu.frmDuLieu.resources
 D:\DỰ ÁN NHẮC VIỆC\To_do_App (2)\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\FormPhu.Settings.resources
 D:\DỰ ÁN NHẮC VIỆC\To_do_App (2)\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\FormPhu.ThongBao.resources
-D:\DỰ ÁN NHẮC VIỆC\To_do_App (2)\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\FormPhu.frmTBCon.resources
 D:\DỰ ÁN NHẮC VIỆC\To_do_App (2)\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\DỰ_ÁN_NHẮC_VIỆC.Properties.Resources.resources
 D:\DỰ ÁN NHẮC VIỆC\To_do_App (2)\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\DỰ ÁN NHẮC VIỆC.csproj.GenerateResource.cache
 D:\DỰ ÁN NHẮC VIỆC\To_do_App (2)\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\DỰ ÁN NHẮC VIỆC.csproj.CoreCompileInputs.cache
@@ -167,3 +166,4 @@ D:\DỰ ÁN NHẮC VIỆC\To_do_App (2)\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC V
 D:\DỰ ÁN NHẮC VIỆC\To_do_App (2)\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\DỰ ÁN NHẮC VIỆC.exe
 D:\DỰ ÁN NHẮC VIỆC\To_do_App (2)\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\DỰ ÁN NHẮC VIỆC.pdb
 D:\DỰ ÁN NHẮC VIỆC\To_do_App (2)\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\Other.AddForm.resources
+D:\DỰ ÁN NHẮC VIỆC\To_do_App (2)\DỰ ÁN NHẮC VIỆC\DỰ ÁN NHẮC VIỆC\obj\Debug\DỰ_ÁN_NHẮC_VIỆC.ThongBaoCon.resources

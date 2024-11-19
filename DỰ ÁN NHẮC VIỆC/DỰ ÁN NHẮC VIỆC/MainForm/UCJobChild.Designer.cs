@@ -30,7 +30,7 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNotes = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.iconFlat = new FontAwesome.Sharp.IconButton();
             this.progressBarJob = new System.Windows.Forms.ProgressBar();
@@ -65,14 +65,15 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtNotes
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(24, 280);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(486, 90);
-            this.textBox1.TabIndex = 1;
+            this.txtNotes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNotes.Location = new System.Drawing.Point(24, 280);
+            this.txtNotes.Multiline = true;
+            this.txtNotes.Name = "txtNotes";
+            this.txtNotes.Size = new System.Drawing.Size(486, 90);
+            this.txtNotes.TabIndex = 1;
+            this.txtNotes.TextChanged += new System.EventHandler(this.txtNotes_TextChanged);
             // 
             // label2
             // 
@@ -119,6 +120,7 @@
             this.cbTrangThai.Size = new System.Drawing.Size(38, 53);
             this.cbTrangThai.TabIndex = 5;
             this.cbTrangThai.UseVisualStyleBackColor = true;
+            this.cbTrangThai.CheckedChanged += new System.EventHandler(this.cbTrangThai_CheckedChanged);
             // 
             // dgvListJobChild
             // 
@@ -212,6 +214,7 @@
             this.nupPhutBD.Name = "nupPhutBD";
             this.nupPhutBD.Size = new System.Drawing.Size(65, 26);
             this.nupPhutBD.TabIndex = 12;
+            this.nupPhutBD.ValueChanged += new System.EventHandler(this.nupPhutBD_ValueChanged);
             // 
             // label5
             // 
@@ -240,13 +243,14 @@
             // 
             this.nupGioBD.Location = new System.Drawing.Point(184, 10);
             this.nupGioBD.Maximum = new decimal(new int[] {
-            11,
+            23,
             0,
             0,
             0});
             this.nupGioBD.Name = "nupGioBD";
             this.nupGioBD.Size = new System.Drawing.Size(65, 26);
             this.nupGioBD.TabIndex = 9;
+            this.nupGioBD.ValueChanged += new System.EventHandler(this.nupGioBD_ValueChanged);
             // 
             // dtpNgayBD
             // 
@@ -256,6 +260,7 @@
             this.dtpNgayBD.Name = "dtpNgayBD";
             this.dtpNgayBD.Size = new System.Drawing.Size(145, 26);
             this.dtpNgayBD.TabIndex = 8;
+            this.dtpNgayBD.ValueChanged += new System.EventHandler(this.dtpNgayBD_ValueChanged);
             // 
             // tabPage2
             // 
@@ -283,6 +288,7 @@
             this.nupPhutKT.Name = "nupPhutKT";
             this.nupPhutKT.Size = new System.Drawing.Size(65, 26);
             this.nupPhutKT.TabIndex = 9;
+            this.nupPhutKT.ValueChanged += new System.EventHandler(this.nupPhutKT_ValueChanged);
             // 
             // dtpNgayKT
             // 
@@ -292,18 +298,20 @@
             this.dtpNgayKT.Name = "dtpNgayKT";
             this.dtpNgayKT.Size = new System.Drawing.Size(145, 26);
             this.dtpNgayKT.TabIndex = 7;
+            this.dtpNgayKT.ValueChanged += new System.EventHandler(this.dtpNgayKT_ValueChanged);
             // 
             // nupGioKT
             // 
             this.nupGioKT.Location = new System.Drawing.Point(184, 10);
             this.nupGioKT.Maximum = new decimal(new int[] {
-            11,
+            23,
             0,
             0,
             0});
             this.nupGioKT.Name = "nupGioKT";
             this.nupGioKT.Size = new System.Drawing.Size(65, 26);
             this.nupGioKT.TabIndex = 9;
+            this.nupGioKT.ValueChanged += new System.EventHandler(this.nupGioKT_ValueChanged);
             // 
             // label4
             // 
@@ -359,7 +367,7 @@
             this.Controls.Add(this.tcNgayThang);
             this.Controls.Add(this.dgvListJobChild);
             this.Controls.Add(this.progressBarJob);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNotes);
             this.Controls.Add(this.label2);
             this.Name = "UCJobChild";
             this.Size = new System.Drawing.Size(526, 892);
@@ -381,7 +389,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNotes;
         private System.Windows.Forms.Label label2;
         private FontAwesome.Sharp.IconButton iconFlat;
         private System.Windows.Forms.ProgressBar progressBarJob;

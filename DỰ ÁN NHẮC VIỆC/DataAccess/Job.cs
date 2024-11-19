@@ -12,6 +12,7 @@ namespace DataAccess
         public int ID { get; set; }
         public string NameJob { get; set; }
         public DateTime ToDate { get; set; }
+
         public DateTime FromDate { get; set; }
 
         public int Status { get; set; } // 1 check: hoàng thành, 2, nocheck: chưa hoàn thành
@@ -22,6 +23,10 @@ namespace DataAccess
         public List<string> ListLevel = new List<string>() { "Important", "None" };
 
         public string Notes { get; set; }
+
+        public int Delete { get; set; }
+
+        public DateTime TimeDelete { get; set; } 
 
     }
 }

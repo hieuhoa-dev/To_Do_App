@@ -116,7 +116,7 @@
       <DependentUpon>ThongBao.cs</DependentUpon>
     </Compile>
     <Compile Include="NotiAndSettingForm\ThongBaoCon.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="NotiAndSettingForm\ThongBaoCon.Designer.cs">
       <DependentUpon>ThongBaoCon.cs</DependentUpon>

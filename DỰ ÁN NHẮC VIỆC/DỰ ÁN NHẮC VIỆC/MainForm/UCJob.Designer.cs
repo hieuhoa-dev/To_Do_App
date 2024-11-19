@@ -31,9 +31,9 @@
             this.components = new System.ComponentModel.Container();
             this.cbJob = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.iconFlat = new FontAwesome.Sharp.IconButton();
             this.btnInfo = new System.Windows.Forms.Button();
             this.ctnsControlCV = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.ctmsSua = new System.Windows.Forms.ToolStripMenuItem();
             this.ctmsXoa = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.panel1.SuspendLayout();
@@ -48,14 +48,34 @@
             this.cbJob.Size = new System.Drawing.Size(22, 21);
             this.cbJob.TabIndex = 0;
             this.cbJob.UseVisualStyleBackColor = true;
+            this.cbJob.CheckedChanged += new System.EventHandler(this.cbJob_CheckedChanged);
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.iconFlat);
             this.panel1.Controls.Add(this.btnInfo);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(459, 45);
+            this.panel1.Size = new System.Drawing.Size(445, 45);
             this.panel1.TabIndex = 2;
+            // 
+            // iconFlat
+            // 
+            this.iconFlat.BackColor = System.Drawing.Color.Transparent;
+            this.iconFlat.Dock = System.Windows.Forms.DockStyle.Right;
+            this.iconFlat.FlatAppearance.BorderSize = 0;
+            this.iconFlat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconFlat.ForeColor = System.Drawing.Color.Gray;
+            this.iconFlat.IconChar = FontAwesome.Sharp.IconChar.Flag;
+            this.iconFlat.IconColor = System.Drawing.Color.Black;
+            this.iconFlat.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconFlat.IconSize = 25;
+            this.iconFlat.Location = new System.Drawing.Point(411, 0);
+            this.iconFlat.Name = "iconFlat";
+            this.iconFlat.Size = new System.Drawing.Size(34, 45);
+            this.iconFlat.TabIndex = 3;
+            this.iconFlat.UseVisualStyleBackColor = false;
+            this.iconFlat.Click += new System.EventHandler(this.iconFlat_Click);
             // 
             // btnInfo
             // 
@@ -65,7 +85,7 @@
             this.btnInfo.Location = new System.Drawing.Point(0, 0);
             this.btnInfo.Name = "btnInfo";
             this.btnInfo.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.btnInfo.Size = new System.Drawing.Size(433, 42);
+            this.btnInfo.Size = new System.Drawing.Size(403, 42);
             this.btnInfo.TabIndex = 0;
             this.btnInfo.Text = "Làm winform";
             this.btnInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -77,20 +97,10 @@
             this.ctnsControlCV.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.ctnsControlCV.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.ctnsControlCV.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ctmsSua,
             this.ctmsXoa,
             this.toolStripSeparator1});
             this.ctnsControlCV.Name = "ctnsControlCV";
-            this.ctnsControlCV.Size = new System.Drawing.Size(116, 74);
-            // 
-            // ctmsSua
-            // 
-            this.ctmsSua.BackColor = System.Drawing.SystemColors.Control;
-            this.ctmsSua.ForeColor = System.Drawing.Color.Black;
-            this.ctmsSua.Name = "ctmsSua";
-            this.ctmsSua.Size = new System.Drawing.Size(115, 32);
-            this.ctmsSua.Text = "Sửa";
-            this.ctmsSua.Click += new System.EventHandler(this.ctmsSua_Click);
+            this.ctnsControlCV.Size = new System.Drawing.Size(116, 42);
             // 
             // ctmsXoa
             // 
@@ -104,14 +114,14 @@
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(112, 6);
             // 
-            // Job
+            // UCJob
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.cbJob);
             this.Controls.Add(this.panel1);
-            this.Name = "Job";
-            this.Size = new System.Drawing.Size(465, 45);
+            this.Name = "UCJob";
+            this.Size = new System.Drawing.Size(459, 45);
             this.panel1.ResumeLayout(false);
             this.ctnsControlCV.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -124,9 +134,9 @@
         private System.Windows.Forms.CheckBox cbJob;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ContextMenuStrip ctnsControlCV;
-        private System.Windows.Forms.ToolStripMenuItem ctmsSua;
         private System.Windows.Forms.ToolStripMenuItem ctmsXoa;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.Button btnInfo;
+        private FontAwesome.Sharp.IconButton iconFlat;
     }
 }

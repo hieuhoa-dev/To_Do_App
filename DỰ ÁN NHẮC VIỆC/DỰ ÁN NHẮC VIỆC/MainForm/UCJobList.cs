@@ -22,10 +22,23 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         }
 
         JobDA dscv;
-        //public UCJobList()
-        //{
-        //    InitializeComponent();
-        //}
+
+        enum MenuChucNang
+        {
+            Xoa = 0,
+            HoanThanh = 1
+        }
+
+        public UCJobList(JobDA dscv, int ChucNang)
+        {
+            InitializeComponent();
+            this.dscv = dscv;
+            fPanel.AutoScroll = true;
+            fPanel.Width = pnlJob.Width;
+            fPanel.Height = pnlJob.Height;
+            pnlJob.Controls.Add(fPanel);
+            ShowJobTheoChucNang(ChucNang);
+        }
         public UCJobList(DateTime date, JobDA dscv)
         {
             InitializeComponent();
@@ -44,12 +57,15 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         //    UCJob job = new UCJob();
         //    pnlJob.Controls.Add(job);
         //}
-
+        public event EventHandler JobChildLoad;
         public void AddJob(Job cv)
         {
             UCJob aJob = new UCJob(cv);
             aJob.JobClicked += ListJobClick_Click;
+            aJob.JobListLoad += ListJob_Load;
             cv.NameJob = txtTenCV.Text;
+
+
 
             aJob.Edited += aJob_Edited;
             aJob.Deleted += aJob_Deleted;
@@ -58,6 +74,10 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             fPanel.Controls.Add(aJob);
         }
 
+        void ListJob_Load(object sender, EventArgs e)
+        {
+            ShowJobByDay(Date);
+        }
 
         void ShowJobByDay(DateTime date)
         {
@@ -69,16 +89,38 @@ namespace DỰ_ÁN_NHẮC_VIỆC
                 {
                     UCJob aJob = new UCJob(toDayJob[i]);
                     aJob.JobClicked += ListJobClick_Click;
+                    aJob.JobListLoad += ListJob_Load;
                     fPanel.Controls.Add(aJob);
 
                 }
             }
-
         }
+
+        // Lấy danh sách đã xóa: có Delete = 1
+        void ShowJobTheoChucNang(int ChucNang)
+        {
+            fPanel.Controls.Clear();
+            if (dscv != null && dscv.DanhSach != null)
+            {
+                List<Job> toDayJob;
+                if (ChucNang == (int)MenuChucNang.Xoa)
+                    toDayJob = dscv.DanhSach.Where(p => p.Delete == 1).ToList();
+                else
+                    toDayJob = dscv.DanhSach.Where(p => p.Status == 1).ToList();
+
+                for (int i = 0; i < toDayJob.Count; i++)
+                {
+                    UCJob aJob = new UCJob(toDayJob[i]);
+                    aJob.JobClicked += ListJobClick_Click;  
+                    fPanel.Controls.Add(aJob);
+                }
+            }
+        }
+
 
         void aJob_Edited(object sender, EventArgs e)
         {
-            
+
         }
 
         void aJob_Deleted(object sender, EventArgs e)
@@ -93,12 +135,15 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         private void dtpJob_ValueChanged(object sender, EventArgs e)
         {
 
-            ShowJobByDay((sender as DateTimePicker).Value);
+            // ShowJobByDay((sender as DateTimePicker).Value);
         }
 
         List<DataAccess.Job> GetJobByDay(DateTime date)
         {
-            return dscv.DanhSach.Where(p => p.ToDate.Year == date.Year && p.ToDate.Month == date.Month && p.ToDate.Day == date.Day).ToList();
+            return dscv.DanhSach.Where(p => p.ToDate.Year == date.Year
+                && p.ToDate.Month == date.Month
+                && p.ToDate.Day == date.Day
+                && p.Delete == 0).ToList(); // Lấy ds chưa xóa
         }
 
 
@@ -126,7 +171,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
 
         private void ListJobClick_Click(object sender, EventArgs e, DataAccess.Job cv)
         {
-            ListJobClick?.Invoke(this, e,cv);
+            ListJobClick?.Invoke(this, e, cv);
 
         }
 

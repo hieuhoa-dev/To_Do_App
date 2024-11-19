@@ -1,6 +1,8 @@
 ﻿USE [ToDoApp]
 GO
 
+DROP TABLE IF EXISTS [dbo].[Job]; -- Xóa bảng nếu tồn tại
+
 --Tạo bảng Job
 CREATE TABLE [dbo].[Job] (
     [ID] INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
@@ -10,7 +12,9 @@ CREATE TABLE [dbo].[Job] (
     [Status] INT NULL,
     [Category] NVARCHAR(100) NULL,
     [LevelJob] INT NULL,
-    [Notes] NVARCHAR(1000) NULL
+    [Notes] NVARCHAR(1000) NULL,
+	[Delete] INT NULL,
+	[TimeDelete] DATETIME NULL
 );
 
 --Tạo bảng JobChild
@@ -42,13 +46,15 @@ Create PROCEDURE [dbo].[Job_InsertUpdateDelete]
  @Category nvarchar(100),
  @LevelJob Int,
  @Notes nvarchar(1000),
+ @Delete INT,
+ @TimeDelete DATETIME,
  @Action int -- Biến cho biết thêm, xóa, hay sửa
 AS
 -- Nếu Action = 0, thực hiện thêm dữ liệu
 IF @Action = 0
 BEGIN
-INSERT INTO Job (NameJob,ToDate,FromDate, [Status],Category,LevelJob,Notes)
-VALUES (@NameJob, @ToDate,@FromDate, @Status,@Category,@LevelJob,@Notes)
+INSERT INTO Job (NameJob,ToDate,FromDate, [Status],Category,LevelJob,Notes,[Delete],[TimeDelete])
+VALUES (@NameJob, @ToDate,@FromDate, @Status,@Category,@LevelJob,@Notes,@Delete,@TimeDelete)
 SET @ID = @@identity -- Thiết lập ID tự tăng
 END
 -- Nếu Action = 1, thực hiện cập nhật dữ liệu
@@ -56,7 +62,7 @@ ELSE IF @Action = 1
 BEGIN
 UPDATE Job SET NameJob = @NameJob, ToDate =@ToDate,
 		FromDate =@FromDate,[Status] =@Status,Category =@Category,
-		LevelJob = @LevelJob, Notes = @Notes
+		LevelJob = @LevelJob, Notes = @Notes,[Delete] = @Delete, TimeDelete =  @TimeDelete
 WHERE [ID] = @ID
 END
 -- Nếu Action = 2, thực hiện xóa dữ liệu
@@ -94,7 +100,7 @@ DELETE FROM JobChild WHERE [ID] = @ID
 END
 
 
-DROP TABLE IF EXISTS [dbo].[Job]; -- Xóa bảng nếu tồn tại
+
 
 
 

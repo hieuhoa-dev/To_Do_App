@@ -35,7 +35,7 @@ namespace Other
             else
                 UpdateJobToSql();
             btnSaveClick?.Invoke(this, e);
-
+            this.Close();
         }
 
         void AddJobToSql()
@@ -106,6 +106,8 @@ namespace Other
 
                 job.Notes = txtNotes.Text;
 
+                job.Delete = 0;  
+                job.TimeDelete = DateTime.Now;
                 JobBL jobBL = new JobBL();
                 // Chèn dữ liệu vào bảng
                 return jobBL.Insert(job);

@@ -8,6 +8,8 @@ using FormPhu;
 using Other;
 using DataAccess;
 using BusinessLogic;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
+using System.Linq;
 
 namespace DỰ_ÁN_NHẮC_VIỆC
 {
@@ -249,7 +251,6 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             //dscv.DocTuFile(Application.StartupPath + "/CongViec.txt");
             //pnlShowJob.Controls.Add(new JobList(DateTime.Now, dscv));
             LoadJobToSQL();
-            LoadJobChildToSQL();
             ShowJobbyDay(DateTime.Now, dscv);
         }
         private void LoadJobToSQL()
@@ -260,13 +261,6 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             dscv.DanhSach = DScv;
         }
 
-        private void LoadJobChildToSQL()
-        {
-            //Gọi đối tượng CategoryBL từ tầng BusinessLogic
-            JobChildBL jobChildBL = new JobChildBL();
-            //dscv_con = jobChildBL.GetAll();   
-        }
-
 
         void ShowJobbyDay(DateTime time, JobDA dscv)
         {
@@ -275,8 +269,15 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             UCJobList jobList = new UCJobList(new DateTime(time.Year, time.Month, time.Day), dscv);
             pnlShowJob.Controls.Add(jobList);
             jobList.ListJobClick += Job_JobClicked;
+            //jobList.JobChildLoad += JobChildLoad;
         }
 
+        public EventHandler JobChildLoad;
+
+        void EventJobChildLoad(object sender, EventArgs e)
+        {
+            JobChildLoad?.Invoke(this, e);
+        }
         void SetDefautDate()
         {
             mCalendar.SelectionEnd = DateTime.Now;
@@ -298,25 +299,22 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             {
                 lbHienThiThongTin.Text = $"Hôm nay, {time:dd/MM/yyyy}";
                 return;
-            }   
+            }
             if (diff == 1)
             {
-            lbHienThiThongTin.Text = $"Ngày mai, {time:dd/MM/yyyy}";
-                return ;
+                lbHienThiThongTin.Text = $"Ngày mai, {time:dd/MM/yyyy}";
+                return;
             }
             if (diff == -1)
             {
                 lbHienThiThongTin.Text = $"Hôm qua, {time:dd/MM/yyyy}";
-                return;          
+                return;
             }
             else
             {
                 lbHienThiThongTin.Text = time.ToString("dd/MM/yyyy");
             }
         }
-
-
-
 
         //private void btnAdd_Click(object sender, EventArgs e)
         //{
@@ -328,7 +326,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
 
         private void iconDonate_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            //ActivateButton(sender);
         }
 
         Panel pnlNoti = null;
@@ -345,10 +343,10 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             {
                 // Tạo mới Panel và thêm vào form
                 pnlNoti = new Panel();
-                pnlNoti.Location = new System.Drawing.Point(1071, 46);
-                pnlNoti.Size = new System.Drawing.Size(211, 197);
+                pnlNoti.Location = new System.Drawing.Point(1061, 46);
+                pnlNoti.Size = new System.Drawing.Size(221, 250);
                 this.Controls.Add(pnlNoti);
-                ThongBao NotiForm = new ThongBao();
+                ThongBao NotiForm = new ThongBao(dscv);
                 NotiForm.TopLevel = false;
                 pnlNoti.Controls.Add(NotiForm);
                 pnlNoti.BringToFront();
@@ -377,6 +375,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             List<JobChild> cvCon = jobChildBL.FindID(cv.ID);
 
             UCJobChild jobChild = new UCJobChild(cv, cvCon);
+            jobChild.JobLoad += LoadJob;
             pnlShowJobChild.Controls.Clear();
             pnlShowJobChild.Controls.Add(jobChild);
         }
@@ -426,5 +425,54 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             ShowJobbyDay(new DateTime(mCalendar.SelectionStart.Year, mCalendar.SelectionStart.Month, mCalendar.SelectionStart.Day), dscv);
         }
 
+        private void btnPreDay_Click(object sender, EventArgs e)
+        {
+            mCalendar.SelectionStart = mCalendar.SelectionStart.AddDays(-1);
+        }
+
+        private void btnNextDay_Click(object sender, EventArgs e)
+        {
+            mCalendar.SelectionStart = mCalendar.SelectionStart.AddDays(1);
+        }
+
+        private void btnThungRac_Click(object sender, EventArgs e)
+        {
+            lbHienThiThongTin.Text = "== ĐÃ XÓA ==";
+            LoadJobToSQL();
+            pnlShowJob.Controls.Clear();
+            UCJobList jobList = new UCJobList(dscv, 0);
+            pnlShowJob.Controls.Add(jobList);
+            jobList.ListJobClick += Job_JobClicked;
+        }
+
+
+        private void btnHoanThanh_Click(object sender, EventArgs e)
+        {
+            lbHienThiThongTin.Text = "== HOÀN THÀNH ==";
+            LoadJobToSQL();
+            pnlShowJob.Controls.Clear();
+            UCJobList jobList = new UCJobList(dscv, 1);
+            pnlShowJob.Controls.Add(jobList);
+            jobList.ListJobClick += Job_JobClicked;
+        }
+
+
+        int phut = 5;
+
+        private void tmNotify_Tick(object sender, EventArgs e)
+        {
+            DateTime now = DateTime.Now;
+
+            foreach (Job job in dscv.DanhSach)
+            {
+                DateTime notifyTime = job.ToDate.AddMinutes(-phut);
+
+                // Kiểm tra nếu thời gian nằm trong khoảng 1 phút
+                if (Math.Abs((notifyTime - now).TotalSeconds) <= 60)
+                {
+                    notifyIcon1.ShowBalloonTip(5000, "Sắp đến", job.NameJob, ToolTipIcon.None);
+                }
+            }
+        }
     }
 }

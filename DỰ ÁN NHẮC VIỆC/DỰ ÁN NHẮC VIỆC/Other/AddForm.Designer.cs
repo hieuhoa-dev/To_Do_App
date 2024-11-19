@@ -54,13 +54,13 @@
             this.txtNotes = new System.Windows.Forms.TextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.dtgvJobChild = new System.Windows.Forms.DataGridView();
+            this.clStatus = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.clJobChild = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clRemove = new System.Windows.Forms.DataGridViewButtonColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.txtTheLoai = new System.Windows.Forms.TextBox();
             this.chbJob = new System.Windows.Forms.CheckBox();
-            this.clStatus = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.clJobChild = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clRemove = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tcNgayThang.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nupPhutBD)).BeginInit();
@@ -202,7 +202,7 @@
             // 
             this.nupGioBD.Location = new System.Drawing.Point(184, 10);
             this.nupGioBD.Maximum = new decimal(new int[] {
-            11,
+            23,
             0,
             0,
             0});
@@ -241,7 +241,7 @@
             // 
             this.nupGioKT.Location = new System.Drawing.Point(184, 10);
             this.nupGioKT.Maximum = new decimal(new int[] {
-            11,
+            23,
             0,
             0,
             0});
@@ -365,6 +365,36 @@
             this.dtgvJobChild.Size = new System.Drawing.Size(439, 258);
             this.dtgvJobChild.TabIndex = 0;
             // 
+            // clStatus
+            // 
+            this.clStatus.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.clStatus.FillWeight = 39.51447F;
+            this.clStatus.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.clStatus.Frozen = true;
+            this.clStatus.HeaderText = "";
+            this.clStatus.MinimumWidth = 8;
+            this.clStatus.Name = "clStatus";
+            this.clStatus.Width = 39;
+            // 
+            // clJobChild
+            // 
+            this.clJobChild.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.clJobChild.FillWeight = 300F;
+            this.clJobChild.Frozen = true;
+            this.clJobChild.HeaderText = "Tên công việc con";
+            this.clJobChild.MinimumWidth = 8;
+            this.clJobChild.Name = "clJobChild";
+            this.clJobChild.Width = 300;
+            // 
+            // clRemove
+            // 
+            this.clRemove.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.clRemove.FillWeight = 68.18182F;
+            this.clRemove.HeaderText = "Xóa";
+            this.clRemove.MinimumWidth = 8;
+            this.clRemove.Name = "clRemove";
+            this.clRemove.Width = 68;
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -402,36 +432,6 @@
             this.chbJob.Size = new System.Drawing.Size(22, 21);
             this.chbJob.TabIndex = 16;
             this.chbJob.UseVisualStyleBackColor = true;
-            // 
-            // clStatus
-            // 
-            this.clStatus.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.clStatus.FillWeight = 39.51447F;
-            this.clStatus.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.clStatus.Frozen = true;
-            this.clStatus.HeaderText = "";
-            this.clStatus.MinimumWidth = 8;
-            this.clStatus.Name = "clStatus";
-            this.clStatus.Width = 39;
-            // 
-            // clJobChild
-            // 
-            this.clJobChild.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.clJobChild.FillWeight = 300F;
-            this.clJobChild.Frozen = true;
-            this.clJobChild.HeaderText = "Tên công việc con";
-            this.clJobChild.MinimumWidth = 8;
-            this.clJobChild.Name = "clJobChild";
-            this.clJobChild.Width = 300;
-            // 
-            // clRemove
-            // 
-            this.clRemove.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.clRemove.FillWeight = 68.18182F;
-            this.clRemove.HeaderText = "Xóa";
-            this.clRemove.MinimumWidth = 8;
-            this.clRemove.Name = "clRemove";
-            this.clRemove.Width = 68;
             // 
             // AddForm
             // 

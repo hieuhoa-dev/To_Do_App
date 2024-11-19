@@ -235,7 +235,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC.Calendarform
             JobByI.Items[0].ForeColor = Color.WhiteSmoke;
             for (int j = 0; j < dscv.DanhSach.Count; j++)
             {
-                if (dscv[j].ToDate.Day == i.Day && dscv[j].ToDate.Month == i.Month && dscv[j].ToDate.Year == i.Year)
+                if (dscv[j].ToDate.Day == i.Day && dscv[j].ToDate.Month == i.Month && dscv[j].ToDate.Year == i.Year && dscv[j].Delete == 0)
                     JobByI.Items.Add(dscv[j].NameJob);
             }
             JobByI.Show(Cursor.Position);
@@ -259,7 +259,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC.Calendarform
 
         List<DataAccess.Job> GetJobByDay(DateTime date)
         {
-            return dscv.DanhSach.Where(p => p.ToDate.Year == date.Year && p.ToDate.Month == date.Month && p.ToDate.Day == date.Day).ToList();
+            return dscv.DanhSach.Where(p => p.ToDate.Year == date.Year && p.ToDate.Month == date.Month && p.ToDate.Day == date.Day && p.Delete==0).ToList();
         }
     }
 }

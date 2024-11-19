@@ -51,13 +51,16 @@
             this.cuiControlDrag1 = new CuoreUI.cuiControlDrag(this.components);
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnHoanThanh = new System.Windows.Forms.Button();
             this.btnToday = new System.Windows.Forms.Button();
             this.mCalendar = new System.Windows.Forms.MonthCalendar();
             this.pnlShowJob = new System.Windows.Forms.Panel();
             this.lbSeparator1 = new System.Windows.Forms.Label();
             this.lbSeparator2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnThungRac = new System.Windows.Forms.Button();
+            this.btnNextDay = new System.Windows.Forms.Button();
+            this.btnPreDay = new System.Windows.Forms.Button();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.ttControl = new System.Windows.Forms.ToolTip(this.components);
             this.ttAdd = new System.Windows.Forms.ToolTip(this.components);
@@ -66,9 +69,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.tmNotify = new System.Windows.Forms.Timer(this.components);
             this.pnlControl2.SuspendLayout();
             this.pnlTop.SuspendLayout();
             this.pnlControl.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabPage1
@@ -351,9 +356,9 @@
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(95, 483);
+            this.button3.Location = new System.Drawing.Point(31, 426);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(246, 41);
+            this.button3.Size = new System.Drawing.Size(202, 41);
             this.button3.TabIndex = 3;
             this.button3.Text = "Sắp đến";
             this.button3.UseVisualStyleBackColor = true;
@@ -362,31 +367,32 @@
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(95, 436);
+            this.button2.Location = new System.Drawing.Point(32, 379);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(246, 41);
+            this.button2.Size = new System.Drawing.Size(202, 41);
             this.button2.TabIndex = 2;
             this.button2.Text = "Quá hạn";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnHoanThanh
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(95, 389);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(246, 41);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Hoàn thành";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnHoanThanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHoanThanh.ForeColor = System.Drawing.Color.Black;
+            this.btnHoanThanh.Location = new System.Drawing.Point(32, 332);
+            this.btnHoanThanh.Name = "btnHoanThanh";
+            this.btnHoanThanh.Size = new System.Drawing.Size(202, 41);
+            this.btnHoanThanh.TabIndex = 1;
+            this.btnHoanThanh.Text = "Hoàn thành";
+            this.btnHoanThanh.UseVisualStyleBackColor = true;
+            this.btnHoanThanh.Click += new System.EventHandler(this.btnHoanThanh_Click);
             // 
             // btnToday
             // 
             this.btnToday.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnToday.ForeColor = System.Drawing.Color.Black;
-            this.btnToday.Location = new System.Drawing.Point(92, 342);
+            this.btnToday.Location = new System.Drawing.Point(65, 285);
             this.btnToday.Name = "btnToday";
-            this.btnToday.Size = new System.Drawing.Size(246, 41);
+            this.btnToday.Size = new System.Drawing.Size(133, 41);
             this.btnToday.TabIndex = 0;
             this.btnToday.Text = "Hôm nay";
             this.btnToday.UseVisualStyleBackColor = true;
@@ -431,10 +437,53 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnThungRac);
+            this.panel1.Controls.Add(this.btnNextDay);
+            this.panel1.Controls.Add(this.btnPreDay);
+            this.panel1.Controls.Add(this.btnToday);
+            this.panel1.Controls.Add(this.btnHoanThanh);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button2);
             this.panel1.Location = new System.Drawing.Point(86, 57);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(267, 500);
+            this.panel1.Size = new System.Drawing.Size(267, 527);
             this.panel1.TabIndex = 25;
+            // 
+            // btnThungRac
+            // 
+            this.btnThungRac.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThungRac.ForeColor = System.Drawing.Color.Black;
+            this.btnThungRac.Location = new System.Drawing.Point(31, 473);
+            this.btnThungRac.Name = "btnThungRac";
+            this.btnThungRac.Size = new System.Drawing.Size(202, 41);
+            this.btnThungRac.TabIndex = 3;
+            this.btnThungRac.Text = "Thùng rác";
+            this.btnThungRac.UseVisualStyleBackColor = true;
+            this.btnThungRac.Click += new System.EventHandler(this.btnThungRac_Click);
+            // 
+            // btnNextDay
+            // 
+            this.btnNextDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNextDay.ForeColor = System.Drawing.Color.Black;
+            this.btnNextDay.Location = new System.Drawing.Point(204, 285);
+            this.btnNextDay.Name = "btnNextDay";
+            this.btnNextDay.Size = new System.Drawing.Size(50, 41);
+            this.btnNextDay.TabIndex = 0;
+            this.btnNextDay.Text = ">";
+            this.btnNextDay.UseVisualStyleBackColor = true;
+            this.btnNextDay.Click += new System.EventHandler(this.btnNextDay_Click);
+            // 
+            // btnPreDay
+            // 
+            this.btnPreDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPreDay.ForeColor = System.Drawing.Color.Black;
+            this.btnPreDay.Location = new System.Drawing.Point(9, 285);
+            this.btnPreDay.Name = "btnPreDay";
+            this.btnPreDay.Size = new System.Drawing.Size(50, 41);
+            this.btnPreDay.TabIndex = 0;
+            this.btnPreDay.Text = "<";
+            this.btnPreDay.UseVisualStyleBackColor = true;
+            this.btnPreDay.Click += new System.EventHandler(this.btnPreDay_Click);
             // 
             // notifyIcon1
             // 
@@ -499,7 +548,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label2.Location = new System.Drawing.Point(380, 92);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(184, 10);
+            this.label2.Size = new System.Drawing.Size(168, 10);
             this.label2.TabIndex = 27;
             // 
             // label3
@@ -509,6 +558,12 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(184, 10);
             this.label3.TabIndex = 27;
+            // 
+            // tmNotify
+            // 
+            this.tmNotify.Enabled = true;
+            this.tmNotify.Interval = 20000;
+            this.tmNotify.Tick += new System.EventHandler(this.tmNotify_Tick);
             // 
             // MainForm
             // 
@@ -523,10 +578,6 @@
             this.Controls.Add(this.pnlShowJobChild);
             this.Controls.Add(this.lbHienThiThongTin);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnToday);
             this.Controls.Add(this.mCalendar);
             this.Controls.Add(this.lbSeparator2);
             this.Controls.Add(this.lbSeparator1);
@@ -544,6 +595,7 @@
             this.pnlControl2.PerformLayout();
             this.pnlTop.ResumeLayout(false);
             this.pnlControl.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -569,7 +621,7 @@
         private FontAwesome.Sharp.IconButton iconSetting;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnHoanThanh;
         private System.Windows.Forms.Button btnToday;
         private System.Windows.Forms.MonthCalendar mCalendar;
         private System.Windows.Forms.Label lbSeparator1;
@@ -586,6 +638,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnThungRac;
+        private System.Windows.Forms.Button btnNextDay;
+        private System.Windows.Forms.Button btnPreDay;
+        private System.Windows.Forms.Timer tmNotify;
     }
 }
 
