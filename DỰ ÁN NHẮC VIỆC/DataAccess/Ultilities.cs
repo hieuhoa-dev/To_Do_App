@@ -21,6 +21,8 @@ namespace DataAccess
         public static string JobChild_GetAll = "JobChild_GetAll";
         public static string JobChild_InsertUpdateDelete = "JobChild_InsertUpdateDelete";
 
-
+        // Các biến của bảng Notify
+        public static string Notify_GetAll = "Notify_GetAll";
+        public static string Notify_InsertUpdateDelete = "Notify_InsertUpdateDelete";
     }
 }

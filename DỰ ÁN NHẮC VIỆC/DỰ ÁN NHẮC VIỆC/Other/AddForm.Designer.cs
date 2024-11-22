@@ -364,6 +364,7 @@
             this.dtgvJobChild.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dtgvJobChild.Size = new System.Drawing.Size(439, 258);
             this.dtgvJobChild.TabIndex = 0;
+            this.dtgvJobChild.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListJobChild_CellContentClick);
             // 
             // clStatus
             // 

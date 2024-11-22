@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DataAccess;
 using BusinessLogic;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace DỰ_ÁN_NHẮC_VIỆC
 {
@@ -22,7 +23,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         }
 
         private List<JobChild> ListJobchild;
-
+        int BienLuuMucDo;
         public UCJobChild(Job jobItem, List<JobChild> ListJobchild)
         {
             InitializeComponent();
@@ -33,12 +34,9 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             ShowInfo();
         }
 
+        //Load công việc
         public void ShowInfo()
         {
-            //if (JobItem == null)
-            //{
-            //    return;
-            //}
             txtName.Text = jobItem.NameJob;
             txtNotes.Text = jobItem.Notes;
             if (jobItem.Status == 1)
@@ -83,9 +81,10 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             {
                 progressBarJob.Value = 0; // Nếu không có công việc nào, đặt giá trị progressBar về 0
             }
+            this.toolTipShowProgress.SetToolTip(this.progressBarJob, progressBarJob.Value.ToString()+"%");
         }
 
-        int BienLuuMucDo;
+
         void LoadMucDo()
         {
             if (jobItem.LevelJob == 1)
@@ -138,6 +137,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
 
         private void txtName_Enter(object sender, EventArgs e)
         {
+            // Tạo mặt nạ cho txtName
             if (txtName.Text == "Nhập tên công việc")
             {
                 txtName.Text = string.Empty;
@@ -147,6 +147,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
 
         private void txtName_Leave(object sender, EventArgs e)
         {
+            // Tạo mặt nạ cho txtName
             if (string.IsNullOrEmpty(txtName.Text))
             {
                 txtName.Text = "Nhập tên công việc";
@@ -154,6 +155,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             }
         }
 
+        // Event khi thay đổi sẽ load danh sách, gửi qua main Form
         public event EventHandler JobLoad;
         private void txtName_TextChanged(object sender, EventArgs e)
         {
@@ -179,6 +181,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             JobBL jobBL = new JobBL();
             // Cập nhật dữ liệu trong bảng
             jobBL.Update(jobItem);
+            //Truyền sự kiên e vào JobLoad
             JobLoad?.Invoke(this, e);
         }
 
@@ -192,6 +195,11 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         private void dtpNgayBD_ValueChanged(object sender, EventArgs e)
         {
             jobItem.ToDate = dtpNgayBD.Value;
+            // Ngày BD lớn hơn Ngày KT
+            if (jobItem.ToDate > jobItem.FromDate)
+            {
+                jobItem.FromDate.AddMinutes(5); // Thì ngày KT phải +5 phút
+            }
             JobBL jobBL = new JobBL();
             jobBL.Update(jobItem);
         }
@@ -257,6 +265,64 @@ namespace DỰ_ÁN_NHẮC_VIỆC
              );
             JobBL jobBL = new JobBL();
             jobBL.Update(jobItem);
+        }
+
+
+        private void dgvListJobChild_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Sự kiện khi ấn vào nút Xóa
+            if (e.RowIndex >= 0
+                && e.ColumnIndex == dgvListJobChild.Columns["DeleteColumn"].Index
+                && !dgvListJobChild.Rows[e.RowIndex].IsNewRow) // Bỏ dòng mới
+            {
+                JobChildBL jobChildBL = new JobChildBL();
+                JobChild jobChild = ListJobchild[e.RowIndex];
+
+                // Xóa hàng trong DataGridView
+                dgvListJobChild.Rows.RemoveAt(e.RowIndex);
+
+                //Xóa trong ds cục bộ 
+                ListJobchild.Remove(jobChild);
+
+                // Xóa hàng trong Sql
+                jobChildBL.Delete(jobChild);
+            }
+            LoadProgress();
+        }
+
+      
+        private void dgvListJobChild_RowValidated(object sender, DataGridViewCellEventArgs e)
+        {
+            // Bỏ qua nếu dòng đang xử lý là "New Row"
+            if (dgvListJobChild.Rows[e.RowIndex].IsNewRow)
+                return;
+
+            var row = dgvListJobChild.Rows[e.RowIndex]; // Lấy dữ liệu từ dòng
+            JobChildBL jobChildBL = new JobChildBL();
+
+            // Kiểm tra nếu hàng đã tồn tại trong danh sách ListJobchild
+            if (e.RowIndex < ListJobchild.Count)
+            {
+                // Cập nhật hàng cũ
+                var jobChild = ListJobchild[e.RowIndex];
+                jobChild.Name = row.Cells["dtgvName"].Value?.ToString();
+                jobChild.Status = bool.TryParse(row.Cells["dtgvStatus"].Value?.ToString(), out bool status) && status ? 1 : 0;
+       
+                jobChildBL.Update(jobChild); // Cập nhật vào cơ sở dữ liệu
+            }
+            else
+            {
+                // Thêm hàng mới
+                var jobChildNew = new JobChild
+                {
+                    JobID = jobItem.ID,
+                    Name = row.Cells["dtgvName"].Value?.ToString(),
+                    Status = bool.TryParse(row.Cells["dtgvStatus"].Value?.ToString(), out bool status) && status ? 1 : 0
+                };
+
+                jobChildBL.Insert(jobChildNew); // Thêm mới vào cơ sở dữ liệu
+            }
+            LoadProgress();
         }
     }
 }

@@ -14,11 +14,11 @@ namespace DỰ_ÁN_NHẮC_VIỆC
     public partial class ThongBaoCon : UserControl
     {
 
-        public ThongBaoCon(Job job)
+        public ThongBaoCon(Notify notify)
         {
             InitializeComponent();
-            lbLoaiTB.Text = "Sắp đến";
-            lbTenCV.Text = job.NameJob;
+            lbLoaiTB.Text = notify.Category;
+            lbTenCV.Text = notify.NameJob;
         }
 
     }

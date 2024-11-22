@@ -30,8 +30,7 @@
         {
             this.pnlJob = new System.Windows.Forms.Panel();
             this.txtTenCV = new System.Windows.Forms.TextBox();
-            this.iconSplitButton1 = new FontAwesome.Sharp.IconSplitButton();
-            this.btnAddTask = new System.Windows.Forms.Button();
+            this.iconSearch = new FontAwesome.Sharp.IconButton();
             this.SuspendLayout();
             // 
             // pnlJob
@@ -44,49 +43,44 @@
             // 
             // txtTenCV
             // 
+            this.txtTenCV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTenCV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtTenCV.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenCV.ForeColor = System.Drawing.Color.DimGray;
-            this.txtTenCV.Location = new System.Drawing.Point(3, 3);
+            this.txtTenCV.Location = new System.Drawing.Point(0, 0);
             this.txtTenCV.Multiline = true;
             this.txtTenCV.Name = "txtTenCV";
-            this.txtTenCV.Size = new System.Drawing.Size(387, 36);
+            this.txtTenCV.Size = new System.Drawing.Size(410, 45);
             this.txtTenCV.TabIndex = 22;
-            this.txtTenCV.Text = "  + Add tasks";
+            this.txtTenCV.Text = " TÌM CÔNG VIỆC...";
+            this.txtTenCV.TextChanged += new System.EventHandler(this.txtTenCV_TextChanged);
             this.txtTenCV.Enter += new System.EventHandler(this.txtTenCV_Enter);
             this.txtTenCV.Leave += new System.EventHandler(this.txtTenCV_Leave);
             // 
-            // iconSplitButton1
+            // iconSearch
             // 
-            this.iconSplitButton1.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconSplitButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconSplitButton1.IconColor = System.Drawing.Color.Black;
-            this.iconSplitButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconSplitButton1.IconSize = 48;
-            this.iconSplitButton1.Name = "iconSplitButton1";
-            this.iconSplitButton1.Rotation = 0D;
-            this.iconSplitButton1.Size = new System.Drawing.Size(23, 23);
-            this.iconSplitButton1.Text = "iconSplitButton1";
-            // 
-            // btnAddTask
-            // 
-            this.btnAddTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnAddTask.FlatAppearance.BorderSize = 0;
-            this.btnAddTask.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddTask.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnAddTask.Location = new System.Drawing.Point(384, 3);
-            this.btnAddTask.Name = "btnAddTask";
-            this.btnAddTask.Size = new System.Drawing.Size(75, 36);
-            this.btnAddTask.TabIndex = 23;
-            this.btnAddTask.Text = "Tạo";
-            this.btnAddTask.UseVisualStyleBackColor = false;
-            this.btnAddTask.Click += new System.EventHandler(this.btnAddTask_Click);
+            this.iconSearch.BackColor = System.Drawing.Color.DimGray;
+            this.iconSearch.Dock = System.Windows.Forms.DockStyle.Right;
+            this.iconSearch.FlatAppearance.BorderSize = 0;
+            this.iconSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 200F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconSearch.ForeColor = System.Drawing.Color.Transparent;
+            this.iconSearch.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.iconSearch.IconColor = System.Drawing.Color.White;
+            this.iconSearch.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconSearch.IconSize = 25;
+            this.iconSearch.Location = new System.Drawing.Point(410, 0);
+            this.iconSearch.Name = "iconSearch";
+            this.iconSearch.Size = new System.Drawing.Size(59, 45);
+            this.iconSearch.TabIndex = 4;
+            this.iconSearch.UseVisualStyleBackColor = false;
             // 
             // UCJobList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnAddTask);
             this.Controls.Add(this.txtTenCV);
+            this.Controls.Add(this.iconSearch);
             this.Controls.Add(this.pnlJob);
             this.Name = "UCJobList";
             this.Size = new System.Drawing.Size(469, 807);
@@ -98,7 +92,6 @@
         #endregion
         private System.Windows.Forms.Panel pnlJob;
         private System.Windows.Forms.TextBox txtTenCV;
-        private FontAwesome.Sharp.IconSplitButton iconSplitButton1;
-        private System.Windows.Forms.Button btnAddTask;
+        private FontAwesome.Sharp.IconButton iconSearch;
     }
 }

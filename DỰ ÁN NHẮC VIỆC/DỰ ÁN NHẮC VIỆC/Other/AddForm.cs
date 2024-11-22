@@ -7,18 +7,18 @@ using BusinessLogic;
 using System.Reflection;
 using DỰ_ÁN_NHẮC_VIỆC;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Collections.Generic;
 
 namespace Other
 {
     public partial class AddForm : Form
     {
-
-        int ChonChuNang; // 0: là tạo, 1 là lưu
-
-        public AddForm(int chonChuNang)
+        private Job job; // Biến cục bộ
+        public event EventHandler btnSaveClick; // Truyền sự kiện
+        public AddForm()
         {
             InitializeComponent();
-            ChonChuNang = chonChuNang;
+
             cmbMucDo.SelectedIndex = 0;
         }
 
@@ -27,13 +27,9 @@ namespace Other
             this.Close();
         }
 
-        public event EventHandler btnSaveClick; // Truyền sự kiện
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (ChonChuNang == 0)
-                AddJobToSql();
-            else
-                UpdateJobToSql();
+            AddJobToSql();
             btnSaveClick?.Invoke(this, e);
             this.Close();
         }
@@ -50,11 +46,12 @@ namespace Other
                 //LoadFoodDataToListView();
             }
         }
+
         public int InsertJob()
         {
 
             //Khai báo đối tượng Job từ tầng DataAccess
-            Job job = new Job();
+            job = new Job();
             job.ID = 0;
             // Kiểm tra nếu các ô nhập khác rỗng
             if (txtTen.Text == "")
@@ -106,7 +103,7 @@ namespace Other
 
                 job.Notes = txtNotes.Text;
 
-                job.Delete = 0;  
+                job.Delete = 0;
                 job.TimeDelete = DateTime.Now;
                 JobBL jobBL = new JobBL();
                 // Chèn dữ liệu vào bảng
@@ -115,7 +112,7 @@ namespace Other
             return -1;
         }
 
-        public void InsertJobChild(int Job)
+        public void InsertJobChild(int JobID)
         {
             //Khai báo đối tượng JobChild từ tầng DataAccess
             if (dtgvJobChild.Rows.Count > 1) // Kiểm tra có ít nhất 1 hàng
@@ -129,7 +126,7 @@ namespace Other
                     jobChild.ID = 0;
                     jobChild.Name = row.Cells["clJobChild"].Value?.ToString(); // Lấy tên công việc
                     jobChild.Status = row.Cells["clStatus"].Value != null && (bool)row.Cells["clStatus"].Value ? 1 : 0;// Lấy trạng thái                                                                                                    
-                    jobChild.JobID = Job;
+                    jobChild.JobID = JobID;
                     JobChildBL jobChildBL = new JobChildBL();
                     jobChildBL.Insert(jobChild);
                 }
@@ -138,9 +135,13 @@ namespace Other
 
         }
 
-        void UpdateJobToSql()
+        private void dgvListJobChild_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            if (e.RowIndex >= 0 && e.ColumnIndex == dtgvJobChild.Columns["clRemove"].Index
+              && !dtgvJobChild.Rows[e.RowIndex].IsNewRow)
+            {
+                dtgvJobChild.Rows.RemoveAt(e.RowIndex);
+            }
         }
 
     }

@@ -33,11 +33,15 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.iconFlat = new FontAwesome.Sharp.IconButton();
             this.btnInfo = new System.Windows.Forms.Button();
-            this.ctnsControlCV = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.ctnsDelete = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.ctmsXoa = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.ctnsHavedDelete = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.khôiPhụcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.xóaVĩnhViễnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
-            this.ctnsControlCV.SuspendLayout();
+            this.ctnsDelete.SuspendLayout();
+            this.ctnsHavedDelete.SuspendLayout();
             this.SuspendLayout();
             // 
             // cbJob
@@ -79,7 +83,7 @@
             // 
             // btnInfo
             // 
-            this.btnInfo.ContextMenuStrip = this.ctnsControlCV;
+            this.btnInfo.ContextMenuStrip = this.ctnsDelete;
             this.btnInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInfo.ForeColor = System.Drawing.Color.Black;
             this.btnInfo.Location = new System.Drawing.Point(0, 0);
@@ -92,15 +96,15 @@
             this.btnInfo.UseVisualStyleBackColor = true;
             this.btnInfo.Click += new System.EventHandler(this.btnInfo_Click);
             // 
-            // ctnsControlCV
+            // ctnsDelete
             // 
-            this.ctnsControlCV.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.ctnsControlCV.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.ctnsControlCV.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ctnsDelete.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.ctnsDelete.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.ctnsDelete.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ctmsXoa,
             this.toolStripSeparator1});
-            this.ctnsControlCV.Name = "ctnsControlCV";
-            this.ctnsControlCV.Size = new System.Drawing.Size(116, 42);
+            this.ctnsDelete.Name = "ctnsControlCV";
+            this.ctnsDelete.Size = new System.Drawing.Size(116, 42);
             // 
             // ctmsXoa
             // 
@@ -114,6 +118,30 @@
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(112, 6);
             // 
+            // ctnsHavedDelete
+            // 
+            this.ctnsHavedDelete.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.ctnsHavedDelete.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.ctnsHavedDelete.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.khôiPhụcToolStripMenuItem,
+            this.xóaVĩnhViễnToolStripMenuItem});
+            this.ctnsHavedDelete.Name = "ctnsHavedDelete";
+            this.ctnsHavedDelete.Size = new System.Drawing.Size(241, 101);
+            // 
+            // khôiPhụcToolStripMenuItem
+            // 
+            this.khôiPhụcToolStripMenuItem.Name = "khôiPhụcToolStripMenuItem";
+            this.khôiPhụcToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.khôiPhụcToolStripMenuItem.Text = "Khôi phục";
+            this.khôiPhụcToolStripMenuItem.Click += new System.EventHandler(this.khôiPhụcToolStripMenuItem_Click);
+            // 
+            // xóaVĩnhViễnToolStripMenuItem
+            // 
+            this.xóaVĩnhViễnToolStripMenuItem.Name = "xóaVĩnhViễnToolStripMenuItem";
+            this.xóaVĩnhViễnToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.xóaVĩnhViễnToolStripMenuItem.Text = "Xóa vĩnh viễn";
+            this.xóaVĩnhViễnToolStripMenuItem.Click += new System.EventHandler(this.xóaVĩnhViễnToolStripMenuItem_Click);
+            // 
             // UCJob
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -123,7 +151,8 @@
             this.Name = "UCJob";
             this.Size = new System.Drawing.Size(459, 45);
             this.panel1.ResumeLayout(false);
-            this.ctnsControlCV.ResumeLayout(false);
+            this.ctnsDelete.ResumeLayout(false);
+            this.ctnsHavedDelete.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -133,10 +162,13 @@
 
         private System.Windows.Forms.CheckBox cbJob;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ContextMenuStrip ctnsControlCV;
+        private System.Windows.Forms.ContextMenuStrip ctnsDelete;
         private System.Windows.Forms.ToolStripMenuItem ctmsXoa;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.Button btnInfo;
         private FontAwesome.Sharp.IconButton iconFlat;
+        private System.Windows.Forms.ContextMenuStrip ctnsHavedDelete;
+        private System.Windows.Forms.ToolStripMenuItem khôiPhụcToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem xóaVĩnhViễnToolStripMenuItem;
     }
 }

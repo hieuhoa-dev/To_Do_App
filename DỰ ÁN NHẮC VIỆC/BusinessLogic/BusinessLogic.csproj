@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="JobBL.cs" />
     <Compile Include="JobChildBL.cs" />
+    <Compile Include="NotifyBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

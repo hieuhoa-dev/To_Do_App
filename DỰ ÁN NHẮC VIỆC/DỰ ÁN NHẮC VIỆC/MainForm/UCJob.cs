@@ -27,8 +27,17 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             InitializeComponent();
 
             this.JobItem = jobItem;
+            if (jobItem.Delete == 0)
+            {
+                this.btnInfo.ContextMenuStrip = this.ctnsDelete;
+            }
+            else
+            {
+                this.btnInfo.ContextMenuStrip = this.ctnsHavedDelete;
+            }
             ShowInfo();
         }
+
 
         void ShowInfo()
         {
@@ -37,31 +46,6 @@ namespace DỰ_ÁN_NHẮC_VIỆC
                 cbJob.Checked = true;
             else cbJob.Checked = false;
             LoadMucDo();
-        }
-
-
-        private event EventHandler edited;
-        public event EventHandler Edited
-        {
-            add { edited += value; }
-            remove { edited -= value; }
-        }
-
-        private event EventHandler deleted;
-        public event EventHandler Deleted
-        {
-            add { deleted += value; }
-            remove { deleted -= value; }
-        }
-
-        private void ctmsSua_Click(object sender, EventArgs e)
-        {
-            JobItem.NameJob = btnInfo.Text;
-            //Them thuoc tinh ...
-            if (edited != null)
-            {
-                edited(this, new EventArgs());
-            }
         }
 
         int BienLuuMucDo;
@@ -81,16 +65,29 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         }
         private void ctmsXoa_Click(object sender, EventArgs e)
         {
-            //if (deleted != null)
-            //{
-            //    deleted(this, new EventArgs());
-            //}
             JobItem.Delete = 1;
             JobBL jobBL = new JobBL();
             jobBL.Update(jobItem);
-
             JobListLoad?.Invoke(sender, e);
+        }
+        private void khôiPhụcToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            JobItem.Delete = 0;
+            JobBL jobBL = new JobBL();
+            jobBL.Update(jobItem);
+            JobListLoad?.Invoke(sender, e);
+        }
 
+        private void xóaVĩnhViễnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc chắn muốn xoá công việc này?", "Thông báo",
+
+             MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                JobBL jobBL = new JobBL();
+                jobBL.Delete(jobItem);
+                JobListLoad?.Invoke(sender, e);
+            }
         }
 
         public event EventHandler JobListLoad;
@@ -138,7 +135,9 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             // Cập nhật dữ liệu trong bảng
             jobBL.Update(jobItem);
             DataAccess.Job cv = this.JobItem;
-            JobClicked?.Invoke(this, e,cv);
+            JobClicked?.Invoke(this, e, cv);
         }
+
+
     }
 }

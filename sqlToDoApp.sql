@@ -25,6 +25,13 @@ CREATE TABLE [dbo].[JobChild] (
     [JobID] INT NOT NULL,
 );
 
+--Tạo bảng Notify
+CREATE TABLE [dbo].[Notify] (
+    [ID] INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
+	[Category] NVARCHAR(200) NULL,
+    [NameJob] NVARCHAR(200) NULL
+);
+
 --Thủ tục lấy tất cả dữ liệu bảng Job
 CREATE PROCEDURE [dbo].[Job_GetAll]
 AS
@@ -35,6 +42,10 @@ CREATE PROCEDURE [dbo].[JobChild_GetAll]
 AS
 SELECT * FROM JobChild
 
+--Thủ tục lấy tất cả dữ liệu bảng Notify
+CREATE PROCEDURE [dbo].[Notify_GetAll]
+AS
+SELECT * FROM Notify
 
 --Thủ tục Insert, Update, Delete từ bảng Job
 Create PROCEDURE [dbo].[Job_InsertUpdateDelete]
@@ -97,6 +108,33 @@ END
 ELSE IF @Action = 2
 BEGIN
 DELETE FROM JobChild WHERE [ID] = @ID
+END
+
+
+--Thủ tục Insert, Update, Delete từ bảng Notify
+Create PROCEDURE [dbo].[Notify_InsertUpdateDelete]
+ @ID int output, -- Biến ID tự tăng, khi thêm xong phải lấy ra
+ @Category NVARCHAR(200) NULL,
+ @NameJob NVARCHAR(200) NULL,
+ @Action int -- Biến cho biết thêm, xóa, hay sửa
+AS
+-- Nếu Action = 0, thực hiện thêm dữ liệu
+IF @Action = 0
+BEGIN
+INSERT INTO Notify ([Category], NameJob)
+VALUES (@Category, @NameJob)
+SET @ID = @@identity -- Thiết lập ID tự tăng
+END
+-- Nếu Action = 1, thực hiện cập nhật dữ liệu
+ELSE IF @Action = 1
+BEGIN
+UPDATE Notify SET [Category] = @Category,NameJob = @NameJob
+WHERE [ID] = @ID
+END
+-- Nếu Action = 2, thực hiện xóa dữ liệu
+ELSE IF @Action = 2
+BEGIN
+DELETE FROM Notify WHERE [ID] = @ID
 END
 
 

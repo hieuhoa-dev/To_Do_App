@@ -8,11 +8,10 @@ using System.Threading.Tasks;
 
 namespace DataAccess
 {
-    //Lớp quản lý Food: DA = DataAccess
-    public class JobChildDA
+    public class NotifyDA
     {
         // Phương thức lấy hết dữ liệu theo thủ tục Food_GetAll
-        public List<JobChild> GetAll()
+        public List<Notify> GetAll()
         {
             //Khai báo đối tượng SqlConnection và mở kết nối
             //Đối tượng SqlConnection truyền vào chuỗi kết nối trong App.config
@@ -21,25 +20,24 @@ namespace DataAccess
             //Khai báo đối tượng SqlCommand có kiểu xử lý là StoredProcedure
             SqlCommand command = sqlConn.CreateCommand();
             command.CommandType = CommandType.StoredProcedure;
-            command.CommandText = Ultilities.JobChild_GetAll;
+            command.CommandText = Ultilities.Notify_GetAll;
             // Đọc dữ liệu, trả về danh sách các đối tượng Food
             SqlDataReader reader = command.ExecuteReader();
-            List<JobChild> list = new List<JobChild>();
+            List<Notify> list = new List<Notify>();
             while (reader.Read())
             {
-                JobChild food = new JobChild();
-                food.ID = Convert.ToInt32(reader["ID"]);
-                food.Name = reader["Name"].ToString();
-                food.Status = Convert.ToInt32(reader["Status"]);
-                food.JobID = Convert.ToInt32(reader["JobID"]);
-                list.Add(food);
+                Notify notify = new Notify();
+                notify.ID = Convert.ToInt32(reader["ID"]);
+                notify.Category = reader["Category"].ToString();
+                notify.NameJob = reader["NameJob"].ToString();
+                list.Add(notify);
             }
             // Đóng kết nối và trả về danh sách
             sqlConn.Close();
             return list;
         }
         // Phương thức thêm, xoá, sửa theo thủ tục Food_InsertUpdateDelete
-        public int Insert_Update_Delete(JobChild jobChild, int action)
+        public int Insert_Update_Delete(Notify notify, int action)
         {
             // Khai báo đối tượng SqlConnection và mở kết nối
             // Đối tượng SqlConnection truyền vào chuỗi kết nối trong App.config
@@ -48,19 +46,17 @@ namespace DataAccess
             //Khai báo đối tượng SqlCommand có kiểu xử lý là StoredProcedure
             SqlCommand command = sqlConn.CreateCommand();
             command.CommandType = CommandType.StoredProcedure;
-            command.CommandText = Ultilities.JobChild_InsertUpdateDelete;
+            command.CommandText = Ultilities.Notify_InsertUpdateDelete;
 
             // Thêm các tham số cho thủ tục; Các tham số này chính là các  tham số trong thủ tục;
             //ID là tham số có giá trị lấy ra khi thêm và truyền vào khi xoá,  sửa
             SqlParameter IDPara = new SqlParameter("@ID", SqlDbType.Int);
             IDPara.Direction = ParameterDirection.InputOutput;
-            command.Parameters.Add(IDPara).Value = jobChild.ID;
+            command.Parameters.Add(IDPara).Value = notify.ID;
 
             //Các biến còn lại chỉ truyền vào
-           // command.Parameters.Add("@Name", SqlDbType.NVarChar, 200).Value = jobChild.Name;
-            command.Parameters.AddWithValue("@Name", string.IsNullOrEmpty(jobChild.Name) ? (object)DBNull.Value : jobChild.Name);
-            command.Parameters.Add("@Status", SqlDbType.Int).Value = jobChild.Status;
-            command.Parameters.Add("@JobID", SqlDbType.Int).Value = jobChild.JobID;
+            command.Parameters.Add("@Category", SqlDbType.NVarChar, 200).Value = notify.Category;
+            command.Parameters.Add("@NameJob", SqlDbType.NVarChar, 200).Value = notify.NameJob;
             command.Parameters.Add("@Action", SqlDbType.Int).Value = action;
             int result = command.ExecuteNonQuery();
             // Thực thi lệnh

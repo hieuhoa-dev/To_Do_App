@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewGroup listViewGroup5 = new System.Windows.Forms.ListViewGroup("Học tập", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup6 = new System.Windows.Forms.ListViewGroup("Mua sắm", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("Học tập", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("Mua sắm", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
             "a",
             "Học tập",
             "10h",
             "20h",
             "Đang thực hiện",
             "Quan Trọng"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("");
             this.panel1 = new System.Windows.Forms.Panel();
             this.gbCVcon = new System.Windows.Forms.GroupBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -160,25 +160,25 @@
             this.columnHeader6,
             this.columnHeader7});
             this.lvDanhSachCV.FullRowSelect = true;
-            listViewGroup5.Header = "Học tập";
-            listViewGroup5.Name = "listViewGroup1";
-            listViewGroup6.Header = "Mua sắm";
-            listViewGroup6.Name = "listViewGroup2";
+            listViewGroup1.Header = "Học tập";
+            listViewGroup1.Name = "listViewGroup1";
+            listViewGroup2.Header = "Mua sắm";
+            listViewGroup2.Name = "listViewGroup2";
             this.lvDanhSachCV.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup5,
-            listViewGroup6});
+            listViewGroup1,
+            listViewGroup2});
             this.lvDanhSachCV.HideSelection = false;
-            listViewItem7.Group = listViewGroup5;
-            listViewItem7.StateImageIndex = 0;
-            listViewItem7.ToolTipText = "s";
-            listViewItem8.Group = listViewGroup6;
-            listViewItem8.StateImageIndex = 0;
-            listViewItem9.Group = listViewGroup6;
-            listViewItem9.StateImageIndex = 0;
+            listViewItem1.Group = listViewGroup1;
+            listViewItem1.StateImageIndex = 0;
+            listViewItem1.ToolTipText = "s";
+            listViewItem2.Group = listViewGroup2;
+            listViewItem2.StateImageIndex = 0;
+            listViewItem3.Group = listViewGroup2;
+            listViewItem3.StateImageIndex = 0;
             this.lvDanhSachCV.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem7,
-            listViewItem8,
-            listViewItem9});
+            listViewItem1,
+            listViewItem2,
+            listViewItem3});
             this.lvDanhSachCV.Location = new System.Drawing.Point(3, 25);
             this.lvDanhSachCV.Name = "lvDanhSachCV";
             this.lvDanhSachCV.Size = new System.Drawing.Size(1280, 316);

@@ -322,7 +322,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         //    UCJobList jobList = new UCJobList(new DateTime(mCalendar.SelectionStart.Year, mCalendar.SelectionStart.Month, mCalendar.SelectionStart.Day), dscv);
         //    jobList.ThemJob();
         //}
-
+        ThongBao NotiForm = new ThongBao();
 
         private void iconDonate_Click(object sender, EventArgs e)
         {
@@ -346,7 +346,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
                 pnlNoti.Location = new System.Drawing.Point(1061, 46);
                 pnlNoti.Size = new System.Drawing.Size(221, 250);
                 this.Controls.Add(pnlNoti);
-                ThongBao NotiForm = new ThongBao(dscv);
+                NotiForm = new ThongBao();
                 NotiForm.TopLevel = false;
                 pnlNoti.Controls.Add(NotiForm);
                 pnlNoti.BringToFront();
@@ -390,7 +390,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             pnlAdd.Size = new System.Drawing.Size(500, 600);
             this.Controls.Add(pnlAdd);
 
-            AddForm addForm = new AddForm((int)ChucNang.Tao);
+            AddForm addForm = new AddForm();
             addForm.FormClosed += new FormClosedEventHandler(addForm_FormClosed);
             addForm.TopLevel = false;
             pnlAdd.Controls.Add(addForm);
@@ -412,11 +412,6 @@ namespace DỰ_ÁN_NHẮC_VIỆC
                 pnlAdd.Dispose();
                 pnlAdd = null;
             }
-        }
-        public enum ChucNang
-        {
-            Tao,
-            Luu
         }
 
         private void LoadJob(object sender, EventArgs e)
@@ -461,18 +456,60 @@ namespace DỰ_ÁN_NHẮC_VIỆC
 
         private void tmNotify_Tick(object sender, EventArgs e)
         {
+            string Coming = "Sắp đến";
+            string Doing = "Đã đến";
+            string Overdue = "Săp quá hạn";
+
             DateTime now = DateTime.Now;
 
             foreach (Job job in dscv.DanhSach)
             {
-                DateTime notifyTime = job.ToDate.AddMinutes(-phut);
+                // Báo 5 phút trước khi đến CV
+                DateTime notifyToTime = job.ToDate.AddMinutes(-phut);
+                // Báo 5 phút trước khi đến CV
+                DateTime notifyFromTime = job.FromDate.AddMinutes(-phut);
 
                 // Kiểm tra nếu thời gian nằm trong khoảng 1 phút
-                if (Math.Abs((notifyTime - now).TotalSeconds) <= 60)
+                if (Math.Abs((notifyToTime - now).TotalSeconds) <= 30)
                 {
-                    notifyIcon1.ShowBalloonTip(5000, "Sắp đến", job.NameJob, ToolTipIcon.None);
+                    //Thông báo sắp đến
+                    notifyIcon1.ShowBalloonTip(5000, Coming, job.NameJob, ToolTipIcon.None);
+                    SaveNotify(job, Coming);
+                    ThongBao_Load();
+                }
+                if (Math.Abs((job.ToDate - now).TotalSeconds) <= 30)
+                {
+                    //Thông báo đã đến
+                    notifyIcon1.ShowBalloonTip(5000, Doing, job.NameJob, ToolTipIcon.None);
+                    SaveNotify(job, Doing);
+                    ThongBao_Load();
+                }
+                if (Math.Abs((notifyFromTime - now).TotalSeconds) <= 30)
+                {
+                    //Thông báo quá hạn
+                    notifyIcon1.ShowBalloonTip(5000, Overdue, job.NameJob, ToolTipIcon.None);
+                    SaveNotify(job, Overdue);
+                    ThongBao_Load();
                 }
             }
+        }
+
+        void ThongBao_Load()
+        {
+            if (NotiForm != null)
+            {
+                NotiForm.LoadForm();
+            }
+        }
+
+        void SaveNotify(Job job,string Category)
+        {
+            Notify notify = new Notify();
+            notify.ID = 0;
+            notify.Category = Category;
+            notify.NameJob = job.NameJob;
+            NotifyBL notifyBL = new NotifyBL();
+            notifyBL.Insert(notify);
         }
     }
 }

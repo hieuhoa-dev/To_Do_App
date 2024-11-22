@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtNotes = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.iconFlat = new FontAwesome.Sharp.IconButton();
@@ -38,7 +39,7 @@
             this.dgvListJobChild = new System.Windows.Forms.DataGridView();
             this.dtgvStatus = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dtgvName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.DeleteColumn = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tcNgayThang = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.nupPhutBD = new System.Windows.Forms.NumericUpDown();
@@ -54,6 +55,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.toolTipShowProgress = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListJobChild)).BeginInit();
             this.tcNgayThang.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -130,28 +132,30 @@
             this.dgvListJobChild.BackgroundColor = System.Drawing.Color.White;
             this.dgvListJobChild.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvListJobChild.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvListJobChild.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvListJobChild.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvListJobChild.ColumnHeadersHeight = 34;
             this.dgvListJobChild.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvListJobChild.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dtgvStatus,
             this.dtgvName,
-            this.Column2});
+            this.DeleteColumn});
             this.dgvListJobChild.Location = new System.Drawing.Point(24, 401);
             this.dgvListJobChild.Name = "dgvListJobChild";
             this.dgvListJobChild.RowHeadersWidth = 30;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
-            this.dgvListJobChild.RowsDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            this.dgvListJobChild.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvListJobChild.Size = new System.Drawing.Size(486, 459);
             this.dgvListJobChild.TabIndex = 8;
+            this.dgvListJobChild.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListJobChild_CellContentClick);
+            this.dgvListJobChild.RowValidated += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListJobChild_RowValidated);
             // 
             // dtgvStatus
             // 
@@ -171,12 +175,12 @@
             this.dtgvName.MinimumWidth = 8;
             this.dtgvName.Name = "dtgvName";
             // 
-            // Column2
+            // DeleteColumn
             // 
-            this.Column2.FillWeight = 50F;
-            this.Column2.HeaderText = "Xóa";
-            this.Column2.MinimumWidth = 8;
-            this.Column2.Name = "Column2";
+            this.DeleteColumn.FillWeight = 50F;
+            this.DeleteColumn.HeaderText = "Xóa";
+            this.DeleteColumn.MinimumWidth = 8;
+            this.DeleteColumn.Name = "DeleteColumn";
             // 
             // tcNgayThang
             // 
@@ -359,6 +363,10 @@
             this.panel1.Size = new System.Drawing.Size(486, 53);
             this.panel1.TabIndex = 16;
             // 
+            // toolTipShowProgress
+            // 
+            this.toolTipShowProgress.IsBalloon = true;
+            // 
             // UCJobChild
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -395,9 +403,6 @@
         private System.Windows.Forms.ProgressBar progressBarJob;
         private System.Windows.Forms.CheckBox cbTrangThai;
         private System.Windows.Forms.DataGridView dgvListJobChild;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn dtgvStatus;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dtgvName;
-        private System.Windows.Forms.DataGridViewButtonColumn Column2;
         private System.Windows.Forms.TabControl tcNgayThang;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.NumericUpDown nupPhutBD;
@@ -413,5 +418,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn dtgvStatus;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dtgvName;
+        private System.Windows.Forms.DataGridViewButtonColumn DeleteColumn;
+        private System.Windows.Forms.ToolTip toolTipShowProgress;
     }
 }

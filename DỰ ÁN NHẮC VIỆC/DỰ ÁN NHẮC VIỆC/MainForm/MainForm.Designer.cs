@@ -44,7 +44,6 @@
             this.pnlTop = new System.Windows.Forms.Panel();
             this.iconAdd = new FontAwesome.Sharp.IconButton();
             this.pnlControl = new System.Windows.Forms.Panel();
-            this.iconSearch = new FontAwesome.Sharp.IconButton();
             this.iconNoti = new FontAwesome.Sharp.IconButton();
             this.iconMinimize = new FontAwesome.Sharp.IconButton();
             this.iconXmark = new FontAwesome.Sharp.IconButton();
@@ -258,7 +257,6 @@
             // pnlControl
             // 
             this.pnlControl.BackColor = System.Drawing.Color.White;
-            this.pnlControl.Controls.Add(this.iconSearch);
             this.pnlControl.Controls.Add(this.iconNoti);
             this.pnlControl.Controls.Add(this.iconMinimize);
             this.pnlControl.Controls.Add(this.iconXmark);
@@ -268,26 +266,6 @@
             this.pnlControl.Name = "pnlControl";
             this.pnlControl.Size = new System.Drawing.Size(1320, 40);
             this.pnlControl.TabIndex = 1;
-            // 
-            // iconSearch
-            // 
-            this.iconSearch.BackColor = System.Drawing.Color.White;
-            this.iconSearch.Dock = System.Windows.Forms.DockStyle.Right;
-            this.iconSearch.FlatAppearance.BorderSize = 0;
-            this.iconSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 200F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconSearch.ForeColor = System.Drawing.Color.Transparent;
-            this.iconSearch.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.iconSearch.IconColor = System.Drawing.Color.Black;
-            this.iconSearch.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconSearch.IconSize = 25;
-            this.iconSearch.Location = new System.Drawing.Point(1084, 0);
-            this.iconSearch.Name = "iconSearch";
-            this.iconSearch.Size = new System.Drawing.Size(59, 40);
-            this.iconSearch.TabIndex = 3;
-            this.ttControl.SetToolTip(this.iconSearch, "Search");
-            this.iconSearch.UseVisualStyleBackColor = false;
-            this.iconSearch.Click += new System.EventHandler(this.iconSearch_Click);
             // 
             // iconNoti
             // 
@@ -630,7 +608,6 @@
         private System.Windows.Forms.Panel pnlShowJob;
         public System.Windows.Forms.NotifyIcon notifyIcon1;
         private FontAwesome.Sharp.IconButton iconAdd;
-        private FontAwesome.Sharp.IconButton iconSearch;
         private System.Windows.Forms.ToolTip ttControl;
         private System.Windows.Forms.ToolTip ttAdd;
         private System.Windows.Forms.Panel pnlShowJobChild;
