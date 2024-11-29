@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtTen = new System.Windows.Forms.TextBox();
             this.dtpNgayKT = new System.Windows.Forms.DateTimePicker();
             this.dtpNgayBD = new System.Windows.Forms.DateTimePicker();
@@ -92,6 +92,7 @@
             this.dtpNgayKT.Name = "dtpNgayKT";
             this.dtpNgayKT.Size = new System.Drawing.Size(145, 26);
             this.dtpNgayKT.TabIndex = 7;
+            this.dtpNgayKT.ValueChanged += new System.EventHandler(this.dtpNgayKT_ValueChanged);
             // 
             // dtpNgayBD
             // 
@@ -101,6 +102,7 @@
             this.dtpNgayBD.Name = "dtpNgayBD";
             this.dtpNgayBD.Size = new System.Drawing.Size(145, 26);
             this.dtpNgayBD.TabIndex = 8;
+            this.dtpNgayBD.ValueChanged += new System.EventHandler(this.dtpNgayBD_ValueChanged);
             // 
             // cmbMucDo
             // 
@@ -174,6 +176,7 @@
             this.nupPhutBD.Name = "nupPhutBD";
             this.nupPhutBD.Size = new System.Drawing.Size(65, 26);
             this.nupPhutBD.TabIndex = 12;
+            this.nupPhutBD.ValueChanged += new System.EventHandler(this.nupPhutBD_ValueChanged);
             // 
             // label5
             // 
@@ -209,6 +212,7 @@
             this.nupGioBD.Name = "nupGioBD";
             this.nupGioBD.Size = new System.Drawing.Size(65, 26);
             this.nupGioBD.TabIndex = 9;
+            this.nupGioBD.ValueChanged += new System.EventHandler(this.nupGioBD_ValueChanged);
             // 
             // tabPage2
             // 
@@ -236,6 +240,7 @@
             this.nupPhutKT.Name = "nupPhutKT";
             this.nupPhutKT.Size = new System.Drawing.Size(65, 26);
             this.nupPhutKT.TabIndex = 9;
+            this.nupPhutKT.ValueChanged += new System.EventHandler(this.nupPhutKT_ValueChanged);
             // 
             // nupGioKT
             // 
@@ -248,6 +253,7 @@
             this.nupGioKT.Name = "nupGioKT";
             this.nupGioKT.Size = new System.Drawing.Size(65, 26);
             this.nupGioKT.TabIndex = 9;
+            this.nupGioKT.ValueChanged += new System.EventHandler(this.nupGioKT_ValueChanged);
             // 
             // label4
             // 
@@ -341,14 +347,14 @@
             this.dtgvJobChild.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dtgvJobChild.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dtgvJobChild.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvJobChild.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvJobChild.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.dtgvJobChild.ColumnHeadersHeight = 34;
             this.dtgvJobChild.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dtgvJobChild.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -359,9 +365,9 @@
             this.dtgvJobChild.Location = new System.Drawing.Point(3, 3);
             this.dtgvJobChild.Name = "dtgvJobChild";
             this.dtgvJobChild.RowHeadersWidth = 30;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            this.dtgvJobChild.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
+            this.dtgvJobChild.RowsDefaultCellStyle = dataGridViewCellStyle14;
             this.dtgvJobChild.Size = new System.Drawing.Size(439, 258);
             this.dtgvJobChild.TabIndex = 0;
             this.dtgvJobChild.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListJobChild_CellContentClick);
@@ -455,6 +461,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddForm";
             this.Text = "Add";
+            this.Load += new System.EventHandler(this.AddForm_Load);
             this.tcNgayThang.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

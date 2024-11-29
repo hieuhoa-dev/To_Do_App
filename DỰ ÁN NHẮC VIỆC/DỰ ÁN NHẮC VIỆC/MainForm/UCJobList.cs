@@ -122,32 +122,6 @@ namespace DỰ_ÁN_NHẮC_VIỆC
                         }
                         fPanel.Controls.Add(aJob);
                     }
-
-                }
-            }
-        }
-       
-        void ShowAllJob()
-        {
-            fPanel.Controls.Clear();
-            if (dscv != null && dscv.DanhSach != null)
-            {
-                for (int i = 0; i < jobCurrent.Count; i++)
-                {
-                    UCJob aJob = new UCJob(jobCurrent[i]);
-                    aJob.JobClicked += ListJobClick_Click;
-
-                    if (ChucNang == -1)
-                    {
-                        aJob.JobListLoad += ListFindTen_Load;
-                    }
-                    if (ChucNang == 0)
-                        aJob.JobListLoad += ListFindTenDelete_Load;
-                    if (ChucNang == 1)
-                    {
-                        aJob.JobListLoad += ListFindTenComplete_Load;
-                    }
-                    fPanel.Controls.Add(aJob);
                 }
             }
         }
@@ -187,7 +161,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             }
             if (txtTenCV.Text == "")
             {
-                ShowAllJob();
+                return;
             }
         }
 
@@ -228,7 +202,5 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             ListJobClick?.Invoke(this, e, cv);
 
         }
-
-
     }
 }

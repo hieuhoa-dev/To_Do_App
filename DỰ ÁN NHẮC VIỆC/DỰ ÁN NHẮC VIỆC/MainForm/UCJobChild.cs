@@ -81,7 +81,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             {
                 progressBarJob.Value = 0; // Nếu không có công việc nào, đặt giá trị progressBar về 0
             }
-            this.toolTipShowProgress.SetToolTip(this.progressBarJob, progressBarJob.Value.ToString()+"%");
+            this.toolTipShowProgress.SetToolTip(this.progressBarJob, progressBarJob.Value.ToString() + "%");
         }
 
 
@@ -195,11 +195,9 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         private void dtpNgayBD_ValueChanged(object sender, EventArgs e)
         {
             jobItem.ToDate = dtpNgayBD.Value;
-            // Ngày BD lớn hơn Ngày KT
-            if (jobItem.ToDate > jobItem.FromDate)
-            {
-                jobItem.FromDate.AddMinutes(5); // Thì ngày KT phải +5 phút
-            }
+            // Kiểm tra ngày BD nhỏ hơn ngày KT
+            if(dtpNgayBD.Value > dtpNgayKT.Value)
+                dtpNgayKT.Value = dtpNgayBD.Value;
             JobBL jobBL = new JobBL();
             jobBL.Update(jobItem);
         }
@@ -214,6 +212,14 @@ namespace DỰ_ÁN_NHẮC_VIỆC
                 jobItem.ToDate.Minute,
                 jobItem.ToDate.Second
             );
+            if (KiemTraNgayThang() && nupGioBD.Value > nupGioKT.Value) 
+            {
+                nupGioKT.Value = nupGioBD.Value;
+                //Gán lại giá trị các thời gian KT
+                dtpNgayKT.Value = jobItem.FromDate;
+                nupGioKT.Value = jobItem.FromDate.Hour;
+                nupPhutKT.Value = jobItem.FromDate.Minute;
+            }
             JobBL jobBL = new JobBL();
             jobBL.Update(jobItem);
         }
@@ -228,13 +234,37 @@ namespace DỰ_ÁN_NHẮC_VIỆC
                (int)nupPhutBD.Value, // Lấy giờ từ NumericUpDown
                jobItem.ToDate.Second
              );
+            if (KiemTraNgayThang() && nupGioBD.Value == nupGioKT.Value && nupPhutBD.Value >= nupPhutKT.Value)
+            {
+                nupPhutKT.Value = nupPhutBD.Value;
+                jobItem.FromDate = jobItem.FromDate.AddMinutes(5);
+                //Gán lại giá trị các thời gian KT
+                dtpNgayKT.Value = jobItem.FromDate;
+                nupGioKT.Value = jobItem.FromDate.Hour;
+                nupPhutKT.Value = jobItem.FromDate.Minute;
+            }
+
             JobBL jobBL = new JobBL();
             jobBL.Update(jobItem);
+        }
+
+        bool KiemTraNgayThang()
+        {
+            if (dtpNgayBD.Value.Year == dtpNgayKT.Value.Year
+                && dtpNgayBD.Value.Month == dtpNgayKT.Value.Month
+                 && dtpNgayBD.Value.Day == dtpNgayKT.Value.Day)
+            {
+                return true;
+            }
+            return false;
         }
 
         private void dtpNgayKT_ValueChanged(object sender, EventArgs e)
         {
             jobItem.FromDate = dtpNgayKT.Value;
+            // Kiểm tra ngày BD nhỏ hơn ngày KT
+            if (dtpNgayBD.Value > dtpNgayKT.Value)
+                dtpNgayBD.Value = dtpNgayKT.Value;
             JobBL jobBL = new JobBL();
             jobBL.Update(jobItem);
         }
@@ -249,6 +279,14 @@ namespace DỰ_ÁN_NHẮC_VIỆC
                jobItem.FromDate.Minute,
                jobItem.FromDate.Second
            );
+            if (KiemTraNgayThang() && nupGioBD.Value > nupGioKT.Value)
+            {
+                nupGioBD.Value = nupGioKT.Value;
+                //Gán lại giá trị các thời gian BD
+                dtpNgayBD.Value = jobItem.ToDate;
+                nupGioBD.Value = jobItem.ToDate.Hour;
+                nupPhutBD.Value = jobItem.ToDate.Minute;
+            }
             JobBL jobBL = new JobBL();
             jobBL.Update(jobItem);
         }
@@ -263,6 +301,15 @@ namespace DỰ_ÁN_NHẮC_VIỆC
                (int)nupPhutKT.Value, // Lấy giờ từ NumericUpDown
                jobItem.FromDate.Second
              );
+            if (KiemTraNgayThang() && nupGioBD.Value == nupGioKT.Value && nupPhutBD.Value >= nupPhutKT.Value)
+            {
+                nupPhutBD.Value = nupPhutKT.Value;
+                jobItem.ToDate = jobItem.ToDate.AddMinutes(-5);
+                //Gán lại giá trị các thời gian KT
+                dtpNgayBD.Value = jobItem.ToDate;
+                nupGioBD.Value = jobItem.ToDate.Hour;
+                nupPhutBD.Value = jobItem.ToDate.Minute;
+            }
             JobBL jobBL = new JobBL();
             jobBL.Update(jobItem);
         }
@@ -290,7 +337,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             LoadProgress();
         }
 
-      
+
         private void dgvListJobChild_RowValidated(object sender, DataGridViewCellEventArgs e)
         {
             // Bỏ qua nếu dòng đang xử lý là "New Row"
@@ -307,7 +354,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
                 var jobChild = ListJobchild[e.RowIndex];
                 jobChild.Name = row.Cells["dtgvName"].Value?.ToString();
                 jobChild.Status = bool.TryParse(row.Cells["dtgvStatus"].Value?.ToString(), out bool status) && status ? 1 : 0;
-       
+
                 jobChildBL.Update(jobChild); // Cập nhật vào cơ sở dữ liệu
             }
             else

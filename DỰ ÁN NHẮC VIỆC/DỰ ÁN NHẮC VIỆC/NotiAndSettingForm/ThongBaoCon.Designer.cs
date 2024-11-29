@@ -28,9 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lbLoaiTB = new System.Windows.Forms.Label();
             this.lbTenCV = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.iconXmark = new FontAwesome.Sharp.IconButton();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // lbLoaiTB
@@ -65,15 +68,37 @@
             this.panel1.Size = new System.Drawing.Size(20, 55);
             this.panel1.TabIndex = 4;
             // 
+            // iconXmark
+            // 
+            this.iconXmark.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(225)))), ((int)(((byte)(218)))));
+            this.iconXmark.Dock = System.Windows.Forms.DockStyle.Right;
+            this.iconXmark.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.iconXmark.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(168)))), ((int)(((byte)(178)))));
+            this.iconXmark.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
+            this.iconXmark.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconXmark.Font = new System.Drawing.Font("Microsoft Sans Serif", 200F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconXmark.ForeColor = System.Drawing.Color.Transparent;
+            this.iconXmark.IconChar = FontAwesome.Sharp.IconChar.Remove;
+            this.iconXmark.IconColor = System.Drawing.Color.Black;
+            this.iconXmark.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconXmark.IconSize = 20;
+            this.iconXmark.Location = new System.Drawing.Point(164, 0);
+            this.iconXmark.Name = "iconXmark";
+            this.iconXmark.Size = new System.Drawing.Size(25, 55);
+            this.iconXmark.TabIndex = 5;
+            this.iconXmark.UseVisualStyleBackColor = false;
+            this.iconXmark.Click += new System.EventHandler(this.iconXmark_Click);
+            // 
             // ThongBaoCon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.iconXmark);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbTenCV);
             this.Controls.Add(this.lbLoaiTB);
             this.Name = "ThongBaoCon";
-            this.Size = new System.Drawing.Size(221, 55);
+            this.Size = new System.Drawing.Size(189, 55);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -84,5 +109,7 @@
         private System.Windows.Forms.Label lbLoaiTB;
         private System.Windows.Forms.Label lbTenCV;
         private System.Windows.Forms.Panel panel1;
+        private FontAwesome.Sharp.IconButton iconXmark;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

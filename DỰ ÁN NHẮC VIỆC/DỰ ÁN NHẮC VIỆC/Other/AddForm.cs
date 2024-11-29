@@ -15,13 +15,28 @@ namespace Other
     {
         private Job job; // Biến cục bộ
         public event EventHandler btnSaveClick; // Truyền sự kiện
+        private DateTime NgayBD;
+        private DateTime NgayKT;
         public AddForm()
         {
             InitializeComponent();
 
             cmbMucDo.SelectedIndex = 0;
         }
+        private void AddForm_Load(object sender, EventArgs e)
+        {
+            NgayBD = DateTime.Today;
+            NgayKT = NgayBD.AddMinutes(5);
 
+            dtpNgayBD.Value = NgayBD;
+            nupGioBD.Value = NgayBD.Hour;
+            nupPhutBD.Value = NgayBD.Minute;
+
+            dtpNgayKT.Value = NgayKT;
+            nupGioKT.Value = NgayKT.Hour;
+            nupPhutKT.Value = NgayKT.Minute;
+
+        }
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -62,31 +77,10 @@ namespace Other
                 job.NameJob = txtTen.Text;
 
                 //Thêm thời gian bắt đầu
-                job.ToDate = new DateTime(
-                 dtpNgayBD.Value.Year,
-                 dtpNgayBD.Value.Month,
-                 dtpNgayBD.Value.Day,
-                 (int)nupGioBD.Value,  // Ép trực tiếp giá trị decimal thành int
-                 (int)nupPhutBD.Value, // Tương tự
-                 0                     // Giây
-                );
+                job.ToDate = NgayBD;
 
                 //Thêm thời gian kết thúc
-                job.FromDate = new DateTime(
-                 dtpNgayBD.Value.Year,
-                 dtpNgayBD.Value.Month,
-                 dtpNgayBD.Value.Day,
-                 (int)nupGioBD.Value,  // Ép trực tiếp giá trị decimal thành int
-                 (int)nupPhutBD.Value, // Tương tự
-                 0                     // Giây
-                );
-
-                // Nếu thời gian bắt đầu lớn hơn hoặc bằng thời gian kết thúc
-                if (job.FromDate >= job.ToDate)
-                {
-                    // Điều chỉnh lại thời gian bắt đầu: cộng thêm 5 phút vào thời gian kết thúc
-                    job.FromDate = job.ToDate.AddMinutes(5);
-                }
+                job.FromDate = NgayKT;
 
                 //Trang thái
                 if (chbJob.Checked)
@@ -143,6 +137,141 @@ namespace Other
                 dtgvJobChild.Rows.RemoveAt(e.RowIndex);
             }
         }
+
+        private void dtpNgayBD_ValueChanged(object sender, EventArgs e)
+        {
+            //Kiểm tra ngày KT
+            if (dtpNgayBD.Value > dtpNgayKT.Value)
+                dtpNgayKT.Value = dtpNgayBD.Value;
+            //Gán ngày BD
+            NgayBD = new DateTime(
+              dtpNgayBD.Value.Year,
+              dtpNgayBD.Value.Month,
+              dtpNgayBD.Value.Day,
+              NgayBD.Hour,
+              NgayBD.Minute,
+              NgayBD.Second);
+        }
+
+        private void nupGioBD_ValueChanged(object sender, EventArgs e)
+        {
+            //Gán ngày BD
+            NgayBD = new DateTime(
+              NgayBD.Year,
+              NgayBD.Month,
+              NgayBD.Day,
+              (int)nupGioBD.Value, // Lấy giờ từ NumericUpDown
+              NgayBD.Minute,
+              NgayBD.Second
+              );
+            //Kiểm tra ngày KT
+            if (KiemTraNgayThang() && nupGioBD.Value > nupGioKT.Value)
+            {
+                nupGioKT.Value = nupGioBD.Value;
+                //Gán lại giá trị các thời gian KT
+                dtpNgayKT.Value = NgayKT;
+                nupGioKT.Value = NgayKT.Hour;
+                nupPhutKT.Value = NgayKT.Minute;
+            }
+
+        }
+
+        private void nupPhutBD_ValueChanged(object sender, EventArgs e)
+        {
+            // Gán ngày BD
+            NgayBD = new DateTime(
+              NgayBD.Year,
+              NgayBD.Month,
+              NgayBD.Day,
+              NgayBD.Hour, // Lấy giờ từ NumericUpDown
+              (int)nupPhutBD.Value,
+              NgayBD.Second
+              );
+            //Kiểm tra ngày KT
+            if (KiemTraNgayThang() && nupGioBD.Value == nupGioKT.Value && nupPhutBD.Value >= nupPhutKT.Value)
+            {
+                nupPhutKT.Value = nupPhutBD.Value;
+                NgayKT = NgayKT.AddMinutes(5);
+                //Gán lại giá trị các thời gian KT
+                dtpNgayKT.Value = NgayKT;
+                nupGioKT.Value = NgayKT.Hour;
+                nupPhutKT.Value = NgayKT.Minute;
+            }
+        }
+
+        private void dtpNgayKT_ValueChanged(object sender, EventArgs e)
+        {
+            // Gán ngày BD
+            if (dtpNgayBD.Value > dtpNgayKT.Value)
+                dtpNgayBD.Value = dtpNgayKT.Value;
+            //Kiểm tra ngày KT
+            NgayKT = new DateTime(
+                dtpNgayKT.Value.Year,
+                dtpNgayKT.Value.Month,
+                dtpNgayKT.Value.Day,
+                NgayKT.Hour,
+                NgayKT.Minute,
+                NgayKT.Second
+                );
+        }
+
+        private void nupGioKT_ValueChanged(object sender, EventArgs e)
+        {
+            //Gán ngày KT
+            NgayKT = new DateTime(
+             NgayKT.Year,
+             NgayKT.Month,
+             NgayKT.Day,
+             (int)nupGioKT.Value, // Lấy giờ từ NumericUpDown
+             NgayKT.Minute,
+             NgayKT.Second
+             );
+            //Kiểm tra ngày BD
+            if (KiemTraNgayThang() && nupGioBD.Value > nupGioKT.Value)
+            {
+                nupGioBD.Value = nupGioKT.Value;
+                //Gán lại giá trị các thời gian KT
+                dtpNgayBD.Value = NgayBD;
+                nupGioBD.Value = NgayBD.Hour;
+                nupPhutBD.Value = NgayBD.Minute;
+            }
+
+        }
+
+        private void nupPhutKT_ValueChanged(object sender, EventArgs e)
+        {
+            // Gán ngày KT
+            NgayKT = new DateTime(
+              NgayKT.Year,
+              NgayKT.Month,
+              NgayKT.Day,
+              NgayKT.Hour, // Lấy giờ từ NumericUpDown
+              (int)nupPhutKT.Value,
+              NgayKT.Second
+              );
+            //Kiểm tra ngày BD
+            if (KiemTraNgayThang() && nupGioBD.Value == nupGioKT.Value && nupPhutBD.Value >= nupPhutKT.Value)
+            {
+                nupPhutBD.Value = nupPhutKT.Value;
+                NgayBD = NgayBD.AddMinutes(-5);
+                //Gán lại giá trị các thời gian KT
+                dtpNgayBD.Value = NgayBD;
+                nupGioBD.Value = NgayBD.Hour;
+                nupPhutBD.Value = NgayBD.Minute;
+            }
+        }
+
+        bool KiemTraNgayThang()
+        {
+            if (dtpNgayBD.Value.Year == dtpNgayKT.Value.Year
+                && dtpNgayBD.Value.Month == dtpNgayKT.Value.Month
+                 && dtpNgayBD.Value.Day == dtpNgayKT.Value.Day)
+            {
+                return true;
+            }
+            return false;
+        }
+
 
     }
 }

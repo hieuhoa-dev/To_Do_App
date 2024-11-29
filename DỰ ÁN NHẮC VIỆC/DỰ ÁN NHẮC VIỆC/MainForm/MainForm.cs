@@ -10,6 +10,7 @@ using DataAccess;
 using BusinessLogic;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 using System.Linq;
+using Microsoft.Win32;
 
 namespace DỰ_ÁN_NHẮC_VIỆC
 {
@@ -18,9 +19,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         JobDA dscv = new JobDA();
         Panel pnlDeskTops = new Panel();
         public Panel pnlJobChild = new Panel();
-
         List<Job> DScv = new List<Job>();
-        //List<JobChild> dscv_con = new List<JobChild>();
         //Tạo khung, viền, bóng
         #region DesignFrom 
         private bool Drag;
@@ -126,6 +125,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             InitializeComponent();
             // m_aeroEnabled = false;
             TaopnlDeskTops();
+            //KhoiDongCungVoiWindow();
         }
         //Tạo thoát, thu nhỏ
         #region 
@@ -316,17 +316,15 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             }
         }
 
-        //private void btnAdd_Click(object sender, EventArgs e)
-        //{
-
-        //    UCJobList jobList = new UCJobList(new DateTime(mCalendar.SelectionStart.Year, mCalendar.SelectionStart.Month, mCalendar.SelectionStart.Day), dscv);
-        //    jobList.ThemJob();
-        //}
         ThongBao NotiForm = new ThongBao();
 
         private void iconDonate_Click(object sender, EventArgs e)
         {
-            //ActivateButton(sender);
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+            {
+                FileName = "https://me.momo.vn/N6IpTpsOu3U4IgtnCbtaU8/olejYMpwQYABdjN",
+                UseShellExecute = true // Đảm bảo sử dụng trình duyệt mặc định
+            });
         }
 
         Panel pnlNoti = null;
@@ -510,6 +508,24 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             notify.NameJob = job.NameJob;
             NotifyBL notifyBL = new NotifyBL();
             notifyBL.Insert(notify);
+        }
+
+        void KhoiDongCungVoiWindow()
+        {
+            RegistryKey regkey = Registry.CurrentUser.CreateSubKey("Software\\ToDoApp");
+            //mở registry khởi động cùng với window
+            RegistryKey regstart = Registry.CurrentUser.CreateSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run");
+            string keyvalue = "1";
+            try
+            {
+                //Chèn giá trị key
+                regkey.SetValue("Index",keyvalue);
+                regstart.SetValue("ToDoApp", Application.StartupPath + "\\DỰ ÁN NHẮC VIỆC.exe");
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }
