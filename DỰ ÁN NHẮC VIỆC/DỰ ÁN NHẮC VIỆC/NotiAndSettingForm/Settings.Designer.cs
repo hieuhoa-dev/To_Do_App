@@ -33,7 +33,7 @@
             this.btnNhapXuat = new System.Windows.Forms.Button();
             this.btnThongBao = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.cbLoaiThongBao = new System.Windows.Forms.ComboBox();
+            this.cbbHienThiTB = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -47,19 +47,17 @@
             this.panel1.Controls.Add(this.btnThongBao);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(225, 562);
+            this.panel1.Size = new System.Drawing.Size(200, 450);
             this.panel1.TabIndex = 0;
             // 
             // btnGioiThieu
             // 
             this.btnGioiThieu.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnGioiThieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGioiThieu.Location = new System.Drawing.Point(0, 442);
-            this.btnGioiThieu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnGioiThieu.Location = new System.Drawing.Point(0, 354);
             this.btnGioiThieu.Name = "btnGioiThieu";
-            this.btnGioiThieu.Size = new System.Drawing.Size(225, 48);
+            this.btnGioiThieu.Size = new System.Drawing.Size(200, 38);
             this.btnGioiThieu.TabIndex = 2;
             this.btnGioiThieu.Text = "Giới thiệu";
             this.btnGioiThieu.UseVisualStyleBackColor = false;
@@ -68,10 +66,9 @@
             // 
             this.btnNhapXuat.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnNhapXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNhapXuat.Location = new System.Drawing.Point(0, 141);
-            this.btnNhapXuat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnNhapXuat.Location = new System.Drawing.Point(0, 113);
             this.btnNhapXuat.Name = "btnNhapXuat";
-            this.btnNhapXuat.Size = new System.Drawing.Size(225, 48);
+            this.btnNhapXuat.Size = new System.Drawing.Size(200, 38);
             this.btnNhapXuat.TabIndex = 1;
             this.btnNhapXuat.Text = "Dữ liệu";
             this.btnNhapXuat.UseVisualStyleBackColor = false;
@@ -81,10 +78,9 @@
             // 
             this.btnThongBao.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnThongBao.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThongBao.Location = new System.Drawing.Point(0, 46);
-            this.btnThongBao.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnThongBao.Location = new System.Drawing.Point(0, 37);
             this.btnThongBao.Name = "btnThongBao";
-            this.btnThongBao.Size = new System.Drawing.Size(225, 48);
+            this.btnThongBao.Size = new System.Drawing.Size(200, 38);
             this.btnThongBao.TabIndex = 0;
             this.btnThongBao.Text = "Thông báo";
             this.btnThongBao.UseVisualStyleBackColor = false;
@@ -94,46 +90,40 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(28, 32);
+            this.label1.Location = new System.Drawing.Point(25, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(169, 25);
+            this.label1.Size = new System.Drawing.Size(145, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Hiển thị thông báo";
             // 
-            // cbLoaiThongBao
-            //
-            this.cbLoaiThongBao.FormattingEnabled = true;
-            this.cbLoaiThongBao.Items.AddRange(new object[] {
-            "Mọi lúc",
-            "Khi mở",
-            "Không bao giờ"});
-            this.cbLoaiThongBao.Location = new System.Drawing.Point(198, 32);
-            this.cbLoaiThongBao.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cbLoaiThongBao.Name = "cbLoaiThongBao";
-            this.cbLoaiThongBao.Size = new System.Drawing.Size(136, 28);
-            this.cbLoaiThongBao.TabIndex = 2;
+            // cbbHienThiTB
+            // 
+            this.cbbHienThiTB.FormattingEnabled = true;
+            this.cbbHienThiTB.Location = new System.Drawing.Point(176, 26);
+            this.cbbHienThiTB.Name = "cbbHienThiTB";
+            this.cbbHienThiTB.Size = new System.Drawing.Size(121, 24);
+            this.cbbHienThiTB.TabIndex = 2;
+            this.cbbHienThiTB.SelectedIndexChanged += new System.EventHandler(this.cbbHienThiTB_SelectedIndexChanged);
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.cbLoaiThongBao);
+            this.panel2.Controls.Add(this.cbbHienThiTB);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(225, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel2.Location = new System.Drawing.Point(200, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(908, 562);
+            this.panel2.Size = new System.Drawing.Size(807, 450);
             this.panel2.TabIndex = 3;
             // 
             // Settings
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1133, 562);
+            this.ClientSize = new System.Drawing.Size(1007, 450);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Settings";
@@ -152,7 +142,7 @@
         private System.Windows.Forms.Button btnNhapXuat;
         private System.Windows.Forms.Button btnThongBao;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cbLoaiThongBao;
+        private System.Windows.Forms.ComboBox cbbHienThiTB;
         private System.Windows.Forms.Button btnGioiThieu;
         private System.Windows.Forms.Panel panel2;
     }

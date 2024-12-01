@@ -29,10 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cbxQuaHan = new System.Windows.Forms.CheckBox();
-            this.cbxSapToi = new System.Windows.Forms.CheckBox();
-            this.cbxDaHT = new System.Windows.Forms.CheckBox();
-            this.btnThayDoi = new System.Windows.Forms.Button();
+            this.chkChuaHoanThanh = new System.Windows.Forms.CheckBox();
+            this.chkDaHoanThanh = new System.Windows.Forms.CheckBox();
             this.txtDuongDan = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,10 +42,8 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.cbxQuaHan);
-            this.panel1.Controls.Add(this.cbxSapToi);
-            this.panel1.Controls.Add(this.cbxDaHT);
-            this.panel1.Controls.Add(this.btnThayDoi);
+            this.panel1.Controls.Add(this.chkChuaHoanThanh);
+            this.panel1.Controls.Add(this.chkDaHoanThanh);
             this.panel1.Controls.Add(this.txtDuongDan);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
@@ -56,129 +52,102 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(900, 562);
+            this.panel1.Size = new System.Drawing.Size(800, 450);
             this.panel1.TabIndex = 0;
             // 
-            // cbxQuaHan
+            // chkChuaHoanThanh
             // 
-            this.cbxQuaHan.AutoSize = true;
-            this.cbxQuaHan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxQuaHan.Location = new System.Drawing.Point(40, 362);
-            this.cbxQuaHan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cbxQuaHan.Name = "cbxQuaHan";
-            this.cbxQuaHan.Size = new System.Drawing.Size(114, 29);
-            this.cbxQuaHan.TabIndex = 17;
-            this.cbxQuaHan.Text = "Quá hạn";
-            this.cbxQuaHan.UseVisualStyleBackColor = true;
+            this.chkChuaHoanThanh.AutoSize = true;
+            this.chkChuaHoanThanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkChuaHoanThanh.Location = new System.Drawing.Point(36, 294);
+            this.chkChuaHoanThanh.Name = "chkChuaHoanThanh";
+            this.chkChuaHoanThanh.Size = new System.Drawing.Size(157, 24);
+            this.chkChuaHoanThanh.TabIndex = 16;
+            this.chkChuaHoanThanh.Text = "Chưa hoàn thành";
+            this.chkChuaHoanThanh.UseVisualStyleBackColor = true;
             // 
-            // cbxSapToi
+            // chkDaHoanThanh
             // 
-            this.cbxSapToi.AutoSize = true;
-            this.cbxSapToi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxSapToi.Location = new System.Drawing.Point(40, 312);
-            this.cbxSapToi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cbxSapToi.Name = "cbxSapToi";
-            this.cbxSapToi.Size = new System.Drawing.Size(99, 29);
-            this.cbxSapToi.TabIndex = 16;
-            this.cbxSapToi.Text = "Sắp tới";
-            this.cbxSapToi.UseVisualStyleBackColor = true;
-            // 
-            // cbxDaHT
-            // 
-            this.cbxDaHT.AutoSize = true;
-            this.cbxDaHT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxDaHT.Location = new System.Drawing.Point(40, 263);
-            this.cbxDaHT.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cbxDaHT.Name = "cbxDaHT";
-            this.cbxDaHT.Size = new System.Drawing.Size(166, 29);
-            this.cbxDaHT.TabIndex = 15;
-            this.cbxDaHT.Text = "Đã hoàn thành";
-            this.cbxDaHT.UseVisualStyleBackColor = true;
-            // 
-            // btnThayDoi
-            // 
-            this.btnThayDoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThayDoi.Location = new System.Drawing.Point(760, 475);
-            this.btnThayDoi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnThayDoi.Name = "btnThayDoi";
-            this.btnThayDoi.Size = new System.Drawing.Size(109, 32);
-            this.btnThayDoi.TabIndex = 14;
-            this.btnThayDoi.Text = "Thay đổi";
-            this.btnThayDoi.UseVisualStyleBackColor = true;
+            this.chkDaHoanThanh.AutoSize = true;
+            this.chkDaHoanThanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkDaHoanThanh.Location = new System.Drawing.Point(36, 235);
+            this.chkDaHoanThanh.Name = "chkDaHoanThanh";
+            this.chkDaHoanThanh.Size = new System.Drawing.Size(139, 24);
+            this.chkDaHoanThanh.TabIndex = 15;
+            this.chkDaHoanThanh.Text = "Đã hoàn thành";
+            this.chkDaHoanThanh.UseVisualStyleBackColor = true;
             // 
             // txtDuongDan
             // 
             this.txtDuongDan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDuongDan.Location = new System.Drawing.Point(161, 475);
-            this.txtDuongDan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtDuongDan.Location = new System.Drawing.Point(234, 380);
             this.txtDuongDan.Name = "txtDuongDan";
             this.txtDuongDan.ReadOnly = true;
-            this.txtDuongDan.Size = new System.Drawing.Size(555, 30);
+            this.txtDuongDan.Size = new System.Drawing.Size(494, 26);
             this.txtDuongDan.TabIndex = 13;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(30, 482);
+            this.label3.Location = new System.Drawing.Point(27, 386);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 25);
+            this.label3.Size = new System.Drawing.Size(189, 20);
             this.label3.TabIndex = 12;
-            this.label3.Text = "Lưu vào:";
+            this.label3.Text = "Dữ liệu đã được lưu vào:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(35, 203);
+            this.label2.Location = new System.Drawing.Point(31, 162);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 25);
+            this.label2.Size = new System.Drawing.Size(109, 20);
             this.label2.TabIndex = 11;
             this.label2.Text = "Xuất dữ liệu";
             // 
             // btnXuatFile
             // 
-            this.btnXuatFile.Location = new System.Drawing.Point(225, 197);
-            this.btnXuatFile.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnXuatFile.Location = new System.Drawing.Point(200, 158);
             this.btnXuatFile.Name = "btnXuatFile";
-            this.btnXuatFile.Size = new System.Drawing.Size(157, 41);
+            this.btnXuatFile.Size = new System.Drawing.Size(140, 33);
             this.btnXuatFile.TabIndex = 10;
             this.btnXuatFile.Text = "Xuất file";
             this.btnXuatFile.UseVisualStyleBackColor = true;
+            this.btnXuatFile.Click += new System.EventHandler(this.btnXuatFile_Click);
             // 
             // btnChonFile
             // 
-            this.btnChonFile.Location = new System.Drawing.Point(225, 63);
-            this.btnChonFile.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnChonFile.Location = new System.Drawing.Point(200, 50);
             this.btnChonFile.Name = "btnChonFile";
-            this.btnChonFile.Size = new System.Drawing.Size(157, 41);
+            this.btnChonFile.Size = new System.Drawing.Size(140, 33);
             this.btnChonFile.TabIndex = 10;
             this.btnChonFile.Text = "Nhập file";
             this.btnChonFile.UseVisualStyleBackColor = true;
+            this.btnChonFile.Click += new System.EventHandler(this.btnChonFile_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(35, 69);
+            this.label1.Location = new System.Drawing.Point(31, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 25);
+            this.label1.Size = new System.Drawing.Size(114, 20);
             this.label1.TabIndex = 9;
             this.label1.Text = "Nhập dữ liệu";
             // 
             // frmDuLieu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(900, 562);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmDuLieu";
             this.Text = "DuLieu";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmDuLieu_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -188,15 +157,13 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.CheckBox cbxQuaHan;
-        private System.Windows.Forms.CheckBox cbxSapToi;
-        private System.Windows.Forms.CheckBox cbxDaHT;
-        private System.Windows.Forms.Button btnThayDoi;
+        private System.Windows.Forms.CheckBox chkDaHoanThanh;
         private System.Windows.Forms.TextBox txtDuongDan;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnChonFile;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnXuatFile;
+        private System.Windows.Forms.CheckBox chkChuaHoanThanh;
     }
 }

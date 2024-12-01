@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DỰ_ÁN_NHẮC_VIỆC.NotiAndSettingForm;
+using System;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace FormPhu
 {
@@ -16,6 +11,12 @@ namespace FormPhu
         {
             InitializeComponent();
             this.IsMdiContainer = true;
+            // Gán các giá trị cho ComboBox
+            cbbHienThiTB.Items.AddRange(new string[] { "Cho phép", "Không" });
+            cbbHienThiTB.SelectedIndex = SettingsState.IsToastEnabled ? 0 : 1;
+
+            // Đảm bảo sự kiện SelectedIndexChanged được đăng ký đúng
+            cbbHienThiTB.SelectedIndexChanged += cbbHienThiTB_SelectedIndexChanged;
         }
 
         private void btnNhapXuat_Click(object sender, EventArgs e)
@@ -40,6 +41,24 @@ namespace FormPhu
            
             HideAllChildForms();
             panel2.Visible = true;
+        }
+
+        private void cbbHienThiTB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Kiểm tra nếu SelectedIndex thay đổi
+            if (cbbHienThiTB.SelectedIndex == 0 && SettingsState.IsToastEnabled == false)
+            {
+                // Chọn "Có" và chưa bật thông báo
+                SettingsState.IsToastEnabled = true;
+                MessageBox.Show("Thông báo đã được thay đổi thành trạng thái bật" );
+            }
+            else if (cbbHienThiTB.SelectedIndex == 1 && SettingsState.IsToastEnabled == true)
+            {
+                // Chọn "Không" và thông báo đang bật
+                SettingsState.IsToastEnabled = false;
+                MessageBox.Show("Thông báo đã được thay đổi thành trạng thái tắt");
+            }
+
         }
     }
 }

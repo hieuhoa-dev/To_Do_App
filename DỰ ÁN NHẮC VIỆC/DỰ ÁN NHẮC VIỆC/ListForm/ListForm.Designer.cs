@@ -28,303 +28,208 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("Học tập", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("Mua sắm", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
-            "a",
-            "Học tập",
-            "10h",
-            "20h",
-            "Đang thực hiện",
-            "Quan Trọng"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.gbCVcon = new System.Windows.Forms.GroupBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
-            this.gbDanhSanhCV = new System.Windows.Forms.GroupBox();
-            this.lvDanhSachCV = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.gbTimKiem = new System.Windows.Forms.GroupBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.txtTenCV = new System.Windows.Forms.TextBox();
+            this.dgvDanhSachCongViec = new System.Windows.Forms.DataGridView();
+            this.NameJob = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnTimKiem = new System.Windows.Forms.Button();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cbbTimKiem = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pnlContainJob = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.gbCVcon.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
-            this.gbDanhSanhCV.SuspendLayout();
-            this.gbTimKiem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachCongViec)).BeginInit();
+            this.pnlContainJob.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.gbCVcon);
-            this.panel1.Controls.Add(this.gbDanhSanhCV);
+            this.panel1.Controls.Add(this.pnlContainJob);
+            this.panel1.Controls.Add(this.btnTimKiem);
+            this.panel1.Controls.Add(this.txtTimKiem);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.cbbTimKiem);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1298, 860);
             this.panel1.TabIndex = 0;
             // 
-            // gbCVcon
+            // dgvDanhSachCongViec
             // 
-            this.gbCVcon.Controls.Add(this.panel2);
-            this.gbCVcon.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.gbCVcon.Location = new System.Drawing.Point(9, 451);
-            this.gbCVcon.Name = "gbCVcon";
-            this.gbCVcon.Size = new System.Drawing.Size(1277, 409);
-            this.gbCVcon.TabIndex = 2;
-            this.gbCVcon.TabStop = false;
-            this.gbCVcon.Text = "Thông tin công viêc";
+            this.dgvDanhSachCongViec.AllowUserToResizeColumns = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDanhSachCongViec.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvDanhSachCongViec.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvDanhSachCongViec.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvDanhSachCongViec.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvDanhSachCongViec.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            this.dgvDanhSachCongViec.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvDanhSachCongViec.ColumnHeadersHeight = 34;
+            this.dgvDanhSachCongViec.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvDanhSachCongViec.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.NameJob,
+            this.Column1,
+            this.Column2,
+            this.Status,
+            this.Column4,
+            this.Column5,
+            this.Column6});
+            this.dgvDanhSachCongViec.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvDanhSachCongViec.Location = new System.Drawing.Point(0, 0);
+            this.dgvDanhSachCongViec.Name = "dgvDanhSachCongViec";
+            this.dgvDanhSachCongViec.RowHeadersWidth = 30;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            this.dgvDanhSachCongViec.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvDanhSachCongViec.Size = new System.Drawing.Size(1298, 799);
+            this.dgvDanhSachCongViec.TabIndex = 0;
             // 
-            // panel2
+            // NameJob
             // 
-            this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.toolStrip1);
-            this.panel2.Location = new System.Drawing.Point(6, 37);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1265, 366);
-            this.panel2.TabIndex = 0;
+            this.NameJob.DataPropertyName = "NameJob";
+            this.NameJob.HeaderText = "Tên công việc";
+            this.NameJob.MinimumWidth = 6;
+            this.NameJob.Name = "NameJob";
             // 
-            // toolStrip1
+            // Column1
             // 
-            this.toolStrip1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripLabel1,
-            this.toolStripSeparator1,
-            this.toolStripProgressBar1});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1263, 38);
-            this.toolStrip1.TabIndex = 0;
-            this.toolStrip1.Text = "toolStrip1";
+            this.Column1.DataPropertyName = "ToDate";
+            this.Column1.HeaderText = "Ngày bắt đầu";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
             // 
-            // toolStripLabel1
+            // Column2
             // 
-            this.toolStripLabel1.ForeColor = System.Drawing.Color.Black;
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(113, 33);
-            this.toolStripLabel1.Text = "Công việc : a";
+            this.Column2.DataPropertyName = "FromDate";
+            this.Column2.HeaderText = "Ngày kết thúc";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
             // 
-            // toolStripSeparator1
+            // Status
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 38);
+            this.Status.DataPropertyName = "Status";
+            this.Status.HeaderText = "Trạng thái";
+            this.Status.MinimumWidth = 6;
+            this.Status.Name = "Status";
             // 
-            // toolStripProgressBar1
+            // Column4
             // 
-            this.toolStripProgressBar1.AutoSize = false;
-            this.toolStripProgressBar1.Name = "toolStripProgressBar1";
-            this.toolStripProgressBar1.Size = new System.Drawing.Size(150, 25);
-            this.toolStripProgressBar1.Value = 60;
+            this.Column4.DataPropertyName = "Category";
+            this.Column4.HeaderText = "Thể loại";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
             // 
-            // gbDanhSanhCV
+            // Column5
             // 
-            this.gbDanhSanhCV.BackColor = System.Drawing.SystemColors.Control;
-            this.gbDanhSanhCV.Controls.Add(this.lvDanhSachCV);
-            this.gbDanhSanhCV.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.gbDanhSanhCV.Location = new System.Drawing.Point(3, 88);
-            this.gbDanhSanhCV.Name = "gbDanhSanhCV";
-            this.gbDanhSanhCV.Size = new System.Drawing.Size(1298, 357);
-            this.gbDanhSanhCV.TabIndex = 1;
-            this.gbDanhSanhCV.TabStop = false;
-            this.gbDanhSanhCV.Text = "Danh sách công việc";
+            this.Column5.DataPropertyName = "LevelJob";
+            this.Column5.HeaderText = "Mức độ";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
             // 
-            // lvDanhSachCV
+            // Column6
             // 
-            this.lvDanhSachCV.Activation = System.Windows.Forms.ItemActivation.OneClick;
-            this.lvDanhSachCV.AllowColumnReorder = true;
-            this.lvDanhSachCV.CheckBoxes = true;
-            this.lvDanhSachCV.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader8,
-            this.columnHeader3,
-            this.columnHeader4,
-            this.columnHeader5,
-            this.columnHeader6,
-            this.columnHeader7});
-            this.lvDanhSachCV.FullRowSelect = true;
-            listViewGroup1.Header = "Học tập";
-            listViewGroup1.Name = "listViewGroup1";
-            listViewGroup2.Header = "Mua sắm";
-            listViewGroup2.Name = "listViewGroup2";
-            this.lvDanhSachCV.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup1,
-            listViewGroup2});
-            this.lvDanhSachCV.HideSelection = false;
-            listViewItem1.Group = listViewGroup1;
-            listViewItem1.StateImageIndex = 0;
-            listViewItem1.ToolTipText = "s";
-            listViewItem2.Group = listViewGroup2;
-            listViewItem2.StateImageIndex = 0;
-            listViewItem3.Group = listViewGroup2;
-            listViewItem3.StateImageIndex = 0;
-            this.lvDanhSachCV.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2,
-            listViewItem3});
-            this.lvDanhSachCV.Location = new System.Drawing.Point(3, 25);
-            this.lvDanhSachCV.Name = "lvDanhSachCV";
-            this.lvDanhSachCV.Size = new System.Drawing.Size(1280, 316);
-            this.lvDanhSachCV.TabIndex = 0;
-            this.lvDanhSachCV.UseCompatibleStateImageBehavior = false;
-            this.lvDanhSachCV.View = System.Windows.Forms.View.Details;
+            this.Column6.DataPropertyName = "Notes";
+            this.Column6.HeaderText = "Ghi chú";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
             // 
-            // columnHeader1
+            // btnTimKiem
             // 
-            this.columnHeader1.Text = "Tên công việc";
-            this.columnHeader1.Width = 315;
+            this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimKiem.ForeColor = System.Drawing.Color.Black;
+            this.btnTimKiem.Location = new System.Drawing.Point(1023, 25);
+            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(110, 29);
+            this.btnTimKiem.TabIndex = 5;
+            this.btnTimKiem.Text = "Tìm kiếm";
+            this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
-            // columnHeader8
+            // txtTimKiem
             // 
-            this.columnHeader8.Text = "Loại ";
-            this.columnHeader8.Width = 150;
+            this.txtTimKiem.Location = new System.Drawing.Point(508, 24);
+            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(481, 26);
+            this.txtTimKiem.TabIndex = 4;
             // 
-            // columnHeader3
+            // label2
             // 
-            this.columnHeader3.Text = "Ngày bắt đầu";
-            this.columnHeader3.Width = 155;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(368, 25);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(132, 22);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Nhập thông tin:";
             // 
-            // columnHeader4
+            // cbbTimKiem
             // 
-            this.columnHeader4.Text = "Ngày kết thúc";
-            this.columnHeader4.Width = 159;
+            this.cbbTimKiem.FormattingEnabled = true;
+            this.cbbTimKiem.Items.AddRange(new object[] {
+            "Tên công việc",
+            "Mức độ",
+            "Thể loại"});
+            this.cbbTimKiem.Location = new System.Drawing.Point(164, 24);
+            this.cbbTimKiem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cbbTimKiem.Name = "cbbTimKiem";
+            this.cbbTimKiem.Size = new System.Drawing.Size(136, 28);
+            this.cbbTimKiem.TabIndex = 2;
             // 
-            // columnHeader5
+            // label1
             // 
-            this.columnHeader5.Text = "Trạng thái";
-            this.columnHeader5.Width = 148;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Control;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(27, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(127, 22);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Tìm kiếm theo:";
             // 
-            // columnHeader6
+            // pnlContainJob
             // 
-            this.columnHeader6.Text = "Mức Độ";
-            this.columnHeader6.Width = 154;
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "Địa điểm";
-            this.columnHeader7.Width = 154;
-            // 
-            // gbTimKiem
-            // 
-            this.gbTimKiem.Controls.Add(this.comboBox4);
-            this.gbTimKiem.Controls.Add(this.comboBox2);
-            this.gbTimKiem.Controls.Add(this.comboBox1);
-            this.gbTimKiem.Controls.Add(this.dateTimePicker2);
-            this.gbTimKiem.Controls.Add(this.dateTimePicker1);
-            this.gbTimKiem.Controls.Add(this.txtTenCV);
-            this.gbTimKiem.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gbTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.gbTimKiem.Location = new System.Drawing.Point(0, 0);
-            this.gbTimKiem.Name = "gbTimKiem";
-            this.gbTimKiem.Size = new System.Drawing.Size(1298, 82);
-            this.gbTimKiem.TabIndex = 0;
-            this.gbTimKiem.TabStop = false;
-            this.gbTimKiem.Text = "Tìm kiếm";
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "DONE",
-            "DOING",
-            "COMING",
-            "MISSED"});
-            this.comboBox4.Location = new System.Drawing.Point(318, 33);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 28);
-            this.comboBox4.TabIndex = 23;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "DONE",
-            "DOING",
-            "COMING",
-            "MISSED"});
-            this.comboBox2.Location = new System.Drawing.Point(1053, 35);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 28);
-            this.comboBox2.TabIndex = 23;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "DONE",
-            "DOING",
-            "COMING",
-            "MISSED"});
-            this.comboBox1.Location = new System.Drawing.Point(885, 37);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 28);
-            this.comboBox1.TabIndex = 23;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.CustomFormat = "dd/MM/yyyy";
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(455, 34);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(117, 26);
-            this.dateTimePicker2.TabIndex = 22;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CustomFormat = "hh:mm - dd/MM/yyyy ";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(626, 37);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(188, 26);
-            this.dateTimePicker1.TabIndex = 22;
-            // 
-            // txtTenCV
-            // 
-            this.txtTenCV.ForeColor = System.Drawing.Color.Gray;
-            this.txtTenCV.Location = new System.Drawing.Point(6, 34);
-            this.txtTenCV.Name = "txtTenCV";
-            this.txtTenCV.Size = new System.Drawing.Size(192, 26);
-            this.txtTenCV.TabIndex = 21;
-            this.txtTenCV.Text = "Tên Công Việc";
+            this.pnlContainJob.Controls.Add(this.dgvDanhSachCongViec);
+            this.pnlContainJob.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlContainJob.Location = new System.Drawing.Point(0, 61);
+            this.pnlContainJob.Name = "pnlContainJob";
+            this.pnlContainJob.Size = new System.Drawing.Size(1298, 799);
+            this.pnlContainJob.TabIndex = 6;
             // 
             // ListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1298, 860);
-            this.Controls.Add(this.gbTimKiem);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ListForm";
             this.Text = "List";
+            this.Load += new System.EventHandler(this.ListForm_Load);
             this.panel1.ResumeLayout(false);
-            this.gbCVcon.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
-            this.gbDanhSanhCV.ResumeLayout(false);
-            this.gbTimKiem.ResumeLayout(false);
-            this.gbTimKiem.PerformLayout();
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachCongViec)).EndInit();
+            this.pnlContainJob.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -332,28 +237,20 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.GroupBox gbDanhSanhCV;
-        private System.Windows.Forms.GroupBox gbTimKiem;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox txtTenCV;
-        private System.Windows.Forms.ListView lvDanhSachCV;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.ColumnHeader columnHeader5;
-        private System.Windows.Forms.ColumnHeader columnHeader6;
-        private System.Windows.Forms.ColumnHeader columnHeader7;
-        private System.Windows.Forms.ColumnHeader columnHeader8;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.GroupBox gbCVcon;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripProgressBar toolStripProgressBar1;
+        private System.Windows.Forms.Button btnTimKiem;
+        private System.Windows.Forms.TextBox txtTimKiem;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cbbTimKiem;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dgvDanhSachCongViec;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NameJob;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Status;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.Panel pnlContainJob;
     }
 }
 

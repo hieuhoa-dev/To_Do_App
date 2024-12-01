@@ -42,6 +42,7 @@
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.DirectoryServices" />
@@ -109,6 +110,7 @@
     <Compile Include="NotiAndSettingForm\Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
+    <Compile Include="NotiAndSettingForm\SettingsState.cs" />
     <Compile Include="NotiAndSettingForm\ThongBao.cs">
       <SubType>Form</SubType>
     </Compile>
