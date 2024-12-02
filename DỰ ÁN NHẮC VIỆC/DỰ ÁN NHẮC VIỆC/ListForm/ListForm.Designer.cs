@@ -30,30 +30,29 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlContainJob = new System.Windows.Forms.Panel();
             this.dgvDanhSachCongViec = new System.Windows.Forms.DataGridView();
             this.NameJob = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ToDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FromDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnTimKiem = new System.Windows.Forms.Button();
+            this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LevelJob = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Notes = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cbbTimKiem = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pnlContainJob = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachCongViec)).BeginInit();
             this.pnlContainJob.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachCongViec)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.pnlContainJob);
-            this.panel1.Controls.Add(this.btnTimKiem);
             this.panel1.Controls.Add(this.txtTimKiem);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.cbbTimKiem);
@@ -65,12 +64,22 @@
             this.panel1.Size = new System.Drawing.Size(1298, 860);
             this.panel1.TabIndex = 0;
             // 
+            // pnlContainJob
+            // 
+            this.pnlContainJob.Controls.Add(this.dgvDanhSachCongViec);
+            this.pnlContainJob.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlContainJob.Location = new System.Drawing.Point(0, 61);
+            this.pnlContainJob.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlContainJob.Name = "pnlContainJob";
+            this.pnlContainJob.Size = new System.Drawing.Size(1298, 799);
+            this.pnlContainJob.TabIndex = 6;
+            // 
             // dgvDanhSachCongViec
             // 
             this.dgvDanhSachCongViec.AllowUserToResizeColumns = false;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -80,24 +89,32 @@
             this.dgvDanhSachCongViec.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvDanhSachCongViec.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvDanhSachCongViec.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            this.dgvDanhSachCongViec.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDanhSachCongViec.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvDanhSachCongViec.ColumnHeadersHeight = 34;
             this.dgvDanhSachCongViec.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvDanhSachCongViec.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.NameJob,
-            this.Column1,
-            this.Column2,
+            this.ToDate,
+            this.FromDate,
             this.Status,
-            this.Column4,
-            this.Column5,
-            this.Column6});
+            this.Category,
+            this.LevelJob,
+            this.Notes});
             this.dgvDanhSachCongViec.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvDanhSachCongViec.Location = new System.Drawing.Point(0, 0);
+            this.dgvDanhSachCongViec.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvDanhSachCongViec.Name = "dgvDanhSachCongViec";
             this.dgvDanhSachCongViec.RowHeadersWidth = 30;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            this.dgvDanhSachCongViec.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            this.dgvDanhSachCongViec.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvDanhSachCongViec.Size = new System.Drawing.Size(1298, 799);
             this.dgvDanhSachCongViec.TabIndex = 0;
             // 
@@ -108,19 +125,19 @@
             this.NameJob.MinimumWidth = 6;
             this.NameJob.Name = "NameJob";
             // 
-            // Column1
+            // ToDate
             // 
-            this.Column1.DataPropertyName = "ToDate";
-            this.Column1.HeaderText = "Ngày bắt đầu";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
+            this.ToDate.DataPropertyName = "ToDate";
+            this.ToDate.HeaderText = "Ngày bắt đầu";
+            this.ToDate.MinimumWidth = 6;
+            this.ToDate.Name = "ToDate";
             // 
-            // Column2
+            // FromDate
             // 
-            this.Column2.DataPropertyName = "FromDate";
-            this.Column2.HeaderText = "Ngày kết thúc";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
+            this.FromDate.DataPropertyName = "FromDate";
+            this.FromDate.HeaderText = "Ngày kết thúc";
+            this.FromDate.MinimumWidth = 6;
+            this.FromDate.Name = "FromDate";
             // 
             // Status
             // 
@@ -129,39 +146,26 @@
             this.Status.MinimumWidth = 6;
             this.Status.Name = "Status";
             // 
-            // Column4
+            // Category
             // 
-            this.Column4.DataPropertyName = "Category";
-            this.Column4.HeaderText = "Thể loại";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
+            this.Category.DataPropertyName = "Category";
+            this.Category.HeaderText = "Thể loại";
+            this.Category.MinimumWidth = 6;
+            this.Category.Name = "Category";
             // 
-            // Column5
+            // LevelJob
             // 
-            this.Column5.DataPropertyName = "LevelJob";
-            this.Column5.HeaderText = "Mức độ";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
+            this.LevelJob.DataPropertyName = "LevelJob";
+            this.LevelJob.HeaderText = "Mức độ";
+            this.LevelJob.MinimumWidth = 6;
+            this.LevelJob.Name = "LevelJob";
             // 
-            // Column6
+            // Notes
             // 
-            this.Column6.DataPropertyName = "Notes";
-            this.Column6.HeaderText = "Ghi chú";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            // 
-            // btnTimKiem
-            // 
-            this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimKiem.ForeColor = System.Drawing.Color.Black;
-            this.btnTimKiem.Location = new System.Drawing.Point(1023, 25);
-            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(110, 29);
-            this.btnTimKiem.TabIndex = 5;
-            this.btnTimKiem.Text = "Tìm kiếm";
-            this.btnTimKiem.UseVisualStyleBackColor = true;
-            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
+            this.Notes.DataPropertyName = "Notes";
+            this.Notes.HeaderText = "Ghi chú";
+            this.Notes.MinimumWidth = 6;
+            this.Notes.Name = "Notes";
             // 
             // txtTimKiem
             // 
@@ -170,6 +174,7 @@
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(481, 26);
             this.txtTimKiem.TabIndex = 4;
+            this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
             // 
             // label2
             // 
@@ -187,6 +192,7 @@
             this.cbbTimKiem.FormattingEnabled = true;
             this.cbbTimKiem.Items.AddRange(new object[] {
             "Tên công việc",
+            "Trạng thái",
             "Mức độ",
             "Thể loại"});
             this.cbbTimKiem.Location = new System.Drawing.Point(164, 24);
@@ -207,15 +213,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Tìm kiếm theo:";
             // 
-            // pnlContainJob
-            // 
-            this.pnlContainJob.Controls.Add(this.dgvDanhSachCongViec);
-            this.pnlContainJob.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlContainJob.Location = new System.Drawing.Point(0, 61);
-            this.pnlContainJob.Name = "pnlContainJob";
-            this.pnlContainJob.Size = new System.Drawing.Size(1298, 799);
-            this.pnlContainJob.TabIndex = 6;
-            // 
             // ListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -228,8 +225,8 @@
             this.Load += new System.EventHandler(this.ListForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachCongViec)).EndInit();
             this.pnlContainJob.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachCongViec)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -237,20 +234,19 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbbTimKiem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvDanhSachCongViec;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NameJob;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Status;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.Panel pnlContainJob;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NameJob;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ToDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FromDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Status;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Category;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LevelJob;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Notes;
     }
 }
 

@@ -29,10 +29,15 @@ namespace FormPhu
 
         public void LoadForm()
         {
-            this.Load += ThongBao_Load;
+            LoadThongBao();
         }
 
         private void ThongBao_Load(object sender, EventArgs e)
+        {
+            LoadThongBao();
+        }
+
+        void LoadThongBao()
         {
             flowLayoutPanel1.Controls.Clear();
             NotifyBL notifyBL = new NotifyBL();
@@ -45,6 +50,7 @@ namespace FormPhu
                 flowLayoutPanel1.Controls.SetChildIndex(thongBaoCon, 0);
             }
         }
-
     }
+
+
 }

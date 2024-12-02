@@ -1,9 +1,12 @@
-﻿using DỰ_ÁN_NHẮC_VIỆC;
+﻿using BusinessLogic;
+using DataAccess;
+using DỰ_ÁN_NHẮC_VIỆC;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -15,149 +18,140 @@ namespace FormPhu
 {
     public partial class frmDuLieu : Form
     {
+        private JobBL jobBL;
         private ListForm listForm;
-        private MainForm mainForm;
         public frmDuLieu()
         {
             InitializeComponent();
-            listForm = new ListForm();
-            listForm.Show();
-
+            //jobService = new JobService();
+            //listForm = new ListForm(); // Khởi tạo Form hiển thị danh sách công việc
+            //listForm.Show(); // Hiển thị Form ListForm
 
         }
 
 
         private void btnChonFile_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "CSV Files (*.csv)|*.csv|All Files (*.*)|*.*";
+            OpenFileDialog openFileDialog = new OpenFileDialog
+            {
+                Filter = "CSV Files (*.csv)|*.csv|All Files (*.*)|*.*"
+            };
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 string filePath = openFileDialog.FileName;
-                DataTable dataTable = ReadCsvFile(filePath);
+                var jobList = ReadCsvFile(filePath); // Lấy danh sách công việc từ BLL
+                JobBL jobBL = new JobBL();
+                foreach (var item in jobList)
+                {
+                    jobBL.Insert(item);
+                }
 
-                if (dataTable.Rows.Count > 0)
-                {
-                    // Cập nhật dữ liệu vào ListForm
-                    listForm.SetDataSource(dataTable);
-                }
-                else
-                {
-                    MessageBox.Show("File CSV không có dữ liệu hoặc không hợp lệ!", "Lỗi");
-                }
+                  MessageBox.Show("Nhập file thành công");
+
             }
         }
 
+
         private void btnXuatFile_Click(object sender, EventArgs e)
         {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Filter = "CSV Files (*.csv)|*.csv|All Files (*.*)|*.*";
+            SaveFileDialog saveFileDialog = new SaveFileDialog
+            {
+                Filter = "CSV Files (*.csv)|*.csv|All Files (*.*)|*.*"
+            };
 
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
                 string filePath = saveFileDialog.FileName;
 
-                // Lấy giá trị trạng thái từ checkbox
-                bool? daHoanThanh = null;
+                // Lấy trạng thái hoàn thành từ checkbox
+                bool? daHoanThanh = chkDaHoanThanh.Checked ? true :
+                                     chkChuaHoanThanh.Checked ? false : (bool?)null;
+                JobBL jobBL = new JobBL();
 
-                if (chkDaHoanThanh.Checked)
-                {
-                    daHoanThanh = true; // Đã hoàn thành
-                }
-                else if (chkChuaHoanThanh.Checked)
-                {
-                    daHoanThanh = false; // Chưa hoàn thành
-                }
+                List<Job> jobList = jobBL.GetAll();
 
-                // Xuất DataGridView với điều kiện lọc trạng thái
-                ExportToCsv(listForm.DataGridView, filePath, daHoanThanh);
+                // Gọi phương thức ExportToCsv từ tầng Business Logic Layer
+                ExportToCsv(jobList, filePath, daHoanThanh);
+
                 MessageBox.Show("Xuất file thành công!", "Thông báo");
 
-                // Hiển thị đường dẫn lên TextBox
-                txtDuongDan.Text = filePath;
+                txtDuongDan.Text = filePath; // Hiển thị đường dẫn file xuất
             }
         }
-
-        // Đọc file CSV
-        private DataTable ReadCsvFile(string filePath)
+        private void frmDuLieu_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DataTable dataTable = new DataTable();
+        }
+        // Phương thức đọc file CSV và trả về DataTable (hoặc List<Job>)
+        public List<Job> ReadCsvFile(string filePath)
+        {
+            List<Job> jobList = new List<Job>();
 
             using (StreamReader reader = new StreamReader(filePath))
             {
-                // Đọc tiêu đề cột
                 string[] headers = reader.ReadLine()?.Split(',');
                 if (headers != null)
                 {
-                    foreach (string header in headers)
-                    {
-                        dataTable.Columns.Add(header.Trim());
-                    }
-
-                    // Đọc dữ liệu từng dòng
                     while (!reader.EndOfStream)
                     {
                         string[] rows = reader.ReadLine()?.Split(',');
-                        if (rows != null && rows.Length == headers.Length) // Đảm bảo số cột khớp
+                        if (rows != null && rows.Length == headers.Length)
                         {
-                            dataTable.Rows.Add(rows);
+                            Job job = new Job();
+                            job.ID = 0;
+                            job.NameJob = rows[0];
+                            job.ToDate = DateTime.ParseExact(rows[1], "MM/dd/yyyy h:mm:ss tt", CultureInfo.InvariantCulture);
+                            job.FromDate = DateTime.ParseExact(rows[2], "MM/dd/yyyy h:mm:ss tt", CultureInfo.InvariantCulture);
+                            if (rows[3]=="Đã hoàn thành" )
+                            {
+                                job.Status = 1;
+
+                            }
+                            else
+                            {
+                                job.Status =0;
+                            }
+                            job.Category = rows[4];
+                            if (rows[5] == "Quan trọng")
+                            {
+                                job.LevelJob = 1;
+
+                            }
+                            else
+                            {
+                                job.LevelJob = 0;
+                            }
+                            
+                            
+                            job.Notes = rows[6];
+                            job.TimeDelete = DateTime.Now;
+
+                            jobList.Add(job);
                         }
                     }
                 }
             }
-            return dataTable;
+
+            return jobList;
         }
-
-        // Xuất DataGridView ra file CSV, có điều kiện lọc theo trạng thái
-        private void ExportToCsv(DataGridView dataGridView, string filePath, bool? daHoanThanh)
-{
-    using (StreamWriter writer = new StreamWriter(filePath, false, Encoding.UTF8)) // Chỉ định UTF-8
-    {
-        // Xuất tiêu đề cột
-        string[] columnNames = dataGridView.Columns
-            .Cast<DataGridViewColumn>()
-            .Select(column => column.HeaderText)
-            .ToArray();
-        writer.WriteLine(string.Join(",", columnNames));
-
-        // Xuất dữ liệu từng dòng, có điều kiện lọc theo trạng thái
-        foreach (DataGridViewRow row in dataGridView.Rows)
+        // Xuất danh sách công việc ra file CSV
+        public void ExportToCsv(List<Job> jobList, string filePath, bool? daHoanThanh)
         {
-            if (!row.IsNewRow)
+            using (StreamWriter writer = new StreamWriter(filePath, false, Encoding.UTF8))
             {
-                // Kiểm tra trạng thái lọc, chỉ xuất dòng có trạng thái phù hợp
-                if (daHoanThanh.HasValue)
+                writer.WriteLine("Tên công việc,Ngày bắt đầu,Ngày kết thúc,Trạng thái,Thể loại,Mức độ,Ghi chú");
+
+                foreach (var job in jobList)
                 {
-                    int status = Convert.ToInt32(row.Cells["Status"].Value);
-                    if (status != (daHoanThanh.Value ? 1 : 0))
+                    if (daHoanThanh.HasValue && job.Status != (daHoanThanh.Value ? 1 : 0))
                     {
-                        continue; // Bỏ qua nếu trạng thái không khớp
+                        continue;
                     }
+                    string status = job.Status == 1 ? "Đã hoàn thành" : "Chưa hoàn thành";
+                    string leveljob = job.LevelJob == 1 ? "Quan trọng" : "Bình thường";
+                    writer.WriteLine($"{job.NameJob},{job.ToDate},{job.FromDate},{status},{job.Category},{leveljob},{job.Notes}");
                 }
-
-                // Thay đổi giá trị cột Status khi ghi ra file
-                string[] cells = row.Cells
-                    .Cast<DataGridViewCell>()
-                    .Select(cell =>
-                    {
-                        if (cell.OwningColumn.Name == "Status")
-                        {
-                            return cell.Value?.ToString() == "1" ? "Đã hoàn thành" : "Chưa hoàn thành";
-                        }
-                        return cell.Value?.ToString() ?? "";
-                    })
-                    .ToArray();
-
-                writer.WriteLine(string.Join(",", cells));
             }
-        }
-    }
-}
-
-        private void frmDuLieu_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            listForm.SetDataSource(listForm.LayDanhSach());
         }
     }
 }

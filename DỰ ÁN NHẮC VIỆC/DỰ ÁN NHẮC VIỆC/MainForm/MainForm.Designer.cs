@@ -542,7 +542,7 @@
             // tmNotify
             // 
             this.tmNotify.Enabled = true;
-            this.tmNotify.Interval = 20000;
+            this.tmNotify.Interval = 50000;
             this.tmNotify.Tick += new System.EventHandler(this.tmNotify_Tick);
             // 
             // MainForm

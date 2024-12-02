@@ -7,6 +7,7 @@ namespace FormPhu
 {
     public partial class Settings : Form
     {
+        public bool TrangThaiThongBao = false;
         public Settings()
         {
             InitializeComponent();
@@ -14,7 +15,7 @@ namespace FormPhu
             // Gán các giá trị cho ComboBox
             cbbHienThiTB.Items.AddRange(new string[] { "Cho phép", "Không" });
             cbbHienThiTB.SelectedIndex = SettingsState.IsToastEnabled ? 0 : 1;
-
+            TrangThaiThongBao = SettingsState.IsToastEnabled;
             // Đảm bảo sự kiện SelectedIndexChanged được đăng ký đúng
             cbbHienThiTB.SelectedIndexChanged += cbbHienThiTB_SelectedIndexChanged;
         }
@@ -27,7 +28,7 @@ namespace FormPhu
             dl.Dock = DockStyle.Fill;
             dl.StartPosition = FormStartPosition.Manual;
             dl.Show();
-            
+
         }
         void HideAllChildForms()
         {
@@ -38,11 +39,11 @@ namespace FormPhu
         }
         private void btnThongBao_Click(object sender, EventArgs e)
         {
-           
+
             HideAllChildForms();
             panel2.Visible = true;
         }
-
+        public event EventHandler TrangThaiNoti;
         private void cbbHienThiTB_SelectedIndexChanged(object sender, EventArgs e)
         {
             // Kiểm tra nếu SelectedIndex thay đổi
@@ -50,13 +51,15 @@ namespace FormPhu
             {
                 // Chọn "Có" và chưa bật thông báo
                 SettingsState.IsToastEnabled = true;
-                MessageBox.Show("Thông báo đã được thay đổi thành trạng thái bật" );
+                MessageBox.Show("Thông báo đã được thay đổi thành trạng thái bật");
+                TrangThaiNoti.Invoke(this, e);
             }
             else if (cbbHienThiTB.SelectedIndex == 1 && SettingsState.IsToastEnabled == true)
             {
                 // Chọn "Không" và thông báo đang bật
                 SettingsState.IsToastEnabled = false;
                 MessageBox.Show("Thông báo đã được thay đổi thành trạng thái tắt");
+                TrangThaiNoti.Invoke(this, e);
             }
 
         }

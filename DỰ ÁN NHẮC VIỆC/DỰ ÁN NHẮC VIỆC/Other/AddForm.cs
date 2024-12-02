@@ -57,8 +57,6 @@ namespace Other
             {
                 // Thông báo kết quả
                 MessageBox.Show("Thêm dữ liệu thành công");
-                // Tải lại dữ liệu cho ListView
-                //LoadFoodDataToListView();
             }
         }
 
@@ -72,14 +70,9 @@ namespace Other
             if (txtTen.Text == "")
                 MessageBox.Show("Chưa nhập dữ liệu cho các ô, vui lòng nhập lại");
             else
-            {
-                //Nhận giá trị Name, Unit, và Notes từ người dùng nhập vào
+            {   
                 job.NameJob = txtTen.Text;
-
-                //Thêm thời gian bắt đầu
                 job.ToDate = NgayBD;
-
-                //Thêm thời gian kết thúc
                 job.FromDate = NgayKT;
 
                 //Trang thái
@@ -124,9 +117,7 @@ namespace Other
                     JobChildBL jobChildBL = new JobChildBL();
                     jobChildBL.Insert(jobChild);
                 }
-
             }
-
         }
 
         private void dgvListJobChild_CellContentClick(object sender, DataGridViewCellEventArgs e)

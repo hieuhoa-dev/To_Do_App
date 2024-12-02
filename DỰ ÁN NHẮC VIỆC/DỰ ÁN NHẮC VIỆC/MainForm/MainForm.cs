@@ -126,6 +126,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             // m_aeroEnabled = false;
             TaopnlDeskTops();
             //KhoiDongCungVoiWindow();
+            tmNotify.Enabled = TrangThaiThongBao;
         }
         //Tạo thoát, thu nhỏ
         #region 
@@ -227,11 +228,17 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         {
             OpenChildForm(new ListForm(), sender);
         }
-
+        bool TrangThaiThongBao = false;
         private void iconSetting_Click(object sender, EventArgs e)
         {
             Settings settings = new Settings();
+            TrangThaiThongBao = settings.TrangThaiThongBao;
+            settings.TrangThaiNoti += SetThongBao;
             settings.Show();
+        }
+        private void SetThongBao(object sender, EventArgs e)
+        {
+            tmNotify.Enabled = TrangThaiThongBao;
         }
 
 
@@ -248,8 +255,6 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         private void MainForm_Load(object sender, EventArgs e)
         {
             iconHome.IconColor = Color.FromArgb(17, 103, 177);
-            //dscv.DocTuFile(Application.StartupPath + "/CongViec.txt");
-            //pnlShowJob.Controls.Add(new JobList(DateTime.Now, dscv));
             LoadJobToSQL();
             ShowJobbyDay(DateTime.Now, dscv);
         }
@@ -475,14 +480,14 @@ namespace DỰ_ÁN_NHẮC_VIỆC
                     SaveNotify(job, Coming);
                     ThongBao_Load();
                 }
-                if (Math.Abs((job.ToDate - now).TotalSeconds) <= 30)
+                else if (Math.Abs((job.ToDate - now).TotalSeconds) <= 30)
                 {
                     //Thông báo đã đến
                     notifyIcon1.ShowBalloonTip(5000, Doing, job.NameJob, ToolTipIcon.None);
                     SaveNotify(job, Doing);
                     ThongBao_Load();
                 }
-                if (Math.Abs((notifyFromTime - now).TotalSeconds) <= 30)
+                else if (Math.Abs((notifyFromTime - now).TotalSeconds) <= 30)
                 {
                     //Thông báo quá hạn
                     notifyIcon1.ShowBalloonTip(5000, Overdue, job.NameJob, ToolTipIcon.None);
@@ -499,6 +504,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
                 NotiForm.LoadForm();
             }
         }
+     
 
         void SaveNotify(Job job,string Category)
         {
