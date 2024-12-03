@@ -117,21 +117,21 @@
             this.tsmTime});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1298, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1298, 36);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // hômNayToolStripMenuItem
             // 
             this.hômNayToolStripMenuItem.Name = "hômNayToolStripMenuItem";
-            this.hômNayToolStripMenuItem.Size = new System.Drawing.Size(104, 29);
+            this.hômNayToolStripMenuItem.Size = new System.Drawing.Size(104, 32);
             this.hômNayToolStripMenuItem.Text = "Hôm Nay";
             this.hômNayToolStripMenuItem.Click += new System.EventHandler(this.hômNayToolStripMenuItem_Click);
             // 
             // tsmTime
             // 
             this.tsmTime.Name = "tsmTime";
-            this.tsmTime.Size = new System.Drawing.Size(33, 29);
+            this.tsmTime.Size = new System.Drawing.Size(33, 32);
             this.tsmTime.Text = " ";
             // 
             // panel4

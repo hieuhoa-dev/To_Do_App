@@ -8,6 +8,7 @@ namespace FormPhu
     public partial class Settings : Form
     {
         public bool TrangThaiThongBao = false;
+        
         public Settings()
         {
             InitializeComponent();
@@ -20,10 +21,12 @@ namespace FormPhu
             cbbHienThiTB.SelectedIndexChanged += cbbHienThiTB_SelectedIndexChanged;
         }
 
+        public EventHandler LoadJob;
         private void btnNhapXuat_Click(object sender, EventArgs e)
         {
             panel2.Visible = false;
             frmDuLieu dl = new frmDuLieu();
+            dl.LoadJob += LoadJob;
             dl.MdiParent = this;
             dl.Dock = DockStyle.Fill;
             dl.StartPosition = FormStartPosition.Manual;

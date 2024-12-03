@@ -29,7 +29,7 @@ namespace FormPhu
 
         }
 
-
+        public event EventHandler LoadJob;
         private void btnChonFile_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog
@@ -46,9 +46,8 @@ namespace FormPhu
                 {
                     jobBL.Insert(item);
                 }
-
-                  MessageBox.Show("Nhập file thành công");
-
+                MessageBox.Show("Nhập file thành công");
+                LoadJob.Invoke(this,e);
             }
         }
 
@@ -102,14 +101,14 @@ namespace FormPhu
                             job.NameJob = rows[0];
                             job.ToDate = DateTime.ParseExact(rows[1], "MM/dd/yyyy h:mm:ss tt", CultureInfo.InvariantCulture);
                             job.FromDate = DateTime.ParseExact(rows[2], "MM/dd/yyyy h:mm:ss tt", CultureInfo.InvariantCulture);
-                            if (rows[3]=="Đã hoàn thành" )
+                            if (rows[3] == "Đã hoàn thành")
                             {
                                 job.Status = 1;
 
                             }
                             else
                             {
-                                job.Status =0;
+                                job.Status = 0;
                             }
                             job.Category = rows[4];
                             if (rows[5] == "Quan trọng")
@@ -121,8 +120,8 @@ namespace FormPhu
                             {
                                 job.LevelJob = 0;
                             }
-                            
-                            
+
+
                             job.Notes = rows[6];
                             job.TimeDelete = DateTime.Now;
 

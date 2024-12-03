@@ -214,10 +214,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             pnlDeskTops.Visible = false;
             ActivateButton(sender);
         }
-        private void iconButton4_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-        }
+    
 
         private void iconCalendar_Click(object sender, EventArgs e)
         {
@@ -232,6 +229,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         private void iconSetting_Click(object sender, EventArgs e)
         {
             Settings settings = new Settings();
+            settings.LoadJob += LoadJob;
             TrangThaiThongBao = settings.TrangThaiThongBao;
             settings.TrangThaiNoti += SetThongBao;
             settings.Show();
@@ -366,10 +364,6 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             this.Controls.Add(pnlDeskTops);
         }
 
-        private void iconSearch_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void Job_JobClicked(object sender, EventArgs e, Job cv)
         {
@@ -504,9 +498,9 @@ namespace DỰ_ÁN_NHẮC_VIỆC
                 NotiForm.LoadForm();
             }
         }
-     
 
-        void SaveNotify(Job job,string Category)
+
+        void SaveNotify(Job job, string Category)
         {
             Notify notify = new Notify();
             notify.ID = 0;
@@ -525,7 +519,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
             try
             {
                 //Chèn giá trị key
-                regkey.SetValue("Index",keyvalue);
+                regkey.SetValue("Index", keyvalue);
                 regstart.SetValue("ToDoApp", Application.StartupPath + "\\DỰ ÁN NHẮC VIỆC.exe");
             }
             catch (Exception)

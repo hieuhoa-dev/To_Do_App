@@ -28,7 +28,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         private void ListForm_Load(object sender, EventArgs e)
         {
             // Thiết lập hiển thị DataGridView
-            dgvDanhSachCongViec.DefaultCellStyle.ForeColor = Color.Black;
+            //dgvDanhSachCongViec.DefaultCellStyle.ForeColor = Color.Black;
 
             // Lấy danh sách công việc từ BusinessLogic
             jobList = jobBL.GetAll();
@@ -75,13 +75,17 @@ namespace DỰ_ÁN_NHẮC_VIỆC
         private void txtTimKiem_TextChanged(object sender, EventArgs e)
         {
             if (txtTimKiem.Text == "")
-                return;
-            List<Job> listkq = new List<Job>();
-            if (string.IsNullOrWhiteSpace(txtTimKiem.Text))
             {
-                MessageBox.Show("Vui lòng nhập thông tin tìm kiếm!");
+                dgvDanhSachCongViec.DataSource = jobList;
                 return;
+                
             }
+            List<Job> listkq = new List<Job>();
+            //if (string.IsNullOrWhiteSpace(txtTimKiem.Text))
+            //{
+            //    MessageBox.Show("Vui lòng nhập thông tin tìm kiếm!");
+            //    return;
+            //}
             string column = null;
             // Dùng cấu trúc if-else thay vì switch
             if (cbbTimKiem.Text == "Tên công việc")
@@ -103,10 +107,10 @@ namespace DỰ_ÁN_NHẮC_VIỆC
 
             if (column != null)
             {
-                // Lọc danh sách công việc
-                jobList = jobBL.GetAll().Where(job =>
-                    job.GetType().GetProperty(column)?.GetValue(job, null)?.ToString().Contains(txtTimKiem.Text) ?? false).ToList();
                 listkq = jobList;
+                // Lọc danh sách công việc
+                listkq = jobBL.GetAll().Where(job =>
+                    job.GetType().GetProperty(column)?.GetValue(job, null)?.ToString().Contains(txtTimKiem.Text) ?? false).ToList();
                 dgvDanhSachCongViec.DataSource = listkq;
             }
         }

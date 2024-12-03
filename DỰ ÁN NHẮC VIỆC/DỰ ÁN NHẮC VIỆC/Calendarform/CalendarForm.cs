@@ -61,6 +61,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC.Calendarform
         }
         string HienNgayTrongTuan(DayOfWeek dayOfWeek)
         {
+            //Chuyển đổi từ tiếng anh sang tiếng việt
             int Ngay = dateOfWeek.IndexOf(dayOfWeek.ToString());
             return NgayTrongTuan[Ngay];
         }
@@ -225,6 +226,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC.Calendarform
 
         void ShowJob(DateTime i)
         {
+            // Tạo công việc bằng ContextMenuStrip
             ContextMenuStrip JobByI = new ContextMenuStrip();
             JobByI.Items.Clear();
             string DateTimeByI = "Thứ " + HienNgayTrongTuan(i.DayOfWeek) + ", Ngày " + i.Day.ToString() + " ,Tháng " + i.Month.ToString()
@@ -238,7 +240,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC.Calendarform
                 if (dscv[j].ToDate.Day == i.Day && dscv[j].ToDate.Month == i.Month && dscv[j].ToDate.Year == i.Year && dscv[j].Delete == 0)
                     JobByI.Items.Add(dscv[j].NameJob);
             }
-            JobByI.Show(Cursor.Position);
+            JobByI.Show(Cursor.Position); // Hiển thị ContextMenuStrip tại vị trị con trỏ
         }
 
         bool KTCVByDay(DateTime date)
@@ -251,6 +253,7 @@ namespace DỰ_ÁN_NHẮC_VIỆC.Calendarform
 
         void ChangeButtonColor(Button btn, DateTime date)
         {
+            // Kiểm tra ngày có công việc hay không, nếu có đổi màu
             if (KTCVByDay(date) == true)       
             {
                 btn.BackColor = Color.Bisque;

@@ -82,11 +82,12 @@ namespace Other
 
                 job.Category = txtTheLoai.Text;
 
-                if (cmbMucDo.SelectedIndex == -1) // Auto chon Item 0
+                if (cmbMucDo.SelectedIndex == -1) // Tự đồng chọn None
                     cmbMucDo.SelectedIndex = 0;
-                if (cmbMucDo.SelectedIndex == 0)
+
+                if (cmbMucDo.SelectedIndex == 0)  // Nếu None lưu vào job
                     job.LevelJob = 0;
-                else job.LevelJob = 1;
+                else job.LevelJob = 1; //Nếu Important lưu 
 
                 job.Notes = txtNotes.Text;
 
